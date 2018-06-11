@@ -1,4 +1,4 @@
-site_name: McGill SI 2017
+site_name: McGill SI 2018
 site_description: Tutorials for analysing bacterial omics data
 site_author: Anna Syme, Torsten Seemann
 site_favicon: favicon.ico
@@ -10,7 +10,7 @@ site_favicon: favicon.ico
 
 copyright: '&copy; The authors; 2016-'
 
-theme: yeti
+theme: alabaster
 #theme: material
 
 extra:
