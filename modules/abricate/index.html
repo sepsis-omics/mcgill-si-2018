@@ -1,0 +1,191 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+
+    <title>Finding antibiotic-resistance genes &mdash; McGill SI 2018</title>
+
+    <link rel="shortcut icon" href="../../img/favicon.ico">
+    <link rel="stylesheet" href="../../css/alabaster.css" type="text/css">
+    <link rel="stylesheet" href="../../css/alabaster-overrides.css" type="text/css">
+
+    
+      <link href="../../css/sepsis.css" rel="stylesheet">
+    
+
+    
+      <script src="../../search/require.js"></script>
+    
+      <script src="../../search/search.js"></script>
+    
+
+    
+
+    <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9">
+
+    
+  
+</head>
+<body>
+
+  <div class="document">
+    <div class="documentwrapper">
+      <div class="bodywrapper">
+        <div class="body" role="main">
+          
+            <p><br></p>
+<h1 id="finding-antibiotic-resistant-genes">Finding antibiotic-resistant genes</h1>
+<h2 id="overview">Overview</h2>
+<ul>
+<li>Import an assembled bacterial genome</li>
+<li>Find antibiotic-resistance (AMR) genes</li>
+</ul>
+<h2 id="import-data">Import data</h2>
+<ul>
+<li>Go to your Galaxy instance.</li>
+<li>
+<p>Set up a new History for this Activity.</p>
+<ul>
+<li>In the History panel, click on the cog icon, select <ss>Create New</ss>.</li>
+<li>A new empty history should appear; click on <fn>Unnamed history</fn> and re-name it (e.g. AMR genes).</li>
+</ul>
+<p><img alt="Galaxy new history" src="./images/galaxy1.png" /></p>
+</li>
+<li>
+<p>Import an assembled genome (or use one from your history).</p>
+<ul>
+<li>Copy this URL for a previously-assembled genome:  <tt>https://swift.rc.nectar.org.au:8888/v1/AUTH_377/public/Microbial_tutorials/SPAdes_contigs.fasta</tt></li>
+<li>From the Galaxy tool panel, click on <ss>Get Data &rarr; Upload File</ss>  </li>
+<li>Click the <ss>Paste/Fetch data</ss> button  </li>
+<li>Paste the URL into the box.</li>
+<li>Click the <ss>Start</ss> button.  </li>
+<li>Once the progress bar reaches 100%, click the <ss>Close</ss> button  </li>
+<li>The file will now upload to your current history.</li>
+<li>Re-name it with the pencil icon to <fn>contigs.fasta</fn>.</li>
+</ul>
+</li>
+</ul>
+<h2 id="find-antibiotic-resistance-genes">Find antibiotic-resistance genes</h2>
+<ul>
+<li>We will use the tool called <a href="https://github.com/tseemann/abricate">ABRicate</a> to find antibiotic resistance genes in the (draft) genome.</li>
+<li>ABRicate uses a <a href="https://cge.cbs.dtu.dk/services/data.php">database</a> of these genes called <a href="https://cge.cbs.dtu.dk/services/ResFinder">ResFinder</a>.</li>
+</ul>
+<p>In the tools panel, go to <ss>NGS Analysis: NGS Annotation: ABRicate</ss>.</p>
+<ul>
+<li>For <ss>Select fasta file</ss> choose <fn>contigs.fasta</fn> (or the name of your own assembly file.)</li>
+<li>Click <ss>Execute</ss>.</li>
+</ul>
+<p>There is one output file. Click on the eye icon to view. It should look like this, although likely with a different number of rows.</p>
+<ul>
+<li>This shows a table with one line for each antibiotic resistance gene found, in which contig, at which position, and the % coverage.</li>
+</ul>
+<p><img alt="abricate results" src="./images/abricate.png" /></p>
+<h2 id="next">Next</h2>
+<p>In the output from Abricate, column 5 has the list of the antibiotic-resistant gene names. Some of these may be complete, exact matches, and some may have a gap/mutation in their sequence which can affect whether that protein is actually expressed.</p>
+<p>To find out more about what type of AMR genes these are, you can search <a href="https://www.ncbi.nlm.nih.gov/gene/">Genbank</a> with the gene name (e.g. aadD).</p>
+            
+          
+        </div>
+      </div>
+    </div>
+    <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+      <div class="sphinxsidebarwrapper">
+        
+  <h1 class="logo"><a href="../..">McGill SI 2018</a></h1>
+
+
+
+  <p class="blurb">Tutorials for analysing bacterial omics data</p>
+
+        
+          
+
+
+
+<h3>Table Of Contents</h3>
+
+<nav>
+  
+  
+    <ul>
+    
+      <li><a href="#overview">Overview</a></li>
+      <ul>
+    
+  </ul>
+    
+      <li><a href="#import-data">Import data</a></li>
+      <ul>
+    
+  </ul>
+    
+      <li><a href="#find-antibiotic-resistance-genes">Find antibiotic-resistance genes</a></li>
+      <ul>
+    
+  </ul>
+    
+      <li><a href="#next">Next</a></li>
+      <ul>
+    
+  </ul>
+    
+  </ul>
+  
+
+  
+</nav>
+          
+  <h3>Related Topics</h3>
+  <ul>
+    
+      <li>Previous: <a href="../snippy/" title="previous chapter">
+        Variant finding
+      </a></li>
+    
+    
+      <li>Next: <a href="../kraken/" title="next chapter">
+        Sample identification with Kraken
+      </a></li>
+    
+  </ul>
+
+        
+        <div id="searchbox" style="display: none;" role="search">
+  <h3>Quick search</h3>
+  <form class="search" action="../../search.html" method="get">
+    <input name="q" type="text">
+    <input value="Go" type="submit">
+  </form>
+  <p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+  </p>
+</div>
+<script type="text/javascript">
+  document.getElementById("searchbox").style.display = "block";
+</script>
+      </div>
+    </div>
+    <div class="clearer"></div>
+  </div>
+
+  
+    <div class="footer">
+      
+        &copy; &copy; The authors; 2016-
+      
+      
+        |
+        Powered by <a href="http://www.mkdocs.org">MkDocs 0.17.2</a>
+        &amp; <a href="https://github.com/iamale/mkdocs-alabaster">Alabaster</a>
+      
+    </div>
+  
+
+  <!--
+  MkDocs version      : 0.17.2
+  Docs Build Date UTC : 2018-06-11 23:54:55
+  -->
+</body>
+</html>
