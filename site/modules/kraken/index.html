@@ -1,0 +1,308 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+
+    <title>Sample identification with Kraken &mdash; McGill SI 2018</title>
+
+    <link rel="shortcut icon" href="../../img/favicon.ico">
+    <link rel="stylesheet" href="../../css/alabaster.css" type="text/css">
+    <link rel="stylesheet" href="../../css/alabaster-overrides.css" type="text/css">
+
+    
+      <link href="../../css/sepsis.css" rel="stylesheet">
+    
+
+    
+      <script src="../../search/require.js"></script>
+    
+      <script src="../../search/search.js"></script>
+    
+
+    
+
+    <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9">
+
+    
+  
+</head>
+<body>
+
+  <div class="document">
+    <div class="documentwrapper">
+      <div class="bodywrapper">
+        <div class="body" role="main">
+          
+            <h1 id="sample-identification-with-kraken">Sample identification with Kraken</h1>
+<p>To identify a sample from sequencing reads, we can use the tool &ldquo;Kraken&rdquo;. This tool can also be used to identify members in a mixed set of reads, for metagenomics.</p>
+<ul>
+<li>
+<p>e.g. reads from one sample &rarr; Kraken &rarr; 95% <em>Staphylococcus aureus</em>.</p>
+</li>
+<li>
+<p>e.g. mixed reads &rarr; Kraken &rarr; 50% <em>Staphylococcus aureus</em>, 40%  <em>Campylobacter concisus</em>, 10% unclassified.</p>
+</li>
+</ul>
+<!-- - is this a proportion of reads?
+- is proportion of reads a proxy for relative abundance?
+(e.g. something might not sequence well - be truly abundant but rare in the sample) -->
+
+<p>In this tutorial we will use Kraken to confirm the identify of reads from a bacterial isolate.</p>
+<h2 id="get-data">Get data</h2>
+<p>In Galaxy, go to <ss>Shared Data</ss> in the top panel, and click on the history named <fn>Kraken data</fn>. In the top right, click <ss>Switch to this history</ss>.</p>
+<p>Your current history should now contain four files. If you are using the tutorial independently of a workshop, at this stage you can upload your FASTQ files into the current history.</p>
+<p><img alt="galaxy history" src="./images/files2.png" /></p>
+<!-- used ERR019289_1 and 2 from EBI. see public data tutorial.
+rename and change datatypes. -- not working -->
+
+<h2 id="run-kraken">Run Kraken</h2>
+<p>We have a sample that should be <em>Staphylococcus aureus</em>. The paired-end FASTQ read files are:</p>
+<ul>
+<li><fn>staph_R1.fq</fn> and <fn>staph_R2.fq</fn>.</li>
+</ul>
+<p>(We will look at the other set of files later on in the tutorial).</p>
+<ul>
+<li>
+<p>Go to <ss>Tools &rarr; NGS Analysis &rarr; Metagenomic analyses &rarr; Kraken, assign taxonomic labels to sequencing reads</ss></p>
+</li>
+<li>
+<p>Set the following parameters:</p>
+<ul>
+<li><ss>Single or paired reads</ss>: <em>Paired</em></li>
+<li><ss>Forward strand:</ss> <fn>staph_R1.fq</fn></li>
+<li><ss>Reverse strand:</ss> <fn>staph_R2.fq</fn></li>
+<li>leave other settings as they are</li>
+</ul>
+</li>
+<li>
+<p>Your tool interface should look like this:</p>
+</li>
+</ul>
+<p><img alt="tool interface" src="./images/tool_interface2.png" /></p>
+<ul>
+<li>Click <ss>Execute</ss></li>
+</ul>
+<!-- ### How it works
+
+Generally: compare sequence to database of known sequence identities.
+
+In detail:
+
+- uses k-mers (default k = 31)
+- user to specify a library of genomes
+- query database for each k-mer in a sequence
+- summarize the hits for all the k-mers from a seq to give the ID
+- if seq has no kmers in dbase, it is left unclassified.
+-->
+
+<h2 id="examine-the-output">Examine the output</h2>
+<p>The output is a file called <fn>Kraken on data x and x: Classification</fn>. This will be at the top of your history pane.</p>
+<p>Click <ss>Refresh</ss> if the file hasn&rsquo;t yet turned green.</p>
+<p><img alt="refresh" src="./images/refresh.png" /></p>
+<p>When the file is green, click on the eye icon to view.</p>
+<ul>
+<li>We will turn this output into something easier to read in the next step.</li>
+<li>Column 2 is the sequence ID.</li>
+<li>Column 3 is the taxon ID (from NCBI).</li>
+<li>Column 5 is a summary of all the taxon IDs that each k-mer in the sequence matched to (taxon ID:number of k-mers).  </li>
+</ul>
+<p><img alt="classification" src="./images/classification.png" /></p>
+<!-- Output Format
+
+Each sequence classified by Kraken results in a single line of output. Output lines contain five tab-delimited fields; from left to right, they are:
+
+1. "C"/"U": one letter code indicating that the sequence was either classified or unclassified.
+2. The sequence ID, obtained from the FASTA/FASTQ header.
+3. The taxonomy ID Kraken used to label the sequence; this is 0 if the sequence is unclassified.
+4. The length of the sequence in bp.
+5. A space-delimited list indicating the LCA mapping of each k-mer in the sequence. For example, "562:13 561:4 A:31 0:1 562:3" would indicate that:
+        a) the first 13 k-mers mapped to taxonomy ID #562
+        b) the next 4 k-mers mapped to taxonomy ID #561
+        c) the next 31 k-mers contained an ambiguous nucleotide
+        d) the next k-mer was not in the database
+        e) the last 3 k-mers mapped to taxonomy ID #562
+-->
+
+<h2 id="kraken-report">Kraken report</h2>
+<p>Go to <ss>Tools &rarr; NGS Analysis &rarr; Metagenomic analyses &rarr; Kraken-report</ss></p>
+<ul>
+<li>
+<p>Set the following parameters:</p>
+<ul>
+<li><ss>Kraken output</ss>: <fn>Kraken on data x and x: Classification</fn></li>
+<li><ss>Select a Kraken database</ss>: <em>krakendb</em></li>
+<li>Click <ss>Execute</ss></li>
+</ul>
+</li>
+</ul>
+<p>The output file is called <fn>Kraken-report on data x</fn>.</p>
+<ul>
+<li>Click on the eye icon to view.</li>
+<li>Column 1: percentage of reads in the clade/taxon in Column 6</li>
+<li>Column 2: number of reads in the clade.</li>
+<li>Column 3: number of reads in the clade but not further classified.</li>
+<li>Column 4: code indicating the rank of the classification: (U)nclassified, (D)omain, (K)ingdom, (P)hylum, (C)lass, (O)rder, (F)amily, (G)enus, (S)pecies).</li>
+<li>Column 5: NCBI taxonomy ID.</li>
+</ul>
+<p><img alt="kraken report" src="./images/kraken_output2.png" /></p>
+<p>Approximately 95% of reads were classified as <em>Staphylococcus aureus</em>, confirming the correct identity of our bacterial sample.</p>
+<ul>
+<li>Of these reads, roughly half were uniquely present in <em>S. aureus</em> subsp. <em>aureus</em>, and most of those were uniquely present in strain HO 5096 0412.</li>
+<li>The sample strain is therefore most related to the HO 5096 0412 strain.</li>
+</ul>
+<p>The remaining reads within the <em>S. aureus</em> clade were classified into various taxa.</p>
+<ul>
+<li>Scroll down column 3 to see the number of reads assigned directly to the taxon in column 6.</li>
+<li>These are all very low and can be disregarded.</li>
+</ul>
+<!-- Output
+
+The output of kraken-report is tab-delimited, with one line per taxon. The fields of the output, from left-to-right, are as follows:
+
+1. Percentage of reads covered by the clade rooted at this taxon
+2. Number of reads covered by the clade rooted at this taxon
+3. Number of reads assigned directly to this taxon
+4. A rank code, indicating (U)nclassified, (D)omain, (K)ingdom, (P)hylum, (C)lass, (O)rder, (F)amily, (G)enus, or (S)pecies. All other ranks are simply filled with a dash.
+5. NCBI taxonomy ID
+6. Indented scientific name -->
+
+<h2 id="next">Next</h2>
+<p>Re-run Kraken with another sample. This sample should be <em>Enterococcus faecalis</em>.</p>
+<ul>
+<li>Use the files <fn>ent_R1.fq</fn> and <fn>ent_R2.fq</fn>.</li>
+<li>Run <ss>Kraken</ss> with these files. These are paired-end reads.</li>
+<li>With the <fn>Classification</fn> file from Kraken, run <ss>Kraken-report</ss>.</li>
+<li>Cick on the eye icon to view the <fn>Kraken-report</fn> file.</li>
+</ul>
+<p><img alt="output 1" src="./images/sample2_1.png" /></p>
+<ul>
+<li>
+<p>63% are classified to the genus <em>Enterococcus</em>, and most of these to <em>E. faecalis</em>.</p>
+</li>
+<li>
+<p>However, if we scroll down the table of results, we see that 31% are classified to the genus <em>Mycobacterium</em>, mostly <em>M. abscessus</em>. These are not in the same phylum as <em>Enterococcus</em>.</p>
+</li>
+</ul>
+<p><img alt="output2" src="./images/sample2_2.png" /></p>
+<ul>
+<li>This sample is probably contaminated.</li>
+</ul>
+<h2 id="links">Links</h2>
+<p><a href="https://genomebiology.biomedcentral.com/articles/10.1186/gb-2014-15-3-r46">Kraken paper</a></p>
+<p><a href="http://ccb.jhu.edu/software/kraken/">Kraken software</a></p>
+            
+          
+        </div>
+      </div>
+    </div>
+    <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+      <div class="sphinxsidebarwrapper">
+        
+  <h1 class="logo"><a href="../..">McGill SI 2018</a></h1>
+
+
+
+  <p class="blurb">Tutorials for analysing bacterial omics data</p>
+
+        
+          
+
+
+
+<h3>Table Of Contents</h3>
+
+<nav>
+  
+  
+    <ul>
+    
+      <li><a href="#get-data">Get data</a></li>
+      <ul>
+    
+  </ul>
+    
+      <li><a href="#run-kraken">Run Kraken</a></li>
+      <ul>
+    
+  </ul>
+    
+      <li><a href="#examine-the-output">Examine the output</a></li>
+      <ul>
+    
+  </ul>
+    
+      <li><a href="#kraken-report">Kraken report</a></li>
+      <ul>
+    
+  </ul>
+    
+      <li><a href="#next">Next</a></li>
+      <ul>
+    
+  </ul>
+    
+      <li><a href="#links">Links</a></li>
+      <ul>
+    
+  </ul>
+    
+  </ul>
+  
+
+  
+</nav>
+          
+  <h3>Related Topics</h3>
+  <ul>
+    
+      <li>Previous: <a href="../abricate/" title="previous chapter">
+        Finding antibiotic-resistance genes
+      </a></li>
+    
+    
+      <li>Next: <a href="../trimmomatic/" title="next chapter">
+        Read trimming
+      </a></li>
+    
+  </ul>
+
+        
+        <div id="searchbox" style="display: none;" role="search">
+  <h3>Quick search</h3>
+  <form class="search" action="../../search.html" method="get">
+    <input name="q" type="text">
+    <input value="Go" type="submit">
+  </form>
+  <p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+  </p>
+</div>
+<script type="text/javascript">
+  document.getElementById("searchbox").style.display = "block";
+</script>
+      </div>
+    </div>
+    <div class="clearer"></div>
+  </div>
+
+  
+    <div class="footer">
+      
+        &copy; &copy; The authors; 2016-
+      
+      
+        |
+        Powered by <a href="http://www.mkdocs.org">MkDocs 0.17.2</a>
+        &amp; <a href="https://github.com/iamale/mkdocs-alabaster">Alabaster</a>
+      
+    </div>
+  
+
+  <!--
+  MkDocs version      : 0.17.2
+  Docs Build Date UTC : 2018-06-11 23:54:55
+  -->
+</body>
+</html>

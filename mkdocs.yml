@@ -38,27 +38,27 @@ extra_css:
 
 pages:
 - Home: index.md
-- Day 1:
+
     #- Genomics workshop overview: modules/workshop_overview/index.md
     #- Using Galaxy: modules/galaxy/index.md
     #- Starting with Galaxy: modules/galaxy/index.md
-    - Training data set: modules/data-dna/index.md
-    - Quality control: modules/fastqc/index.md
+- Training data set: modules/data-dna/index.md
+- Quality control: modules/fastqc/index.md
     #- Read trimming: modules/trimmomatic/index.md
     #- Genome assembly with Velvet: modules/velvet/index.md
-    - Genome assembly: modules/spades/index.md
-    - Genome annotation: modules/prokka/index.md
-- Day 2:
-    - Variant finding: modules/snippy/index.md
+- Genome assembly: modules/spades/index.md
+- Genome annotation: modules/prokka/index.md
+
+- Variant finding: modules/snippy/index.md
     #- Public data &rarr; assembly, annotation: modules/access_data/index.md
 #- Day 3:
-- Day 4:
-    - Finding antibiotic-resistance genes: modules/abricate/index.md
-    - Sample identification with Kraken: modules/kraken/index.md
-- Extra:
-    - Read trimming: modules/trimmomatic/index.md
-    - Galaxy workflows: modules/workflows/index.md
-    - Viral genome sequencing: modules/viral_genomes/index.md
+- Finding antibiotic-resistance genes: modules/abricate/index.md
+- Sample identification with Kraken: modules/kraken/index.md
+
+
+- Read trimming: modules/trimmomatic/index.md
+- Galaxy workflows: modules/workflows/index.md
+- Viral genome sequencing: modules/viral_genomes/index.md
     #- Metagenomics with FROGS: modules/frogs/index.md
     #- PacBio assembly with SMRT portal: modules/pacbio/index.md
     #- PacBio assembly with command line tools: modules/cmdline_assembly/index.md
@@ -80,7 +80,7 @@ pages:
 #- Advanced:
     #- Differential Gene Expression: intro/dge/index.md
     #- Pan genome: intro/roary/index.md
-    - Artemis: modules/artemis/index.md
+- Artemis: modules/artemis/index.md
     #- JBrowse: modules/jbrowse/index.md
 
 #- Proteomics:

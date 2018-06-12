@@ -1,0 +1,308 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+
+    <title>Genome annotation &mdash; McGill SI 2018</title>
+
+    <link rel="shortcut icon" href="../../img/favicon.ico">
+    <link rel="stylesheet" href="../../css/alabaster.css" type="text/css">
+    <link rel="stylesheet" href="../../css/alabaster-overrides.css" type="text/css">
+
+    
+      <link href="../../css/sepsis.css" rel="stylesheet">
+    
+
+    
+      <script src="../../search/require.js"></script>
+    
+      <script src="../../search/search.js"></script>
+    
+
+    
+
+    <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9">
+
+    
+  
+</head>
+<body>
+
+  <div class="document">
+    <div class="documentwrapper">
+      <div class="bodywrapper">
+        <div class="body" role="main">
+          
+            <p><br></p>
+<h1 id="genome-annotation-using-prokka">Genome annotation using Prokka</h1>
+<p>Keywords: annotation, Prokka, JBrowse, Galaxy, Microbial Genomics Virtual Lab</p>
+<h2 id="background">Background</h2>
+<p>In this section we will use a software tool called Prokka to annotate the draft genome sequence produced in the previous <a href="../spades/">tutorial</a>. Prokka is a “wrapper”; it collects together several pieces of software (from various authors), and so avoids “re-inventing the wheel”.</p>
+<p>Prokka finds and annotates features (both protein coding regions and RNA genes, i.e. tRNA, rRNA) present on on a sequence. Note, Prokka uses a two-step process for the annotation of protein coding regions: first, protein coding regions on the genome are identified using <a href="http://prodigal.ornl.gov/">Prodigal</a>; second, the <em>function</em> of the encoded protein is predicted by similarity to proteins in one of many protein or protein domain databases. Prokka is a software tool that can be used to annotate bacterial, archaeal and viral genomes quickly, generating standard output files in GenBank, EMBL and gff formats. More information about Prokka can be found <a href="https://github.com/tseemann/prokka">here</a>.</p>
+<h2 id="learning-objectives">Learning objectives</h2>
+<p>At the end of this tutorial you should be able to:</p>
+<ol>
+<li>load a genome assembly into Prokka</li>
+<li>annotate the assembly using Prokka</li>
+<li>examine the annotated genome using JBrowse</li>
+</ol>
+<h2 id="input-data">Input data</h2>
+<p>Prokka requires assembled contigs.</p>
+<ul>
+<li>
+<p>If you are continuing on from the previous workshop (<a href="../spades/">Assembly with Spades</a>), this file will be in your current history: <fn>SPAdes_contigs.fasta</fn>.</p>
+</li>
+<li>
+<p>Alternatively, get the file called &ldquo;assembled contigs&rdquo; from the <a href="../data-dna/">Training dataset page.</a></p>
+</li>
+</ul>
+<!--
+We will import a history from Galaxy:
+
+- In the menu options across the top, go to <ss>Shared Data</ss>.
+- Click on <ss>Histories</ss>.
+- A list of published histories should appear. Click on <fn>GCC 2016 small genome annotation</fn>.
+- Click on <ss>Import history</ss>.
+- An option will appear to re-name the history. We don't need to rename it, so click <ss>Import</ss>.
+- The history will now appear in your Current History pane, and the <fn>SPAdes_contigs.fasta</fn> file is now ready to use in Galaxy analyses.
+-->
+
+<h2 id="run-prokka">Run Prokka</h2>
+<ul>
+<li>In Galaxy, go to <ss>Tools &rarr; NGS Analysis &rarr; NGS: Annotation &rarr; Prokka</ss>  </li>
+<li>Set the following parameters (leave everything else unchanged):<ul>
+<li><ss>Contigs to annotate</ss>: <fn>SPAdes contigs (fasta)</fn>  </li>
+<li><ss>Locus tag prefix (&ndash;locustag)</ss>: P</li>
+<li><ss>Force GenBank/ENA/DDJB compliance (&ndash;compliant)</ss>: <em>No</em></li>
+<li><ss>Sequencing Centre ID (&ndash;centre)</ss>: V</li>
+<li><ss>Genus Name</ss>: <em>Staphylococcus</em>  </li>
+<li><ss>Species Name</ss>: <em>aureus</em>  </li>
+<li><ss>Use genus-specific BLAST database</ss> <em>No</em>  </li>
+</ul>
+</li>
+</ul>
+<p>Your tool interface should look like this:</p>
+<p><img alt="prokka interface" src="./images/interface.png" /></p>
+<ul>
+<li>Click <ss>Execute</ss>  </li>
+</ul>
+<h2 id="examine-the-output">Examine the output</h2>
+<!-- First, enable *Scratchbook* in Galaxy - this allows you to view several windows simultaneously. Click on the 3&times;3 squares icon on the menu bar:
+
+![scratchbook icon](images/scratchbook.png)
+-->
+
+<p>Once Prokka has finished, examine each of its output files.</p>
+<ul>
+<li>The <fn>GFF</fn> and <fn>GBK</fn> files contain all of the information about the features annotated (in different formats.)</li>
+<li>The <fn>.txt</fn> file contains a summary of the number of features annotated.</li>
+<li>The <fn>.faa</fn> file contains the protein sequences of the genes annotated.</li>
+<li>The <fn>.ffn</fn> file contains the nucleotide sequences of the genes annotated.</li>
+</ul>
+<h2 id="view-annotated-features-in-jbrowse">View annotated features in JBrowse</h2>
+<p>Now that we have annotated the draft genome sequence, we would like to view the sequence in the JBrowse genome viewer.</p>
+<ul>
+<li>
+<p>Go to <ss>Statistics and Visualisation &rarr; Graph/Display Data &rarr; JBrowse genome browser</ss>.</p>
+</li>
+<li>
+<p>Under <ss>Reference genome to display</ss> choose <em>Use a genome from history</em>.</p>
+</li>
+<li>
+<p>Under <ss>Select the reference genome</ss> choose <fn>Prokka on data XX:fna</fn>. This .fna sequence is the fasta nucleotide sequence, and will be the reference against which annotations are displayed.</p>
+</li>
+<li>
+<p>For <ss>Produce a Standalone Instance</ss> select <em>Yes</em>.</p>
+</li>
+<li>
+<p>For <ss>Genetic Code</ss> choose <em>11: The Bacterial, Archaeal and Plant Plastid Code</em>.</p>
+</li>
+<li>
+<p>Under <ss>JBrowse-in-Galaxy Action</ss> choose <em>New JBrowse Instance</em>.</p>
+</li>
+<li>
+<p>Click <ss>Insert Track Group</ss></p>
+</li>
+<li>
+<p>Under <ss>Track Category</ss> type in <em>gene annotations</em>.</p>
+</li>
+<li>
+<p>Click <ss>Insert Annotation Track</ss></p>
+</li>
+<li>
+<p>For <ss>Track Type</ss> choose <em>GFF/GFF3/BED/GBK Features</em></p>
+</li>
+<li>
+<p>For <ss>GFF/GFF3/BED Track Data</ss> select <fn>Prokka on data XX:gff</fn>  [Note: not wildtype.gff]</p>
+</li>
+<li>
+<p>Under <ss>JBrowse Track Type[Advanced]</ss> select <em>Canvas Features</em>.</p>
+</li>
+<li>
+<p>Click on <ss>JBrowse Styling Options <Advanced]</ss></p>
+</li>
+<li>
+<p>Under <ss>JBrowse style.label</ss> add in <em>product</em>.</p>
+</li>
+<li>
+<p>Under <ss>Track Visibility</ss> choose <em>On for new users</em>.</p>
+</li>
+</ul>
+<p>Your tool interface should look like this:</p>
+<p><img alt="JBrowse interface" src="./images/jbrowse_int.png" /></p>
+<!--
+![JBrowse interface](images/jbrowse_oldversion.png) -->
+
+<ul>
+<li>
+<p>Click <ss>Execute</ss></p>
+</li>
+<li>
+<p>A new file will be created, called <fn>JBrowse on data XX and data XX - Complete</fn>. Click on the eye icon next to the file name. The JBrowse window will appear in the centre Galaxy panel.</p>
+</li>
+<li>
+<p>Under <ss>Available Tracks</ss> on the left, tick the box for <fn>Prokka on data XX:gff</fn>.</p>
+</li>
+<li>
+<p>Select contig 1 in the drop down box. You can only see one contig displayed at a time.</p>
+</li>
+</ul>
+<p><img alt="JBrowse" src="./images/jbrowse5.png" /></p>
+<ul>
+<li>
+<p>Use the plus and minus buttons to zoom in and out, and the arrows to move left or right (or click and drag within the window to move left or right).</p>
+</li>
+<li>
+<p>Zoom in to see the reference sequence at the top. JBrowse displays the sequence and a 6-frame amino acid translation.</p>
+</li>
+</ul>
+<p>Zoomed in view:</p>
+<p><img alt="JBrowse" src="./images/jbrowse6.png" /></p>
+<ul>
+<li>Right click on a gene/feature annotation (the bars on the annotation track), then select <ss>View Details</ss> to see more information.<ul>
+<li>gene name</li>
+<li>product name</li>
+<li>you can download the FASTA sequence by clicking on the disk icon.</li>
+</ul>
+</li>
+</ul>
+<!-- ## What next?
+
+- Identify genome variants (nucletotide changes) using [Snippy](/modules/snippy/index.md).
+-->
+            
+          
+        </div>
+      </div>
+    </div>
+    <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+      <div class="sphinxsidebarwrapper">
+        
+  <h1 class="logo"><a href="../..">McGill SI 2018</a></h1>
+
+
+
+  <p class="blurb">Tutorials for analysing bacterial omics data</p>
+
+        
+          
+
+
+
+<h3>Table Of Contents</h3>
+
+<nav>
+  
+  
+    <ul>
+    
+      <li><a href="#background">Background</a></li>
+      <ul>
+    
+  </ul>
+    
+      <li><a href="#learning-objectives">Learning objectives</a></li>
+      <ul>
+    
+  </ul>
+    
+      <li><a href="#input-data">Input data</a></li>
+      <ul>
+    
+  </ul>
+    
+      <li><a href="#run-prokka">Run Prokka</a></li>
+      <ul>
+    
+  </ul>
+    
+      <li><a href="#examine-the-output">Examine the output</a></li>
+      <ul>
+    
+  </ul>
+    
+      <li><a href="#view-annotated-features-in-jbrowse">View annotated features in JBrowse</a></li>
+      <ul>
+    
+  </ul>
+    
+  </ul>
+  
+
+  
+</nav>
+          
+  <h3>Related Topics</h3>
+  <ul>
+    
+      <li>Previous: <a href="../spades/" title="previous chapter">
+        Genome assembly
+      </a></li>
+    
+    
+      <li>Next: <a href="../snippy/" title="next chapter">
+        Variant finding
+      </a></li>
+    
+  </ul>
+
+        
+        <div id="searchbox" style="display: none;" role="search">
+  <h3>Quick search</h3>
+  <form class="search" action="../../search.html" method="get">
+    <input name="q" type="text">
+    <input value="Go" type="submit">
+  </form>
+  <p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+  </p>
+</div>
+<script type="text/javascript">
+  document.getElementById("searchbox").style.display = "block";
+</script>
+      </div>
+    </div>
+    <div class="clearer"></div>
+  </div>
+
+  
+    <div class="footer">
+      
+        &copy; &copy; The authors; 2016-
+      
+      
+        |
+        Powered by <a href="http://www.mkdocs.org">MkDocs 0.17.2</a>
+        &amp; <a href="https://github.com/iamale/mkdocs-alabaster">Alabaster</a>
+      
+    </div>
+  
+
+  <!--
+  MkDocs version      : 0.17.2
+  Docs Build Date UTC : 2018-06-11 23:54:54
+  -->
+</body>
+</html>
