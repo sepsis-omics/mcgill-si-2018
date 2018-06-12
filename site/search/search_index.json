@@ -242,7 +242,7 @@
         }, 
         {
             "location": "/modules/abricate/", 
-            "text": "Finding antibiotic-resistant genes\n\n\nOverview\n\n\n\n\nImport an assembled bacterial genome\n\n\nFind antibiotic-resistance (AMR) genes\n\n\n\n\nImport data\n\n\n\n\nGo to your Galaxy instance.\n\n\n\n\nSet up a new History for this Activity.\n\n\n\n\nIn the History panel, click on the cog icon, select \nCreate New\n.\n\n\nA new empty history should appear; click on \nUnnamed history\n and re-name it (e.g. AMR genes).\n\n\n\n\n\n\n\n\n\n\nImport an assembled genome (or use one from your history).\n\n\n\n\nCopy this URL for a previously-assembled genome:  \nhttps://swift.rc.nectar.org.au:8888/v1/AUTH_377/public/Microbial_tutorials/SPAdes_contigs.fasta\n\n\nFrom the Galaxy tool panel, click on \nGet Data \n Upload File\n  \n\n\nClick the \nPaste/Fetch data\n button  \n\n\nPaste the URL into the box.\n\n\nClick the \nStart\n button.  \n\n\nOnce the progress bar reaches 100%, click the \nClose\n button  \n\n\nThe file will now upload to your current history.\n\n\nRe-name it with the pencil icon to \ncontigs.fasta\n.\n\n\n\n\n\n\n\n\nFind antibiotic-resistance genes\n\n\n\n\nWe will use the tool called \nABRicate\n to find antibiotic resistance genes in the (draft) genome.\n\n\nABRicate uses a \ndatabase\n of these genes called \nResFinder\n.\n\n\n\n\nIn the tools panel, go to \nNGS Analysis: NGS Annotation: ABRicate\n.\n\n\n\n\nFor \nSelect fasta file\n choose \ncontigs.fasta\n (or the name of your own assembly file.)\n\n\nClick \nExecute\n.\n\n\n\n\nThere is one output file. Click on the eye icon to view. It should look like this, although likely with a different number of rows.\n\n\n\n\nThis shows a table with one line for each antibiotic resistance gene found, in which contig, at which position, and the % coverage.\n\n\n\n\n\n\nNext\n\n\nIn the output from Abricate, column 5 has the list of the antibiotic-resistant gene names. Some of these may be complete, exact matches, and some may have a gap/mutation in their sequence which can affect whether that protein is actually expressed.\n\n\nTo find out more about what type of AMR genes these are, you can search \nGenbank\n with the gene name (e.g. aadD).", 
+            "text": "Finding antibiotic-resistant genes\n\n\nOverview\n\n\n\n\nImport an assembled bacterial genome\n\n\nFind antibiotic-resistance (AMR) genes\n\n\n\n\nImport data\n\n\n\n\nGo to your Galaxy instance.\n\n\n\n\nSet up a new History for this Activity.\n\n\n\n\nIn the History panel, click on the cog icon, select \nCreate New\n.\n\n\nA new empty history should appear; click on \nUnnamed history\n and re-name it (e.g. AMR genes).\n\n\n\n\n\n\n\n\n\n\nImport an assembled genome (or use one from your history).\n\n\n\n\nCopy this URL for a previously-assembled genome:  \nhttps://swift.rc.nectar.org.au:8888/v1/AUTH_377/public/Microbial_tutorials/SPAdes_contigs.fasta\n\n\nFrom the Galaxy tool panel, click on \nGet Data \n Upload File\n  \n\n\nClick the \nPaste/Fetch data\n button  \n\n\nPaste the URL into the box.\n\n\nClick the \nStart\n button.  \n\n\nOnce the progress bar reaches 100%, click the \nClose\n button  \n\n\nThe file will now upload to your current history.\n\n\nRe-name it with the pencil icon to \ncontigs.fasta\n.\n\n\n\n\n\n\n\n\nFind antibiotic-resistance genes\n\n\n\n\nWe will use the tool called \nABRicate\n to find antibiotic resistance genes in the (draft) genome.\n\n\nABRicate uses a \ndatabase\n of these genes called \nResFinder\n.\n\n\n\n\nIn the tools panel, go to \nNGS Analysis: NGS Annotation: ABRicate\n.\n\n\n\n\nFor \nSelect fasta file\n choose \ncontigs.fasta\n (or the name of your own assembly file.)\n\n\nClick \nExecute\n.\n\n\n\n\nThere is one output file. Click on the eye icon to view. It should look like this, although likely with a different number of rows. (We will probably only have a few rows as we have used a cut-down data set).\n\n\n\n\nThis shows a table with one line for each antibiotic resistance gene found, in which contig, at which position, and the % coverage.\n\n\n\n\n\n\nNext\n\n\nIn the output from Abricate, column 5 has the list of the antibiotic-resistant gene names. Some of these may be complete, exact matches, and some may have a gap/mutation in their sequence which can affect whether that protein is actually expressed.\n\n\nTo find out more about what type of AMR genes these are, you can search \nGenbank\n with the gene name (e.g. aadD).", 
             "title": "Finding antibiotic-resistance genes"
         }, 
         {
@@ -262,13 +262,133 @@
         }, 
         {
             "location": "/modules/abricate/#find-antibiotic-resistance-genes", 
-            "text": "We will use the tool called  ABRicate  to find antibiotic resistance genes in the (draft) genome.  ABRicate uses a  database  of these genes called  ResFinder .   In the tools panel, go to  NGS Analysis: NGS Annotation: ABRicate .   For  Select fasta file  choose  contigs.fasta  (or the name of your own assembly file.)  Click  Execute .   There is one output file. Click on the eye icon to view. It should look like this, although likely with a different number of rows.   This shows a table with one line for each antibiotic resistance gene found, in which contig, at which position, and the % coverage.", 
+            "text": "We will use the tool called  ABRicate  to find antibiotic resistance genes in the (draft) genome.  ABRicate uses a  database  of these genes called  ResFinder .   In the tools panel, go to  NGS Analysis: NGS Annotation: ABRicate .   For  Select fasta file  choose  contigs.fasta  (or the name of your own assembly file.)  Click  Execute .   There is one output file. Click on the eye icon to view. It should look like this, although likely with a different number of rows. (We will probably only have a few rows as we have used a cut-down data set).   This shows a table with one line for each antibiotic resistance gene found, in which contig, at which position, and the % coverage.", 
             "title": "Find antibiotic-resistance genes"
         }, 
         {
             "location": "/modules/abricate/#next", 
             "text": "In the output from Abricate, column 5 has the list of the antibiotic-resistant gene names. Some of these may be complete, exact matches, and some may have a gap/mutation in their sequence which can affect whether that protein is actually expressed.  To find out more about what type of AMR genes these are, you can search  Genbank  with the gene name (e.g. aadD).", 
             "title": "Next"
+        }, 
+        {
+            "location": "/modules/nanopore-mcgillsi/Nanopore_tutorial/", 
+            "text": "Nanopore tutorial\n\n\nWe will be using the Galaxy server that you have been using this week so far so please open that up.\n\n\nData we will use (Download from dropbox):\n\n\n\n\nEM_079517.fasta\n\n\nillumina_assembly_graph.fastg\n\n\nO55_combined_miniasm.gfa\n\n\nsakai_prophages.fa\n\n\n\n\nPrograms we will use off galaxy:\n\n\n\n\nTablet\n \n\n\nBandage\n\n\n\n\nFirst off, we are going to start by using some Ebola data to look at mapping nanopore reads to a reference. We are going to use BWA mem that has long read capability.\n\n\nStep 1: Fastq-dump\n\n\nFirst we need to retrieve Ebola data from NCBI. \n\n\n\n\nWe will use the \nGet Data\n tab on the left hand side panel of Galaxy, under \nTools\n. \n\n\nClick on \nDownload and Extract Reads in FASTA/Q\n\n\nOptions will now be visible in the middle panel of galaxy\n\n\nThe input type should be \nSRR accession\n\n\nIn Accession enter \nERR1014225\n (This is the accession number for nanopore reads of an Ebola sample from the West African outbreak)\n\n\nSelect \ngzip compressed fastq\n for the output format\n\n\nClick \nExecute\n\n\n\n\n\n\n\n\nThe job will then appear in the \nHistory\n panel on the right hand side of the screen\n\n\n\n\n\n\n\n\nThe job will turn green when it has finished\n\n\n\n\nStep 2: BWA-MEM\n\n\nNext we will map our nanopore Ebola reads to a reference.\n\n\n\n\nWe will use the \nNGS:Mapping\n tab on the left hand side panel of Galaxy, under \nTools\n. \n\n\nClick on \nMap with BWA-MEM\n\n\nOptions will now be visible in the middle panel of galaxy\n\n\nSelect \nUse a genome from history and build index\n\n\nThe reference sequence will be preloaded into your galaxy history: \nEM_079517.fasta\n (This is a finished Ebola reference genome for strain Zaire)\n\n\nFor Algorithm select \nAuto. Let BWA decide the best algorithm to use\n\n\nSelect \nSingle\n for type of reads\n\n\nSelect \nERR1014225 (fastq-dump)\n for fastq dataset\n\n\nSelect \nDo not set\n for read groups information\n\n\nSelect \n3. Nanopore 2D-reads mode (-x ont2d)\n for analysis mode  \n\n\nClick \nExecute\n\n\n\n\n\n\nWhen it has finished running, we will download the mapped reads.\n\n\n\n\nClick on the finished job (Called \nMap with BWA-MEM\netc.) in the \nHistory\n panel on the right hand side panel \n\n\nYou will see a save icon under the details of the job\n\n\nClick on it and the \nDownload dataset\n and \nDownload bam_index\n options will appear\n\n\nWe need both so click on one after the other \n\n\n\n\n\n\nStep 3: Viewing the mapping in Tablet\n\n\n\n\nWe will load the downloaded data into Tablet by opening the Tablet program and clicking on \nOpen Assembly\n in the top left hand side of the screen\n\n\nFor \nPrimary assembly file or URL:\n click on \nBrowse...\n and find the downloaded Bam file (you need the file with the extension \n.bam\n not \n.bai\n)\n\n\nFor \nReference/consensus file or URL:\n click on \nBrowse...\n and find the downloaded (from dropbox) reference genome \nEM_079517.fasta\n\n\n\n\n\n\n\n\nClick \nOpen\n and then click on the Contig \nEM_079517\n on the left hand panel of the screen and you will see your mapping results ready to browse\n\n\nTake a few minutes to explore the program and the results\n\n\n\n\n\n\nWhat can you tell from the alignment about the method of sequencing?\n\n\nDoes the data look different to Illumina data that you might have seen?\n\n\nCan you find anything that looks like consistent errors?\n\n\nCan you find anything that looks like a reliable SNP?\n\n\nStep 4: Comparing Illumina and Nanopore assemblies\n\n\nNext, we\nre going to use \nEscherichia coli\n to illustrate how much assemblies can be improved with long reads\n\n\nPre-knowledge\n\n\n\n\nPathogenic \nE. coli\n tends to have a lot repeat sequences\n\n\nThis is due to large prophages integrating in the genome\n\n\nThese prophages are very similar to each other and cause confusion for assembly algorithms \n\n\nThese prophages can be as large as ~50kb\n\n\nNo matter how deep you sequence, if you don\nt get reads longer than those repeats you will never finish the genome\n\n\nSee \nthis paper\n for more detail\n\n\n\n\nBandage\n\n\nNodes = contigs\nEdges = overlaps\n\n\n\n\n\n\n\nOpen up Bandage from your desktop\n\n\nClick on \nFile\n then \nLoad graph\n\n\nFind the \nillumina_assembly_graph.fastg\n location on your computer and click \nOpen\n\n\n\n\n\n\n\n\nClick \nDraw graph\n on the left hand panel of the screen\n\n\nYou will see that the Illumina assembly produces a whole mess of 649 contigs with a lot of short contigs connecting everything together\n\n\nYou can zoom in on the graph to look at it in more detail\n\n\n\n\n\n\n\n\nWe can colour the graph by depth by changing \nGraph display\n from \nRandom colours\n to \nColour by depth\n\n\nYou\nll see that the short contigs all have much higher coverage than the other contigs. \nWhat do you think that means?\n\n\n\n\n\n\nNow we are going to use \nBLAST\n to look for the prophage regions in the assembly\n\n\n\n\nClick on \nCreate/view BLAST search\n in the left hand panel of the screen\n\n\nStep 1\n click on \nBuild BLAST database\n\n\nStep 2\n click on \nLoad from FASTA file\n and find the \nsakai_prophages.fa\n location on your computer\n\n\nStep 3\n click on \nRun BLAST search\n\n\nclick on \nClose\n\n\n\n\n\n\nYou will see the prophage regions highlighted in colour on the assembly graph now.\n\n\nWhat affect are the prophage regions having on the assembly?\n\n\n\n\nNow, we will load the nanopore assembly into Bandage to see how long reads affect this\n\n\n\n\nClick on \nFile\n then \nLoad graph\n\n\nFind the \nO55_combined_miniasm.gfa\n location on your computer and click \nOpen\n\n\nClick \nDraw graph\n on the left hand panel of the screen\n\n\nChange \nGraph display\n option from \nBLAST hits(solid)\n to \nRandom colours\n. \nWhat is strikingly different about this assembly than the Illumina one?\n\n\n\n\n\n\nNow, lets look at where the prophage regions are in this assembly\n\n\n\n\nClick on \nCreate/view BLAST search\n in the left hand panel of the screen\n\n\nStep 1\n click on \nBuild BLAST database\n\n\nStep 2\n click on \nLoad from FASTA file\n and find the \nsakai_prophages.fa\n location on your computer\n\n\nStep 3\n click on \nRun BLAST search\n\n\nclick on \nClose\n\n\n\n\n\n\nHow have the long reads improved this assembly?\n\n\nAre there any regions that haven\nt been resolved by the nanopore experiment? Why would that be?", 
+            "title": "Nanopore data"
+        }, 
+        {
+            "location": "/modules/nanopore-mcgillsi/Nanopore_tutorial/#nanopore-tutorial", 
+            "text": "We will be using the Galaxy server that you have been using this week so far so please open that up.", 
+            "title": "Nanopore tutorial"
+        }, 
+        {
+            "location": "/modules/nanopore-mcgillsi/Nanopore_tutorial/#data-we-will-use-download-from-dropbox", 
+            "text": "EM_079517.fasta  illumina_assembly_graph.fastg  O55_combined_miniasm.gfa  sakai_prophages.fa", 
+            "title": "Data we will use (Download from dropbox):"
+        }, 
+        {
+            "location": "/modules/nanopore-mcgillsi/Nanopore_tutorial/#programs-we-will-use-off-galaxy", 
+            "text": "Tablet    Bandage", 
+            "title": "Programs we will use off galaxy:"
+        }, 
+        {
+            "location": "/modules/nanopore-mcgillsi/Nanopore_tutorial/#first-off-we-are-going-to-start-by-using-some-ebola-data-to-look-at-mapping-nanopore-reads-to-a-reference-we-are-going-to-use-bwa-mem-that-has-long-read-capability", 
+            "text": "", 
+            "title": "First off, we are going to start by using some Ebola data to look at mapping nanopore reads to a reference. We are going to use BWA mem that has long read capability."
+        }, 
+        {
+            "location": "/modules/nanopore-mcgillsi/Nanopore_tutorial/#step-1-fastq-dump", 
+            "text": "First we need to retrieve Ebola data from NCBI.    We will use the  Get Data  tab on the left hand side panel of Galaxy, under  Tools .   Click on  Download and Extract Reads in FASTA/Q  Options will now be visible in the middle panel of galaxy  The input type should be  SRR accession  In Accession enter  ERR1014225  (This is the accession number for nanopore reads of an Ebola sample from the West African outbreak)  Select  gzip compressed fastq  for the output format  Click  Execute     The job will then appear in the  History  panel on the right hand side of the screen     The job will turn green when it has finished", 
+            "title": "Step 1: Fastq-dump"
+        }, 
+        {
+            "location": "/modules/nanopore-mcgillsi/Nanopore_tutorial/#step-2-bwa-mem", 
+            "text": "Next we will map our nanopore Ebola reads to a reference.   We will use the  NGS:Mapping  tab on the left hand side panel of Galaxy, under  Tools .   Click on  Map with BWA-MEM  Options will now be visible in the middle panel of galaxy  Select  Use a genome from history and build index  The reference sequence will be preloaded into your galaxy history:  EM_079517.fasta  (This is a finished Ebola reference genome for strain Zaire)  For Algorithm select  Auto. Let BWA decide the best algorithm to use  Select  Single  for type of reads  Select  ERR1014225 (fastq-dump)  for fastq dataset  Select  Do not set  for read groups information  Select  3. Nanopore 2D-reads mode (-x ont2d)  for analysis mode    Click  Execute", 
+            "title": "Step 2: BWA-MEM"
+        }, 
+        {
+            "location": "/modules/nanopore-mcgillsi/Nanopore_tutorial/#when-it-has-finished-running-we-will-download-the-mapped-reads", 
+            "text": "Click on the finished job (Called  Map with BWA-MEM etc.) in the  History  panel on the right hand side panel   You will see a save icon under the details of the job  Click on it and the  Download dataset  and  Download bam_index  options will appear  We need both so click on one after the other", 
+            "title": "When it has finished running, we will download the mapped reads."
+        }, 
+        {
+            "location": "/modules/nanopore-mcgillsi/Nanopore_tutorial/#step-3-viewing-the-mapping-in-tablet", 
+            "text": "We will load the downloaded data into Tablet by opening the Tablet program and clicking on  Open Assembly  in the top left hand side of the screen  For  Primary assembly file or URL:  click on  Browse...  and find the downloaded Bam file (you need the file with the extension  .bam  not  .bai )  For  Reference/consensus file or URL:  click on  Browse...  and find the downloaded (from dropbox) reference genome  EM_079517.fasta     Click  Open  and then click on the Contig  EM_079517  on the left hand panel of the screen and you will see your mapping results ready to browse  Take a few minutes to explore the program and the results", 
+            "title": "Step 3: Viewing the mapping in Tablet"
+        }, 
+        {
+            "location": "/modules/nanopore-mcgillsi/Nanopore_tutorial/#what-can-you-tell-from-the-alignment-about-the-method-of-sequencing", 
+            "text": "", 
+            "title": "What can you tell from the alignment about the method of sequencing?"
+        }, 
+        {
+            "location": "/modules/nanopore-mcgillsi/Nanopore_tutorial/#does-the-data-look-different-to-illumina-data-that-you-might-have-seen", 
+            "text": "", 
+            "title": "Does the data look different to Illumina data that you might have seen?"
+        }, 
+        {
+            "location": "/modules/nanopore-mcgillsi/Nanopore_tutorial/#can-you-find-anything-that-looks-like-consistent-errors", 
+            "text": "", 
+            "title": "Can you find anything that looks like consistent errors?"
+        }, 
+        {
+            "location": "/modules/nanopore-mcgillsi/Nanopore_tutorial/#can-you-find-anything-that-looks-like-a-reliable-snp", 
+            "text": "", 
+            "title": "Can you find anything that looks like a reliable SNP?"
+        }, 
+        {
+            "location": "/modules/nanopore-mcgillsi/Nanopore_tutorial/#step-4-comparing-illumina-and-nanopore-assemblies", 
+            "text": "", 
+            "title": "Step 4: Comparing Illumina and Nanopore assemblies"
+        }, 
+        {
+            "location": "/modules/nanopore-mcgillsi/Nanopore_tutorial/#next-were-going-to-use-escherichia-coli-to-illustrate-how-much-assemblies-can-be-improved-with-long-reads", 
+            "text": "", 
+            "title": "Next, we're going to use Escherichia coli to illustrate how much assemblies can be improved with long reads"
+        }, 
+        {
+            "location": "/modules/nanopore-mcgillsi/Nanopore_tutorial/#pre-knowledge", 
+            "text": "Pathogenic  E. coli  tends to have a lot repeat sequences  This is due to large prophages integrating in the genome  These prophages are very similar to each other and cause confusion for assembly algorithms   These prophages can be as large as ~50kb  No matter how deep you sequence, if you don t get reads longer than those repeats you will never finish the genome  See  this paper  for more detail", 
+            "title": "Pre-knowledge"
+        }, 
+        {
+            "location": "/modules/nanopore-mcgillsi/Nanopore_tutorial/#bandage", 
+            "text": "Nodes = contigs\nEdges = overlaps   Open up Bandage from your desktop  Click on  File  then  Load graph  Find the  illumina_assembly_graph.fastg  location on your computer and click  Open     Click  Draw graph  on the left hand panel of the screen  You will see that the Illumina assembly produces a whole mess of 649 contigs with a lot of short contigs connecting everything together  You can zoom in on the graph to look at it in more detail     We can colour the graph by depth by changing  Graph display  from  Random colours  to  Colour by depth  You ll see that the short contigs all have much higher coverage than the other contigs.  What do you think that means?", 
+            "title": "Bandage"
+        }, 
+        {
+            "location": "/modules/nanopore-mcgillsi/Nanopore_tutorial/#now-we-are-going-to-use-blast-to-look-for-the-prophage-regions-in-the-assembly", 
+            "text": "Click on  Create/view BLAST search  in the left hand panel of the screen  Step 1  click on  Build BLAST database  Step 2  click on  Load from FASTA file  and find the  sakai_prophages.fa  location on your computer  Step 3  click on  Run BLAST search  click on  Close", 
+            "title": "Now we are going to use BLAST to look for the prophage regions in the assembly"
+        }, 
+        {
+            "location": "/modules/nanopore-mcgillsi/Nanopore_tutorial/#you-will-see-the-prophage-regions-highlighted-in-colour-on-the-assembly-graph-now", 
+            "text": "", 
+            "title": "You will see the prophage regions highlighted in colour on the assembly graph now."
+        }, 
+        {
+            "location": "/modules/nanopore-mcgillsi/Nanopore_tutorial/#what-affect-are-the-prophage-regions-having-on-the-assembly", 
+            "text": "", 
+            "title": "What affect are the prophage regions having on the assembly?"
+        }, 
+        {
+            "location": "/modules/nanopore-mcgillsi/Nanopore_tutorial/#now-we-will-load-the-nanopore-assembly-into-bandage-to-see-how-long-reads-affect-this", 
+            "text": "Click on  File  then  Load graph  Find the  O55_combined_miniasm.gfa  location on your computer and click  Open  Click  Draw graph  on the left hand panel of the screen  Change  Graph display  option from  BLAST hits(solid)  to  Random colours .  What is strikingly different about this assembly than the Illumina one?", 
+            "title": "Now, we will load the nanopore assembly into Bandage to see how long reads affect this"
+        }, 
+        {
+            "location": "/modules/nanopore-mcgillsi/Nanopore_tutorial/#now-lets-look-at-where-the-prophage-regions-are-in-this-assembly", 
+            "text": "Click on  Create/view BLAST search  in the left hand panel of the screen  Step 1  click on  Build BLAST database  Step 2  click on  Load from FASTA file  and find the  sakai_prophages.fa  location on your computer  Step 3  click on  Run BLAST search  click on  Close", 
+            "title": "Now, lets look at where the prophage regions are in this assembly"
+        }, 
+        {
+            "location": "/modules/nanopore-mcgillsi/Nanopore_tutorial/#how-have-the-long-reads-improved-this-assembly", 
+            "text": "", 
+            "title": "How have the long reads improved this assembly?"
+        }, 
+        {
+            "location": "/modules/nanopore-mcgillsi/Nanopore_tutorial/#are-there-any-regions-that-havent-been-resolved-by-the-nanopore-experiment-why-would-that-be", 
+            "text": "", 
+            "title": "Are there any regions that haven't been resolved by the nanopore experiment? Why would that be?"
         }, 
         {
             "location": "/modules/kraken/", 

@@ -67,6 +67,14 @@
 
     
     <url>
+     <loc>/modules/nanopore-mcgillsi/Nanopore_tutorial/</loc>
+     <lastmod>2018-06-12</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    
+
+    
+    <url>
      <loc>/modules/kraken/</loc>
      <lastmod>2018-06-12</lastmod>
      <changefreq>daily</changefreq>
