@@ -55,6 +55,9 @@ pages:
     #- Public data &rarr; assembly, annotation: modules/access_data/index.md
 #- Day 3:
 - Finding antibiotic-resistance genes: modules/abricate/index.md
+
+- Nanopore data: modules/nanopore-mcgillsi/Nanopore_tutorial.md
+
 - Sample identification with Kraken: modules/kraken/index.md
 - Investigate a TB outbreak: modules/transmission/index.md
 
