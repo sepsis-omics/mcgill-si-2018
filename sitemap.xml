@@ -10,85 +10,91 @@
     
 
     
-        
     <url>
      <loc>/modules/data-dna/</loc>
      <lastmod>2018-06-12</lastmod>
      <changefreq>daily</changefreq>
     </url>
-        
+    
+
+    
     <url>
      <loc>/modules/fastqc/</loc>
      <lastmod>2018-06-12</lastmod>
      <changefreq>daily</changefreq>
     </url>
-        
+    
+
+    
     <url>
      <loc>/modules/spades/</loc>
      <lastmod>2018-06-12</lastmod>
      <changefreq>daily</changefreq>
     </url>
-        
+    
+
+    
     <url>
      <loc>/modules/prokka/</loc>
      <lastmod>2018-06-12</lastmod>
      <changefreq>daily</changefreq>
     </url>
-        
     
 
     
-        
     <url>
      <loc>/modules/snippy/</loc>
      <lastmod>2018-06-12</lastmod>
      <changefreq>daily</changefreq>
     </url>
-        
     
 
     
-        
     <url>
      <loc>/modules/abricate/</loc>
      <lastmod>2018-06-12</lastmod>
      <changefreq>daily</changefreq>
     </url>
-        
+    
+
+    
     <url>
      <loc>/modules/kraken/</loc>
      <lastmod>2018-06-12</lastmod>
      <changefreq>daily</changefreq>
     </url>
-        
     
 
     
-        
     <url>
      <loc>/modules/trimmomatic/</loc>
      <lastmod>2018-06-12</lastmod>
      <changefreq>daily</changefreq>
     </url>
-        
+    
+
+    
     <url>
      <loc>/modules/workflows/</loc>
      <lastmod>2018-06-12</lastmod>
      <changefreq>daily</changefreq>
     </url>
-        
+    
+
+    
     <url>
      <loc>/modules/viral_genomes/</loc>
      <lastmod>2018-06-12</lastmod>
      <changefreq>daily</changefreq>
     </url>
-        
+    
+
+    
     <url>
      <loc>/modules/artemis/</loc>
      <lastmod>2018-06-12</lastmod>
      <changefreq>daily</changefreq>
     </url>
-        
     
 
     
