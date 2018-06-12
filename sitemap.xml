@@ -11,6 +11,14 @@
 
     
     <url>
+     <loc>/modules/mcgill-galaxy-intro/</loc>
+     <lastmod>2018-06-12</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    
+
+    
+    <url>
      <loc>/modules/data-dna/</loc>
      <lastmod>2018-06-12</lastmod>
      <changefreq>daily</changefreq>
