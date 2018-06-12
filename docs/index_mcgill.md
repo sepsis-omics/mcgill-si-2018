@@ -6,5 +6,5 @@ This site contains tutorials for using the
 tasks on bacterial "omics" data, either on the Unix command line or using
 the [Galaxy](http://galaxyproject.org/) system.
 
-![Logo](media/logos/mol_gen_epi.jpg)
+![Logo](frontpage.png)
 ![Logo2](media/logos/mcGill_logo.png)
