@@ -35,7 +35,7 @@ In the tools panel, go to <ss>NGS Analysis: NGS Annotation: ABRicate</ss>.
 - For <ss>Select fasta file</ss> choose <fn>contigs.fasta</fn> (or the name of your own assembly file.)
 - Click <ss>Execute</ss>.
 
-There is one output file. Click on the eye icon to view. It should look like this, although likely with a different number of rows.
+There is one output file. Click on the eye icon to view. It should look like this, although likely with a different number of rows. (We will probably only have a few rows as we have used a cut-down data set).
 
 - This shows a table with one line for each antibiotic resistance gene found, in which contig, at which position, and the % coverage.
 
