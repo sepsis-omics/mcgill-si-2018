@@ -301,6 +301,16 @@
             "title": "Links"
         }, 
         {
+            "location": "/modules/transmission/", 
+            "text": "Phylogenetic trees, SNP matrices and epi data \u2013 inferring transmission and data visualization\n\n\nPlease speak to your instructor about the location of these materials in the class dropbox.", 
+            "title": "Investigate a TB outbreak"
+        }, 
+        {
+            "location": "/modules/transmission/#phylogenetic-trees-snp-matrices-and-epi-data-inferring-transmission-and-data-visualization", 
+            "text": "Please speak to your instructor about the location of these materials in the class dropbox.", 
+            "title": "Phylogenetic trees, SNP matrices and epi data \u2013 inferring transmission and data visualization"
+        }, 
+        {
             "location": "/modules/trimmomatic/", 
             "text": "Trimming reads\n\n\nIntroduction\n\n\nAfter checking your input sequence reads for quality (e.g. using FastQC) it might be necessary to trim the reads. Here we will use the Trimmomatic tool. For more inforamtion, see the Trimmomatic \nwebpage\n and the \nmanual.\n\n\nLearning Objectives\n\n\nAt the end of this tutorial you should be able to:\n\n\n\n\ninput sequence reads to Trimmomatic\n\n\ntrim using appropriate parameters, and\n\n\nexamine the output trimmed reads.\n\n\n\n\nStart\n\n\n\n\nopen your Galaxy instance\n\n\nfind your quality-checked Illumina sequence reads\n\n\ne.g. \nmutant_R1.fastq\n and \nmutant_R2.fastq\n\n\nWe want to trim the parts of the reads that are of low quality\n\n\nbased on the FastQC results, we might want to trim the reads like this:\n\n\ntrim Illumina adapters\n\n\nleading and trailing bases - trim if quality is below 15\n\n\nsliding window - trim once average quality is below 20\n\n\n\n\n\n\n\n\nTrimmomatic functions\n\n\n\n\n\n\nAdapter trimming\n\n\n\n\nThis function trims adapters, barcodes and other contaminants from the reads.\n\n\nYou need to supply a FASTA file of possible adapter sequences, barcodes etc to trim. See Trimmomatic website for detailed instructions.\n\n\nThe default quality settings are sensible.\n\n\nThis should always be the first trimming step if it is used.\n\n\n\n\n\n\n\n\nSliding window trimming\n\n\n\n\nThis function uses a sliding window to measure average quality and trims accordingly.\n\n\nThe default quality parameters are sensible for this step.\n\n\n\n\n\n\n\n\nTrailing bases quality trimming\n\n\n\n\nThis function trims bases from the end of a read if they drop below a quality threshold. e.g. If base 69 of 75 drops below the threshold, the read is cut to 68 bases.\n\n\nUse FastQC report to decide whether this step is warranted and what quality value to use. A quality threshold value of 10-15 is a good starting point.\n\n\n\n\n\n\n\n\nLeading bases quality trimming\n\n\n\n\nThis function works in a similar fashion to trailing bases trimming except it performs it at the start of the reads.\n\n\nUse FastQC report to determine if this step is warranted. If the quality of bases is poor at the beginning of reads it might be necessary.\n\n\n\n\n\n\n\n\nMinimum read length\n\n\n\n\nOnce all trimming steps are complete, this function makes sure that the reads are still longer than this value. If not, the read is removed from the file and its pair is put into the orphan file.\n\n\nThe most appropriate value for this parameter will depend on the FastQC report, specifically the length of the high quality section of the Per Base Sequence Quality graph.\n\n\n\n\n\n\n\n\nEach read library should be trimmed separately with parameters dependent on their own FastQC reports.\n\n\n\n\n\n\nRun Trimmomatic\n\n\n\n\n\n\n\nGo to \nTools \n NGS Analysis \n NGS: QC and manipulation \n Trimmomatic\n.\n\n\nInput FASTQ file (R1/first of pair)\n: \nmutant_R1.fastq\n\n\nInput FASTQ file (R2/second of pair)\n: \nmutant_R2.fastq\n\n\nPerform initial ILLUMINACLIP step \n: \nYes\n\n\n!\n\n\nAdapter sequences to use\n: FIXME\n\n\n\nHow accurate the match between the two \nadapter ligated\n reads must be for PE palindrome read alignment\n: 40\n\n\nHow accurate the match between any adapter etc. sequence must be against a read\n: 15\n\n\nleave the first \nTrimmomatic Operation\n as is\n\n\nclick on \n+ Insert Trimmomatic Operation\n\n\nSelect Trimmomatic operation to perform\n: \nCut bases off the start of a read, if below a threshold quality (LEADING)\n\n\nMinimum quality required to keep a base\n: 15\n\n\nclick on \n+ Insert Trimmomatic Operation\n\n\nSelect Trimmomatic operation to perform\n: \nCut bases off the end of a read, if below a threshold quality (TRAILING)\n\n\nMinimum quality required to keep a base\n: 15\n\n\nclick \nExecute\n\n\n\n\n\n\n\nExamine output\n\n\nTrimmomatic should produce 2 pairs files (1 left and 1 right hand end) and 1 or 2 single \u201corphaned reads\u201d files.\n\n\nThe output files are the ones you should use for assembly.\n\n\nThere are four output files, still in FASTQ format:\n\n\n\n\nR1 reads that have a pair in the R2 file\n\n\nR2 reads that have a pair in the R1 file\n\n\nR1 reads with no pair (R2 match was low quality: deleted)\n\n\nR2 reads with no pair (R1 match was low quality: deleted)\n\n\n\n\nExamine each file with the eye icon. Look for:\n\n\n\n\nNumber of reads orphaned by the trimming / cleanup process.\n\n\nNumber of pairs lost totally.\n\n\n\n\nWhat next?\n\n\nNext: use the output FASTQ files for Assembly, e.g. with \nSpades", 
             "title": "Read trimming"
@@ -589,6 +599,16 @@
             "location": "/modules/artemis/#what-next", 
             "text": "Links to more information:  the Artemis manual.    Assemble a bacterial genome using Spades.", 
             "title": "What next"
+        }, 
+        {
+            "location": "/modules/extra/", 
+            "text": "Practise your skills\n\n\nPlease speak to your instructor about the location of these materials in the class dropbox.", 
+            "title": "Additional material - skills practice"
+        }, 
+        {
+            "location": "/modules/extra/#practise-your-skills", 
+            "text": "Please speak to your instructor about the location of these materials in the class dropbox.", 
+            "title": "Practise your skills"
         }, 
         {
             "location": "/about/", 
