@@ -67,6 +67,14 @@
 
     
     <url>
+     <loc>/modules/transmission/</loc>
+     <lastmod>2018-06-12</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    
+
+    
+    <url>
      <loc>/modules/trimmomatic/</loc>
      <lastmod>2018-06-12</lastmod>
      <changefreq>daily</changefreq>
@@ -92,6 +100,14 @@
     
     <url>
      <loc>/modules/artemis/</loc>
+     <lastmod>2018-06-12</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    
+
+    
+    <url>
+     <loc>/modules/extra/</loc>
      <lastmod>2018-06-12</lastmod>
      <changefreq>daily</changefreq>
     </url>
