@@ -2,12 +2,12 @@
     "docs": [
         {
             "location": "/", 
-            "text": "Welcome!\n\n\nThis site contains tutorials for using the\n\nMicrobial Genomics Virtual Lab\n to perform bioinformatics\ntasks on bacterial genome sequence \nusing the \nGalaxy\n system.", 
+            "text": "Welcome!\n\n\nThis site contains tutorials for using the\n\nMicrobial Genomics Virtual Lab\n to perform bioinformatics\ntasks on bacterial genome sequence\nusing the \nGalaxy\n system.", 
             "title": "Home"
         }, 
         {
             "location": "/#welcome", 
-            "text": "This site contains tutorials for using the Microbial Genomics Virtual Lab  to perform bioinformatics\ntasks on bacterial genome sequence \nusing the  Galaxy  system.", 
+            "text": "This site contains tutorials for using the Microbial Genomics Virtual Lab  to perform bioinformatics\ntasks on bacterial genome sequence\nusing the  Galaxy  system.", 
             "title": "Welcome!"
         }, 
         {
