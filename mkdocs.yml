@@ -54,6 +54,7 @@ pages:
 #- Day 3:
 - Finding antibiotic-resistance genes: modules/abricate/index.md
 - Sample identification with Kraken: modules/kraken/index.md
+- Investigate a TB outbreak: modules/transmission/index.md
 
 
 - Read trimming: modules/trimmomatic/index.md
