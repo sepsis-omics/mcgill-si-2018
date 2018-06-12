@@ -39,6 +39,8 @@ extra_css:
 pages:
 - Home: index.md
 
+- Introduction to Galaxy: modules/mcgill-galaxy-intro/index.md
+
     #- Genomics workshop overview: modules/workshop_overview/index.md
     #- Using Galaxy: modules/galaxy/index.md
     #- Starting with Galaxy: modules/galaxy/index.md
