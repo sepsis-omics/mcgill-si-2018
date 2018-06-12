@@ -15,8 +15,8 @@ The tutorials have been deployed here: https://sepsis-omics.github.io/mcgill-si-
 
 ### Clone the repo
 ```
-% git clone https://github.com/sepsis-omics/tutorials.git sepsis-tutorials
-% cd sepsis-tutorials
+% git clone https://github.com/sepsis-omics/mcgill-si-2018.git mcgill2018-tutorials
+% cd mcgill2018-tutorials
 ```
 
 ### Browse the site locally without deploying to public internet
