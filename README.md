@@ -1,10 +1,10 @@
-# Sepsis-Omics Tutorials
+# McGill tutorials.
 
 Tutorials on how to use the microGVL to do common bacterial bioinformatic tasks.
 
 ## Deployment
 
-The tutorials have been deployed here: http://sepsis-omics.github.io/tutorials/
+The tutorials have been deployed here: https://sepsis-omics.github.io/mcgill-si-2018/
 
 ## How to work on them locally
 
@@ -56,7 +56,7 @@ mkdocs gh-deploy --clean --message "Added minia"
 ```
 This first builds a web HTML version of our Markdown hierarchy into the `site/` folder, then pushes it to a special
 branch of the github repo called `gh-pages` which GitHub makes available at the public URL
-http://sepsis-omics.github.io/tutorials/
+https://sepsis-omics.github.io/mcgill-si-2018/
 
 ## Authors
 
