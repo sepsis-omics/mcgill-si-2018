@@ -17,7 +17,7 @@ At the end of this tutorial you should be able to:
 
 ## Input files
 
-See [here](/modules/galaxy/index.md) for information about how to start with Galaxy, and [here](/modules/data-dna/index.md) for the link to import the "Galaxy history of input files" for this tutorial, if you don't already have them in your history.
+See [here](/modules/data-dna/index.md) for the link to import the "Galaxy history of input files" for this tutorial, if you don't already have them in your history.
 
 - We will use the paired-end read set from our Galaxy history.
 - These are the files <fn>mutant_R1.fastq</fn> and <fn>mutant_R2.fastq</fn>.
