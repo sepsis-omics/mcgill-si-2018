@@ -51,12 +51,13 @@
 
 <p>In this tutorial we will use Kraken to confirm the identify of reads from a bacterial isolate.</p>
 <h2 id="get-data">Get data</h2>
-<p>In Galaxy, go to <ss>Shared Data</ss> in the top panel, and click on the history named <fn>Kraken data</fn>. In the top right, click <ss>Switch to this history</ss>.</p>
-<p>Your current history should now contain four files. If you are using the tutorial independently of a workshop, at this stage you can upload your FASTQ files into the current history.</p>
+<p>In Galaxy, go to <ss>Shared Data</ss> in the top panel.</p>
+<ul>
+<li>Click on the history named <fn>Kraken data</fn>.</li>
+<li>In the top right, click <ss>Switch to this history</ss>.</li>
+<li>Your current history should now contain four files.</li>
+</ul>
 <p><img alt="galaxy history" src="./images/files2.png" /></p>
-<!-- used ERR019289_1 and 2 from EBI. see public data tutorial.
-rename and change datatypes. -- not working -->
-
 <h2 id="run-kraken">Run Kraken</h2>
 <p>We have a sample that should be <em>Staphylococcus aureus</em>. The paired-end FASTQ read files are:</p>
 <ul>
@@ -73,17 +74,16 @@ rename and change datatypes. -- not working -->
 <li><ss>Single or paired reads</ss>: <em>Paired</em></li>
 <li><ss>Forward strand:</ss> <fn>staph_R1.fq</fn></li>
 <li><ss>Reverse strand:</ss> <fn>staph_R2.fq</fn></li>
+<li><ss>Select a Kraken database</ss>: choose <fn>minikraken_20171013_4GB</fn></li>
 <li>leave other settings as they are</li>
-</ul>
-</li>
-<li>
-<p>Your tool interface should look like this:</p>
-</li>
-</ul>
-<p><img alt="tool interface" src="./images/tool_interface2.png" /></p>
-<ul>
 <li>Click <ss>Execute</ss></li>
 </ul>
+</li>
+</ul>
+<!--- Your tool interface should look like this:
+
+![tool interface](images/tool_interface2.png) -->
+
 <!-- ### How it works
 
 Generally: compare sequence to database of known sequence identities.
@@ -107,6 +107,7 @@ In detail:
 <li>Column 2 is the sequence ID.</li>
 <li>Column 3 is the taxon ID (from NCBI).</li>
 <li>Column 5 is a summary of all the taxon IDs that each k-mer in the sequence matched to (taxon ID:number of k-mers).  </li>
+<li>Your file may look a little different to this example image.</li>
 </ul>
 <p><img alt="classification" src="./images/classification.png" /></p>
 <!-- Output Format
@@ -132,7 +133,7 @@ Each sequence classified by Kraken results in a single line of output. Output li
 <p>Set the following parameters:</p>
 <ul>
 <li><ss>Kraken output</ss>: <fn>Kraken on data x and x: Classification</fn></li>
-<li><ss>Select a Kraken database</ss>: <em>krakendb</em></li>
+<li><ss>Select a Kraken database</ss>: choose <fn>minikraken_20171013_4GB</fn></li>
 <li>Click <ss>Execute</ss></li>
 </ul>
 </li>
@@ -146,12 +147,12 @@ Each sequence classified by Kraken results in a single line of output. Output li
 <li>Column 4: code indicating the rank of the classification: (U)nclassified, (D)omain, (K)ingdom, (P)hylum, (C)lass, (O)rder, (F)amily, (G)enus, (S)pecies).</li>
 <li>Column 5: NCBI taxonomy ID.</li>
 </ul>
-<p><img alt="kraken report" src="./images/kraken_output2.png" /></p>
-<p>Approximately 95% of reads were classified as <em>Staphylococcus aureus</em>, confirming the correct identity of our bacterial sample.</p>
-<ul>
-<li>Of these reads, roughly half were uniquely present in <em>S. aureus</em> subsp. <em>aureus</em>, and most of those were uniquely present in strain HO 5096 0412.</li>
-<li>The sample strain is therefore most related to the HO 5096 0412 strain.</li>
-</ul>
+<p><img alt="kraken report" src="./images/krakenreport.png" /></p>
+<p>Approximately 88% of reads were classified as <em>Staphylococcus aureus</em>, confirming the correct identity of our bacterial sample.</p>
+<!--
+- Of these reads, roughly half were uniquely present in *S. aureus* subsp. *aureus*, and most of those were uniquely present in strain HO 5096 0412.
+- The sample strain is therefore most related to the HO 5096 0412 strain. -->
+
 <p>The remaining reads within the <em>S. aureus</em> clade were classified into various taxa.</p>
 <ul>
 <li>Scroll down column 3 to see the number of reads assigned directly to the taxon in column 6.</li>
@@ -176,19 +177,24 @@ The output of kraken-report is tab-delimited, with one line per taxon. The field
 <li>With the <fn>Classification</fn> file from Kraken, run <ss>Kraken-report</ss>.</li>
 <li>Cick on the eye icon to view the <fn>Kraken-report</fn> file.</li>
 </ul>
-<p><img alt="output 1" src="./images/sample2_1.png" /></p>
+<p>What results do you have?</p>
 <ul>
-<li>
-<p>63% are classified to the genus <em>Enterococcus</em>, and most of these to <em>E. faecalis</em>.</p>
-</li>
-<li>
-<p>However, if we scroll down the table of results, we see that 31% are classified to the genus <em>Mycobacterium</em>, mostly <em>M. abscessus</em>. These are not in the same phylum as <em>Enterococcus</em>.</p>
-</li>
+<li>What taxon are most reads classfied to?</li>
+<li>If you scroll down, are there many reads that are classified to a different taxon?</li>
+<li>What could this mean?</li>
 </ul>
-<p><img alt="output2" src="./images/sample2_2.png" /></p>
-<ul>
-<li>This sample is probably contaminated.</li>
-</ul>
+<!--
+![output 1](images/sample2_1.png)
+
+- 63% are classified to the genus *Enterococcus*, and most of these to *E. faecalis*.
+
+- However, if we scroll down the table of results, we see that 31% are classified to the genus *Mycobacterium*, mostly *M. abscessus*. These are not in the same phylum as *Enterococcus*.
+
+![output2](images/sample2_2.png)
+
+- This sample is probably contaminated.
+-->
+
 <h2 id="links">Links</h2>
 <p><a href="https://genomebiology.biomedcentral.com/articles/10.1186/gb-2014-15-3-r46">Kraken paper</a></p>
 <p><a href="http://ccb.jhu.edu/software/kraken/">Kraken software</a></p>
@@ -302,7 +308,7 @@ The output of kraken-report is tab-delimited, with one line per taxon. The field
 
   <!--
   MkDocs version      : 0.17.2
-  Docs Build Date UTC : 2018-06-13 03:50:53
+  Docs Build Date UTC : 2018-06-13 04:46:34
   -->
 </body>
 </html>
