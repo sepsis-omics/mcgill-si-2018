@@ -6,5 +6,5 @@ This site contains tutorials for using the
 tasks on bacterial genome sequence
 using the [Galaxy](http://galaxyproject.org/) system.
 
-![Logo](frontpage.png)
+<!-- ![Logo](frontpage.png) -->
 <!-- ![Logo2](media/logos/mcGill_logo.png) -->
