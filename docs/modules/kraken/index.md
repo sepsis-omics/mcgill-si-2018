@@ -14,14 +14,13 @@ In this tutorial we will use Kraken to confirm the identify of reads from a bact
 
 ## Get data
 
-In Galaxy, go to <ss>Shared Data</ss> in the top panel, and click on the history named <fn>Kraken data</fn>. In the top right, click <ss>Switch to this history</ss>.
+In Galaxy, go to <ss>Shared Data</ss> in the top panel.
 
-Your current history should now contain four files. If you are using the tutorial independently of a workshop, at this stage you can upload your FASTQ files into the current history.
+* Click on the history named <fn>Kraken data</fn>.
+* In the top right, click <ss>Switch to this history</ss>.
+* Your current history should now contain four files.
 
 ![galaxy history](images/files2.png)
-
-<!-- used ERR019289_1 and 2 from EBI. see public data tutorial.
-rename and change datatypes. -- not working -->
 
 ## Run Kraken
 
@@ -38,13 +37,16 @@ We have a sample that should be *Staphylococcus aureus*. The paired-end FASTQ re
     - <ss>Single or paired reads</ss>: *Paired*
     - <ss>Forward strand:</ss> <fn>staph_R1.fq</fn>
     - <ss>Reverse strand:</ss> <fn>staph_R2.fq</fn>
+    - <ss>Select a Kraken database</ss>: choose <fn>minikraken_20171013_4GB</fn>
     - leave other settings as they are
+    -  Click <ss>Execute</ss>
 
-- Your tool interface should look like this:
+<!--- Your tool interface should look like this:
 
-![tool interface](images/tool_interface2.png)
+![tool interface](images/tool_interface2.png) -->
 
--  Click <ss>Execute</ss>
+
+
 
 <!-- ### How it works
 
@@ -73,6 +75,7 @@ When the file is green, click on the eye icon to view.
 - Column 2 is the sequence ID.
 - Column 3 is the taxon ID (from NCBI).
 - Column 5 is a summary of all the taxon IDs that each k-mer in the sequence matched to (taxon ID:number of k-mers).  
+- Your file may look a little different to this example image.
 
 ![classification](images/classification.png)
 
@@ -100,7 +103,7 @@ Go to <ss>Tools &rarr; NGS Analysis &rarr; Metagenomic analyses &rarr; Kraken-re
 - Set the following parameters:
 
     - <ss>Kraken output</ss>: <fn>Kraken on data x and x: Classification</fn>
-    - <ss>Select a Kraken database</ss>: *krakendb*
+    - <ss>Select a Kraken database</ss>: choose <fn>minikraken_20171013_4GB</fn>
     -  Click <ss>Execute</ss>
 
 
@@ -113,13 +116,14 @@ The output file is called <fn>Kraken-report on data x</fn>.
 - Column 4: code indicating the rank of the classification: (U)nclassified, (D)omain, (K)ingdom, (P)hylum, (C)lass, (O)rder, (F)amily, (G)enus, (S)pecies).
 - Column 5: NCBI taxonomy ID.
 
-![kraken report](images/kraken_output2.png)
+![kraken report](images/krakenreport.png)
 
 
-Approximately 95% of reads were classified as *Staphylococcus aureus*, confirming the correct identity of our bacterial sample.
+Approximately 88% of reads were classified as *Staphylococcus aureus*, confirming the correct identity of our bacterial sample.
 
+<!--
 - Of these reads, roughly half were uniquely present in *S. aureus* subsp. *aureus*, and most of those were uniquely present in strain HO 5096 0412.
-- The sample strain is therefore most related to the HO 5096 0412 strain.
+- The sample strain is therefore most related to the HO 5096 0412 strain. -->
 
 The remaining reads within the *S. aureus* clade were classified into various taxa.
 
@@ -146,6 +150,13 @@ Re-run Kraken with another sample. This sample should be *Enterococcus faecalis*
 - With the <fn>Classification</fn> file from Kraken, run <ss>Kraken-report</ss>.
 - Cick on the eye icon to view the <fn>Kraken-report</fn> file.
 
+What results do you have?
+
+* What taxon are most reads classfied to?
+* If you scroll down, are there many reads that are classified to a different taxon?
+* What could this mean?
+
+<!--
 ![output 1](images/sample2_1.png)
 
 - 63% are classified to the genus *Enterococcus*, and most of these to *E. faecalis*.
@@ -155,6 +166,8 @@ Re-run Kraken with another sample. This sample should be *Enterococcus faecalis*
 ![output2](images/sample2_2.png)
 
 - This sample is probably contaminated.
+-->
+
 
 ## Links
 
