@@ -150,23 +150,28 @@ Re-run Kraken with another sample. This sample should be *Enterococcus faecalis*
 - With the <fn>Classification</fn> file from Kraken, run <ss>Kraken-report</ss>.
 - Cick on the eye icon to view the <fn>Kraken-report</fn> file.
 
-What results do you have?
+<!-- What results do you have?
 
 * What taxon are most reads classfied to?
 * If you scroll down, are there many reads that are classified to a different taxon?
 * What could this mean?
+-->
 
-<!--
+
 ![output 1](images/sample2_1.png)
 
+
+
 - 63% are classified to the genus *Enterococcus*, and most of these to *E. faecalis*.
+
+- (Our results are probably slightly different to the example image.)
 
 - However, if we scroll down the table of results, we see that 31% are classified to the genus *Mycobacterium*, mostly *M. abscessus*. These are not in the same phylum as *Enterococcus*.
 
 ![output2](images/sample2_2.png)
 
 - This sample is probably contaminated.
--->
+
 
 
 ## Links
