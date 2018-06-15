@@ -1,4 +1,3 @@
-<br>
 # Galaxy workflows
 
 This tutorial assumes you have used Galaxy before.

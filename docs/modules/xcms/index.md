@@ -1,4 +1,3 @@
-<br>
 # Metabolomics with XCMS
 
 ## Overview

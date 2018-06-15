@@ -1,4 +1,3 @@
-<br>
 #Assembly using Velvet
 
 Keywords: de novo assembly, Velvet, Galaxy, Microbial Genomics Virtual Lab

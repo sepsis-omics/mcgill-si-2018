@@ -1,4 +1,3 @@
-<br>
 #Bash scripts
 
 It is possible to put some commands into a script, to run automatically.

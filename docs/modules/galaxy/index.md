@@ -1,4 +1,3 @@
-<br>
 # Starting with Galaxy
 
 Keywords: Galaxy, Microbial Genomics Virtual Lab

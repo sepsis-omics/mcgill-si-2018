@@ -1,5 +1,3 @@
-<br>
-
 # Genomics
 
 The tutorials listed here under the Genomics tab include a set that can be run as a Genomics Workshop.

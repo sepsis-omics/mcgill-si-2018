@@ -1,4 +1,3 @@
-<br>
 # Viral Genome Sequencing
 
 This tutorial is about determining the genome sequence of a virus, using comparisons to a reference sequence.

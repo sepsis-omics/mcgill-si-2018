@@ -1,4 +1,3 @@
-<br>
 # FastQC in Galaxy
 
 <!---

@@ -1,4 +1,3 @@
-<br>
 #Metagenomics
 
 Metagenomics aims to compare microbial communities from different environments by using information from the metagenome. Typically, 16S rRNA is used when classifying taxa, and whole-genome sequencing when aiming to identify gene functions and pathways.

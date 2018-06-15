@@ -1,4 +1,3 @@
-<br>
 # Genome annotation using Prokka
 
 Keywords: annotation, Prokka, JBrowse, Galaxy, Microbial Genomics Virtual Lab

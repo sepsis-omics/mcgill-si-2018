@@ -1,4 +1,3 @@
-<br>
 #Public data &rarr; assembly, annotation, MLST
 
 ##Overview

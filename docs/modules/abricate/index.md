@@ -1,4 +1,3 @@
-<br>
 #Finding antibiotic-resistant genes
 
 ##Overview

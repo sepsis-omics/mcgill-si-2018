@@ -1,4 +1,3 @@
-<br>
 # DGE using kallisto
 
 This tutorial is about differential gene expression in bacteria, using tools on the command-line tools (kallisto) and the web (Degust).
