@@ -16,8 +16,14 @@ In this tutorial we will use Kraken to confirm the identify of reads from a bact
 
 In Galaxy, go to <ss>Shared Data</ss> in the top panel.
 
-* Click on the history named <fn>Kraken data</fn>.
-* In the top right, click <ss>Switch to this history</ss>.
+* Click on <ss>Data Libraries</ss>
+* Click on <fn>Kraken data</fn>
+* Tick the box next to each of these files
+* Click the <ss>to History</ss> button
+* Under <ss>create new</ss> type *Kraken*
+* Click <ss>Import</ss>
+
+
 * Your current history should now contain four files.
 
 ![galaxy history](images/files2.png)
