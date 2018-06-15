@@ -56,7 +56,7 @@ pages:
 #- Day 3:
 - Finding antibiotic-resistance genes: modules/abricate/index.md
 
-- Nanopore data: modules/nanopore-mcgillsi/Nanopore_tutorial.md
+- Nanopore viral genomics: modules/nanopore-ebola/index.md
 
 - Sample identification with Kraken: modules/kraken/index.md
 - Investigate a TB outbreak: modules/transmission/index.md
@@ -100,3 +100,4 @@ pages:
 - Additional material - skills practice: modules/extra/index.md
 
 - About: about/index.md
+
