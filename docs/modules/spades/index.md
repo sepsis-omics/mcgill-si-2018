@@ -1,25 +1,18 @@
 # Assembly using Spades
 
-Keywords: de novo assembly, Spades, Galaxy, Microbial Genomics Virtual Lab
-
 ## Background
-Spades is one of a number of *de novo* assemblers that use short read sets as input (e.g. Illumina Reads), and the assembly method is based on de Bruijn graphs. For information about Spades see this [link](http://bioinf.spbau.ru/spades).
 
-<!---
-A protocol for assembling with Velvet (another *de novo* assembler) is available [here](https://docs.google.com/document/d/1xs-TI5MejQARqo0pcocGlymsXldwJbJII890gnmjI0o/pub).
---->
+Spades is one of a number of *de novo* assemblers that use short read sets
+as input (e.g.  Illumina Reads), and the assembly method is based on de
+Bruijn graphs.  For information about Spades see this
+[link](http://bioinf.spbau.ru/spades).
 
-In this activity, we will perform a *de novo* assembly of a short read set using the Spades assembler. The output from Spades that we are interested in is a multiFASTA file that contains the draft genome sequence.
-
-
-
-<!--
-We have a closed, annotated genome sequence for a closely related *wildtype* strain.
--->
-
-
+In this activity, we will perform a *de novo* assembly of a short read set
+using the Spades assembler.  The output from Spades that we are interested
+in is a multiFASTA file that contains the draft genome sequence.
 
 ## Learning objectives
+
 At the end of this tutorial you should be able to:
 
 <!--1. import data into Galaxy  
