@@ -10,8 +10,8 @@ site_favicon: favicon.ico
 
 copyright: '&copy; The authors; 2016-'
 
-theme: alabaster
-#theme: material
+#theme: alabaster
+theme: material
 
 extra:
     feature:
