@@ -1,7 +1,23 @@
 <br>
 # Dataset
 
-## Import a Galaxy history
+## Import the files
+
+- Go to your Galaxy instance. Make sure you are registered and logged in. Refresh the page.
+- In the top menu, click on <ss>Data Libraries</ss>
+- Click on <fn>Genomics Data</fn>
+- A list of files will appear
+- Tick the box next to each of these files
+- Then click the <ss>to History</ss> button
+- Click <ss>Import</ss>
+- The files should now be in your current history
+
+Alternative ways to import these files are listed below. 
+
+
+## Alternative:
+
+### Import a Galaxy history
 
 Copy this link:
 
