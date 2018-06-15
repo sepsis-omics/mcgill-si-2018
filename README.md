@@ -1,6 +1,6 @@
-# McGill tutorials.
+# McGill SI 2018
 
-Tutorials for genomic epidemiology and microbial genomics.
+Tutorials for microbial genomics and genomic epidemiology.
 
 ## Deployment
 
@@ -55,11 +55,11 @@ the file to the master document `mkdocs.yml` in the correct section.
 
 ### When you are happy, add it the repo
 ```
-git add docs/dna/denovo/minia.md
+git add docs/modules/denovo/minia.md
 git commit -m "Added minia" mkdocs.yml docs/modules/denovo/minia.md
 git push
 ```
-Your private local web version  http://127.0.0.1:8000/ will also update.
+Your private local web version http://127.0.0.1:8000/ will also auto-update.
 
 ### To deploy the whole lot to the *public* website
 ```
@@ -71,8 +71,10 @@ https://sepsis-omics.github.io/mcgill-si-2018/
 
 ## Authors
 
-* Torsten Seemann
 * Anna Syme
+* Torsten Seemann
 * Simon Gladman
 * Dieter Bulach
+* Anders Goncalves da Silva
 * Lauren Cowley
+
