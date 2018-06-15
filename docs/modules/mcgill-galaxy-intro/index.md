@@ -1,3 +1,4 @@
 # Introduction to Galaxy
 
-Please speak to your instructor about the link to the introductory tutorial.
+
+[Link to introductory tutorial](https://www.melbournebioinformatics.org.au/tutorials/tutorials/galaxy_101/galaxy_101/)
