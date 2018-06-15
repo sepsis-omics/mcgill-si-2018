@@ -12,4 +12,5 @@ serve:
 
 deploy:
 	mkdocs gh-deploy --clean --message "publicly deploy"
+
 	

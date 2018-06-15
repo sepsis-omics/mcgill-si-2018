@@ -15,7 +15,7 @@
 Alternative ways to import these files are listed below. 
 
 
-## Alternative:
+## Alternate method if the above doesn't exist
 
 ### Import a Galaxy history
 

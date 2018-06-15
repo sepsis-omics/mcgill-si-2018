@@ -39,32 +39,32 @@ extra_css:
 pages:
 - Home: index.md
 
-- Introduction to Galaxy: modules/mcgill-galaxy-intro/index.md
+- Day 1:
+  - Introduction to Galaxy: modules/galaxy-intro-1/index.md
+  #- Genomics workshop overview: modules/workshop_overview/index.md
+  #- Using Galaxy: modules/galaxy/index.md
+  #- Starting with Galaxy: modules/galaxy/index.md
+  - Training data set: modules/data-dna/index.md
+  - Quality control: modules/fastqc/index.md
 
-    #- Genomics workshop overview: modules/workshop_overview/index.md
-    #- Using Galaxy: modules/galaxy/index.md
-    #- Starting with Galaxy: modules/galaxy/index.md
-- Training data set: modules/data-dna/index.md
-- Quality control: modules/fastqc/index.md
+- Day 2:
     #- Read trimming: modules/trimmomatic/index.md
     #- Genome assembly with Velvet: modules/velvet/index.md
-- Genome assembly: modules/spades/index.md
-- Genome annotation: modules/prokka/index.md
-
-- Variant finding: modules/snippy/index.md
+    - Genome assembly: modules/spades/index.md
+    - Genome annotation: modules/prokka/index.md
+    - Variant finding: modules/snippy/index.md
     #- Public data &rarr; assembly, annotation: modules/access_data/index.md
-#- Day 3:
-- Finding antibiotic-resistance genes: modules/abricate/index.md
 
-- Nanopore viral genomics: modules/nanopore-ebola/index.md
+- Day 3:
+  - Finding antibiotic-resistance genes: modules/abricate/index.md
+  - Nanopore viral genomics: modules/nanopore-ebola/index.md
+  - Sample identification with Kraken: modules/kraken/index.md
+  #- Investigate a TB outbreak: modules/transmission/index.md
 
-- Sample identification with Kraken: modules/kraken/index.md
-- Investigate a TB outbreak: modules/transmission/index.md
-
-
-- Read trimming: modules/trimmomatic/index.md
-- Galaxy workflows: modules/workflows/index.md
-- Viral genome sequencing: modules/viral_genomes/index.md
+- Day 4:
+  - Read trimming: modules/trimmomatic/index.md
+  - Galaxy workflows: modules/workflows/index.md
+  - Viral genome sequencing: modules/viral_genomes/index.md
     #- Metagenomics with FROGS: modules/frogs/index.md
     #- PacBio assembly with SMRT portal: modules/pacbio/index.md
     #- PacBio assembly with command line tools: modules/cmdline_assembly/index.md
@@ -74,6 +74,7 @@ pages:
     #- Annotation using command line tools: modules/cmdline_prokka/index.md
     #- Bash scripts: modules/scripts/index.md
 
+- Day 5:
 #- Transcriptomics:
 #  - Overview: modules/transcriptomics.md
 #  - Dataset: modules/data-rna/index.md
@@ -86,7 +87,7 @@ pages:
 #- Advanced:
     #- Differential Gene Expression: intro/dge/index.md
     #- Pan genome: intro/roary/index.md
-- Artemis: modules/artemis/index.md
+    - Artemis: modules/artemis/index.md
     #- JBrowse: modules/jbrowse/index.md
 
 #- Proteomics:
@@ -97,7 +98,8 @@ pages:
 #    - Metabolite identification: modules/xcms/index.md
     #- Draft: modules/xcms/metab_draft.md
 
-- Additional material - skills practice: modules/extra/index.md
+- Bonus:
+#  - Additional material - skills practice: modules/extra/index.md
 
 - About: about/index.md
 
