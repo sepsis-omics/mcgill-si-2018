@@ -10,7 +10,7 @@ The tutorials have been deployed here: https://sepsis-omics.github.io/mcgill-si-
 
 ### Install the mkdocs tools
 ```
-% pip install mkdocs markdown-include mkdocs-extensions mkdocs-material
+% pip install --upgrade mkdocs markdown-include mkdocs-extensions mkdocs-material
 ```
 
 ### Clone the repo
@@ -77,4 +77,3 @@ https://sepsis-omics.github.io/mcgill-si-2018/
 * Dieter Bulach
 * Anders Goncalves da Silva
 * Lauren Cowley
-
