@@ -7,5 +7,4 @@ for the
 running on the
 [Genomics Virtual Lab](https://www.gvl.org.au/).
 
-![Logo](media/logos/gen-epi-course-2018.png)
-
+![Logo](media/timetable/title.png)

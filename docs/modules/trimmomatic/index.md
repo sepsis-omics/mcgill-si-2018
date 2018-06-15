@@ -95,6 +95,3 @@ Examine each file with the eye icon. Look for:
 - Number of reads orphaned by the trimming / cleanup process.
 - Number of pairs lost totally.
 
-## What next?
-
-Next: use the output FASTQ files for Assembly, e.g. with [Spades](../spades/index.md)

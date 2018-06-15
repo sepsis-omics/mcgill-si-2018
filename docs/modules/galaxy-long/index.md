@@ -2,13 +2,22 @@
 
 ## Background
 
-Galaxy is a web-based analysis and workflow platform designed for biologists to analyse their own data. It can be used to run a variety of bioinformatics tools. The selection of bioinformatics tools installed on the Galaxy instance we are using today caters for the analysis of bacterial genomics data sets.
+Galaxy is a web-based analysis and workflow platform designed for biologists
+to analyse their own data.  It can be used to run a variety of
+bioinformatics tools.  The selection of bioinformatics tools installed on
+the Galaxy instance we are using today caters for the analysis of bacterial
+genomics data sets.
 
-Bioinformatics tools can be added from the Galaxy ‘tool shed’ or removed as necessary from your Galaxy instance.
+Bioinformatics tools can be added from the Galaxy ‘tool shed’ or removed as
+necessary from your Galaxy instance.
 
-Galaxy is an open, web-based platform. Details about the project can be found [here](https://galaxyproject.org/).
+Galaxy is an open, web-based platform.  Details about the project can be
+found [here](https://galaxyproject.org/).
 
-The Galaxy interface is separated into three parts. The <ss>Tools</ss> list on the left, the <ss>Viewing</ss> panel in the middle and the analysis and data <ss>History</ss> on the right. We will be looking at all three parts in this tutorial.
+The Galaxy interface is separated into three parts.  The <ss>Tools</ss> list
+on the left, the <ss>Viewing</ss> panel in the middle and the analysis and
+data <ss>History</ss> on the right.  We will be looking at all three parts
+in this tutorial.
 
 ![galaxy overview screenshot](images/image05.png)
 

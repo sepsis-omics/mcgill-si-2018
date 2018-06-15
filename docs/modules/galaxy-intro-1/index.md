@@ -1,24 +1,24 @@
-# Learn key tasks
+# Introduction to Galaxy
+
+
 
 * This is a short introduction to the Galaxy user interface - the web page that you interact with.
 * We will cover key tasks in Galaxy: uploading files, using tools, and viewing histories.
 
 ## What does Galaxy look like?
 
-* Browse to your Galaxy instance and log in or register.
-    * Use Chrome, Safari or Firefox as your browser, not Internet Explorer.
-    * This is an image of Galaxy Australia, located at [www.usegalaxy.org.au](https://usegalaxy.org.au/).
-
-* The particular Galaxy server that you are using may look slightly different and have a different web address.
-    * For example, the main Galaxy server is [www.usegalaxy.org](https://usegalaxy.org/).
+* Go the custom [McGill SI Galaxy Server](http://canada1.genome.edu.au/galaxy)&nbsp;&#x21F1; for this course
+    * Use Chrome, Safari or Firefox; Internet Explorer/Edge is not recommened.
+    * This is an image of Galaxy Australia; which may look slightly different to the
+      one we are using in this course. You may have used the
+      "official" main Galaxy server [usegalaxy.org](https://usegalaxy.org/) before.
 
 ![login](images/galaxy-login.png)
 
-
 * The Galaxy page is divided into three panels:
-    * Tools on the left
-    * Viewing panel in the middle
-    * History of analysis and files on the right
+    * **Left:** tool list
+    * **Middle:** viewing panel
+    * **Right:** history of analysis and files
 
 ![galaxy overview screenshot](images/galaxy-panel.png)
 

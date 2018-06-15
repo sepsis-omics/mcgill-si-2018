@@ -1,105 +1,129 @@
-site_name: McGill SI 2018
-site_description: Tutorials for analysing bacterial omics data
-site_author: Anna Syme, Torsten Seemann
-site_favicon: favicon.ico
+# mkdocs w/ material theme
 
-#site_url: 'http://sepsis-omics.github.io/tutorials/'
+site_name: 'McGill SI 2018 GenEpi'
+site_description: 'McGill Summer Institue - Genomic Epidemiology of Infectious Diseaes'
+site_author: 'Anna Syme, Torsten Seemann'
+site_url: 'https://sepsis-omics.github.io/mcgill-si-2018'
 
-#repo_name: 'sepsis-omics/tutorials'
-#repo_url: 'https://github.com/sepsis-omics/tutorials'
+# Will add github and edit links for each page
+#repo_name: 'sepsis-omics/mcgill-si-2018'
+#repo_url: 'https://github.com/sepsis-omics/mcgill-si-2018'
 
-copyright: '&copy; The authors; 2016-'
+# Copyright
+copyright: '&copy; Melbourne Bioinformatics, The University of Melbourne, Australia.'
 
-#theme: alabaster
-theme: material
+# https://squidfunk.github.io/mkdocs-material/getting-started/
+theme:
+  name: 'material'
+  language: 'en'
+  palette:
+    primary: 'teal'
+    accent: 'teal'
+  logo:
+    icon: 'blur_on'
+#  feature:
+#    tabs: true
 
+# Customization
 extra:
-    feature:
-        tabs: true
-    social:
-        - type: 'coffee'
-          link: 'https://omics.data.edu.au/'
-        - type: 'github'
-          link: 'https://github.com/sepsis-omics/tutorials'
-        - type: 'bug'
-          link: 'https://github.com/sepsis-omics/tutorials/issues'
-
+  social:
+    - type: 'dropbox'
+      link: 'http://bit.ly/GenomicEpi18'
+    - type: 'github'
+      link: 'https://github.com/sepsis-omics/mcgill-si-2018'
+    - type: 'bug'
+      link: 'https://github.com/sepsis-omics/mcgill-si-2018/issues'
+    - type: 'twitter'
+      link: 'https://twitter.com/MelBioInf'
+    - type: 'internet-explorer'
+      link: 'https://www.melbournebioinformatics.org.au/'
 
 markdown_extensions:
-    - admonition
-    - smarty
-    - tables
-    - markdown_include.include
-    - codehilite
-#    - pymdownx.details
+  - admonition
+  - smarty
+  - tables
+  - markdown_include.include
+  - codehilite
 
 extra_css:
     - css/sepsis.css
 
 pages:
-- Home: index.md
+  - Home: index.md
 
-- Day 1:
-  - Introduction to Galaxy: modules/galaxy-intro-1/index.md
-  #- Genomics workshop overview: modules/workshop_overview/index.md
-  #- Using Galaxy: modules/galaxy/index.md
-  #- Starting with Galaxy: modules/galaxy/index.md
-  - Training data set: modules/data-dna/index.md
-  - Quality control: modules/fastqc/index.md
+  - Day 1:
+    - Agenda: day1.md
+    - Intro to Galaxy: modules/galaxy-intro-1/index.md
+    - Training data set: modules/data-dna/index.md
+    - Quality control: modules/fastqc/index.md
+    - Genome assembly: modules/spades/index.md
+    #- Using Galaxy: modules/galaxy/index.md
+    #- Starting with Galaxy: modules/galaxy/index.md
 
-- Day 2:
+  - Day 2:
+    - Agenda: day2.md    
+    - Detecting contamination: modules/kraken/index.md
+    - Variant finding: modules/snippy/index.md
+    - Genome annotation: modules/prokka/index.md
     #- Read trimming: modules/trimmomatic/index.md
     #- Genome assembly with Velvet: modules/velvet/index.md
-    - Genome assembly: modules/spades/index.md
-    - Genome annotation: modules/prokka/index.md
-    - Variant finding: modules/snippy/index.md
     #- Public data &rarr; assembly, annotation: modules/access_data/index.md
 
-- Day 3:
-  - Finding antibiotic-resistance genes: modules/abricate/index.md
-  - Nanopore viral genomics: modules/nanopore-ebola/index.md
-  - Sample identification with Kraken: modules/kraken/index.md
-  #- Investigate a TB outbreak: modules/transmission/index.md
+  - Day 3:
+    - Agenda: day3.md
 
-- Day 4:
-  - Read trimming: modules/trimmomatic/index.md
-  - Galaxy workflows: modules/workflows/index.md
-  - Viral genome sequencing: modules/viral_genomes/index.md
+  - Day 4:
+    - Agenda: day4.md
+    - Predicting antimicrobial resistance: modules/abricate/index.md
+    - Nanopore viral genomics: modules/nanopore-ebola/index.md
+
+  - Day 5:
+    - Agenda: day5.md
+
+  - Extra:
+    - Artemis: modules/artemis/index.md
+    - Read trimming: modules/trimmomatic/index.md
+    - Galaxy workflows: modules/workflows/index.md
+    - Viral genome sequencing: modules/viral_genomes/index.md
+
+  - Journal Club: journal_club.md
+
+  - About:
+    - Authors: about/index.md
+
+  #- Proteomics:
+  #    - Protein Identification: modules/xtandem/index.md
+  #    - Pathway annotation and prediction: modules/pathway_tools/annotation/index.md
+
+  #- Metabolomics:
+  #    - Metabolite identification: modules/xcms/index.md
+      #- Draft: modules/xcms/metab_draft.md
+
+  #- Command-Line:
+  #  - PacBio assembly with command line tools: modules/cmdline_assembly/index.md
+  #  - Spades assembly - commandline: modules/spades_cmdline/index.md
+  #  #- Genome annotation - commandline:
+
+  #- Txomics:
+  #  - Overview: modules/transcriptomics.md
+  #  - Dataset: modules/data-rna/index.md
+  #  - Transcriptome assembly: modules/stringtie/index.md
+  #    - Differential gene expression using Galaxy and Degust: modules/dge/index.md
+  #    - Differential gene expression using Kallisto and Degust: modules/kallisto/index.md
+       #- Salmon: modules/salmon/index.md
+
+  #- Bonus:
+  #  - Additional material - skills practice: modules/extra/index.md
+
     #- Metagenomics with FROGS: modules/frogs/index.md
     #- PacBio assembly with SMRT portal: modules/pacbio/index.md
-    #- PacBio assembly with command line tools: modules/cmdline_assembly/index.md
-    #- Spades assembly - commandline: modules/spades_cmdline/index.md
-    #- Genome annotation - commandline:
-    #- Pangenomes with Roary: modules/roary/index.md
     #- Annotation using command line tools: modules/cmdline_prokka/index.md
     #- Bash scripts: modules/scripts/index.md
+    #- Genomics workshop overview: modules/workshop_overview/index.md
 
-- Day 5:
-#- Transcriptomics:
-#  - Overview: modules/transcriptomics.md
-#  - Dataset: modules/data-rna/index.md
-#  #- Quality control: modules/fastqc/index.md
-#  #- Read trimming: modules/trimmomatic/index.md
-#  - Transcriptome assembly: modules/stringtie/index.md
-#    - Differential gene expression using Galaxy and Degust: modules/dge/index.md
-#    - Differential gene expression using Kallisto and Degust: modules/kallisto/index.md
-     #- Salmon: modules/salmon/index.md
-#- Advanced:
+# DONT WORK:
+
+#    - Investigate a TB outbreak: modules/transmission/index.md
+    #- JBrowse: modules/jbrowse/index.md
     #- Differential Gene Expression: intro/dge/index.md
     #- Pan genome: intro/roary/index.md
-    - Artemis: modules/artemis/index.md
-    #- JBrowse: modules/jbrowse/index.md
-
-#- Proteomics:
-#    - Protein Identification: modules/xtandem/index.md
-#    - Pathway annotation and prediction: modules/pathway_tools/annotation/index.md
-
-#- Metabolomics:
-#    - Metabolite identification: modules/xcms/index.md
-    #- Draft: modules/xcms/metab_draft.md
-
-- Bonus:
-#  - Additional material - skills practice: modules/extra/index.md
-
-- About: about/index.md
-
