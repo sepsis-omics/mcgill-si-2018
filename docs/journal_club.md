@@ -11,7 +11,7 @@ disease  outbreaks  at  two  universities  in  the  USA_
 * [Paper](https://www.dropbox.com/sh/kvvkvmhbwzovcg2/AABc_D2vFn42UcNdvOQzjGJXa/Pre-reading%20materials/Anders_N_meningitidis/Hao-MGen-2018.pdf)
 * [Supplement](https://www.dropbox.com/sh/kvvkvmhbwzovcg2/AAC0J5BED1u1Mofq76lAhMM4a/Pre-reading%20materials/Anders_N_meningitidis/Hao-MGen-2018-Supplement.pdf)
 
-## In&eacute;s
+## In&egrave;s
 
 Weill _et al_ (2017) 
 _Genomic  history  of  the  seventhpandemic  of  cholera  in  Africa_
