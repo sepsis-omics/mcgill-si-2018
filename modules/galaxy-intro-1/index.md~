@@ -1,4 +1,6 @@
-# Learn key tasks
+# Introduction to Galaxy
+
+
 
 * This is a short introduction to the Galaxy user interface - the web page that you interact with.
 * We will cover key tasks in Galaxy: uploading files, using tools, and viewing histories.
@@ -219,25 +221,7 @@ What have we learned?
 
 ## Conclusion
 
-Well done! You have completed the short introduction to Galaxy, where you named the history, uploaded a file, used a tool, and viewed results. Additional tutorials are available for a more in-depth introduction to Galaxy's features.
-
-## See this history in Galaxy
-
-If you want to see this Galaxy history without performing the steps above:
-
-* Log in to Galaxy Australia: [https://usegalaxy.org.au/](https://usegalaxy.org.au/)
-* Go to <ss>Shared Data</ss>
-* Click <ss>Histories</ss>
-* Click <fn>Completed-key-tasks-analysis</fn>
-* Click <ss>Import</ss> (at the top right corner)
-* The analysis should now be showing as your current history.
-
-## What's next?
-To use the tutorials on this website:
-
-* &#8592; see the list in the left hand panel
-* &#8598; or, click the **menu button** (three horizontal bars) in the top left of the page
-
-You can find more tutorials at the Galaxy Training Network:
-
-* [http://galaxyproject.github.io/training-material/](http://galaxyproject.github.io/training-material/)  
+Well done!  You have completed the short introduction to Galaxy, where you
+named the history, uploaded a file, used a tool, and viewed results. 
+Additional tutorials are available for a more in-depth introduction to
+Galaxy's features.
