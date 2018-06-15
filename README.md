@@ -1,6 +1,6 @@
 # McGill tutorials.
 
-Tutorials on how to use the microGVL to do common bacterial bioinformatic tasks.
+Tutorials for genomic epidemiology and microbial genomics.
 
 ## Deployment
 
@@ -10,13 +10,13 @@ The tutorials have been deployed here: https://sepsis-omics.github.io/mcgill-si-
 
 ### Install the mkdocs tools
 ```
-% pip install mkdocs markdown-include mkdocs-alabaster mkdocs-bootstrap
+% pip install mkdocs markdown-include mkdocs-extensions mkdocs-material
 ```
 
 ### Clone the repo
 ```
-% git clone https://github.com/sepsis-omics/mcgill-si-2018.git mcgill2018-tutorials
-% cd mcgill2018-tutorials
+% git clone https://github.com/sepsis-omics/mcgill-si-2018.git
+% cd mcgill-si-2018
 ```
 
 ### Browse the site locally without deploying to public internet
@@ -34,18 +34,29 @@ This will update automatically as you make changes to the documenation.
 ### The actual Markdown pages are in the `docs` folder:
 ```
 % ls docs
-index.md about.md     # some pages
-dna/ prot/ rna/ met/  # some folders with more pages
-media/                # folder for images
+index.md about.md modules/ 
+
+# modules/lessons
+% cd modules
+% ls
+
+dna/ prot/ rna/ met/  
+
+# the content for a module
+% cd dna
+% ls dna
+index.md images/
 ```
-To add a new page, say a page on the 'Minia' genome assembler, find the right location and create a page.
-In this case it would be `docs/dna/denovo/minia.md`. Write the tutorial in that file, and then add the file to the
-master document `mkdocs.yml` in the correct section.
+
+To add a new page, say a page on the 'Minia' genome assembler, find the
+right location and create a page.  In this case it would be
+`docs/modules/denovo/minia.md`.  Write the tutorial in that file, and then add
+the file to the master document `mkdocs.yml` in the correct section.
 
 ### When you are happy, add it the repo
 ```
 git add docs/dna/denovo/minia.md
-git commit -m "Added minia" mkdocs.yml docs/dna/denovo/minia.md
+git commit -m "Added minia" mkdocs.yml docs/modules/denovo/minia.md
 git push
 ```
 Your private local web version  http://127.0.0.1:8000/ will also update.
@@ -64,6 +75,4 @@ https://sepsis-omics.github.io/mcgill-si-2018/
 * Anna Syme
 * Simon Gladman
 * Dieter Bulach
-* Dominique Gorse
-* Xin-Yi Chua
-* Mike Thang
+* Lauren Cowley
