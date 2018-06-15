@@ -1,3 +1,0 @@
-# StringTie
-
-cmd line 

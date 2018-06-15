@@ -1,3 +1,0 @@
-# CANU
-
-pacbio cmdline
