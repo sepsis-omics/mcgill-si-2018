@@ -111,8 +111,7 @@ From Snippy, there are 10 output files in various formats.
 - For <ss>Track Data</ss> select <fn>wildtype.gff</fn>
 - Under <ss>JBrowse Track Type[Advanced]</ss> select *Canvas Features*.
 - Click on <ss>JBrowse Styling Options <Advanced]</ss>
-- Under <ss>JBrowse style.label</ss> add in the word *product*.
-- Under <ss>JBrowse style.description</ss> add in the word *product*.
+- Under <ss>JBrowse style.description</ss> add in the word *product* so that it says *note,description,product*
 - Under <ss>Track Visibility</ss> choose *On for new users*.
 
 - Click <ss>Execute</ss>
