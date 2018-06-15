@@ -792,13 +792,8 @@
         },
         {
             "location": "/about/",
-            "text": "About\n\n\nAuthors\n\n\n Anna Syme\n\n\n Torsten Seemann\n\n\n Simon Gladman\n\n\n Dieter Bulach",
-            "title": "Home"
-        },
-        {
-            "location": "/about/#about",
-            "text": "",
-            "title": "About"
+            "text": "Authors\n\n\n Anna Syme\n\n\n Torsten Seemann\n\n\n Simon Gladman\n\n\n Dieter Bulach",
+            "title": "Authors"
         },
         {
             "location": "/about/#authors",
