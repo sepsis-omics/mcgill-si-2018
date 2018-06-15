@@ -460,15 +460,22 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#data-we-will-use-download-from-dropbox" title="Data we will use (Download from dropbox):" class="md-nav__link">
-    Data we will use (Download from dropbox):
+  <a href="#data-we-will-use-download" title="Data we will use (download)" class="md-nav__link">
+    Data we will use (download)
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#programs-we-will-use-off-galaxy" title="Programs we will use off galaxy:" class="md-nav__link">
-    Programs we will use off galaxy:
+  <a href="#non-galaxy-tools-needed-download" title="Non-Galaxy tools needed (download)" class="md-nav__link">
+    Non-Galaxy tools needed (download)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#introduction" title="Introduction" class="md-nav__link">
+    Introduction
   </a>
   
 </li>
@@ -708,15 +715,22 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#data-we-will-use-download-from-dropbox" title="Data we will use (Download from dropbox):" class="md-nav__link">
-    Data we will use (Download from dropbox):
+  <a href="#data-we-will-use-download" title="Data we will use (download)" class="md-nav__link">
+    Data we will use (download)
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#programs-we-will-use-off-galaxy" title="Programs we will use off galaxy:" class="md-nav__link">
-    Programs we will use off galaxy:
+  <a href="#non-galaxy-tools-needed-download" title="Non-Galaxy tools needed (download)" class="md-nav__link">
+    Non-Galaxy tools needed (download)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#introduction" title="Introduction" class="md-nav__link">
+    Introduction
   </a>
   
 </li>
@@ -782,35 +796,36 @@
                 
                 <h1 id="nanopore-tutorial">Nanopore tutorial</h1>
 <p>We will be using the Galaxy server that you have been using this week so far so please open that up.</p>
-<h2 id="data-we-will-use-download-from-dropbox">Data we will use (Download from dropbox):</h2>
+<h2 id="data-we-will-use-download">Data we will use (<a href=""><em>download</em></a>)</h2>
 <ul>
-<li><a href="./EM_079517.fasta"><code>EM_079517.fasta</code></a></li>
-<li><code>illumina_assembly_graph.fastg</code></li>
-<li><code>O55_combined_miniasm.gfa</code></li>
-<li><code>sakai_prophages.fa</code></li>
+<li><FN>EM_079517.fasta</FN></li>
+<li><FN>illumina_assembly_graph.fastg</FN></li>
+<li><FN>O55_combined_miniasm.gfa</FN></li>
+<li><FN>sakai_prophages.fa</FN></li>
 </ul>
-<h2 id="programs-we-will-use-off-galaxy">Programs we will use off galaxy:</h2>
+<h2 id="non-galaxy-tools-needed-download">Non-Galaxy tools needed (<a href="https://www.dropbox.com/sh/kvvkvmhbwzovcg2/AAASrlyOWSq2jt-IQKyPjBgZa/Software_to_install?dl=0"><em>download</em></a>)</h2>
 <ul>
 <li><a href="https://ics.hutton.ac.uk/tablet/">Tablet</a> </li>
 <li><a href="http://rrwick.github.io/Bandage/">Bandage</a></li>
 </ul>
-<p>First off, we are going to start by using some Ebola data to look at mapping
-nanopore reads to a reference.  We are going to use BWA mem that has long
-read capability.</p>
+<h2 id="introduction">Introduction</h2>
+<p>First off, we are going to start by using some Ebola viral genome data to look at
+mapping (aligning) Nanopore reads to a reference.<br />
+We are going to use <code>bwa mem</code> that has long read capability.</p>
 <h2 id="step-1-fastq-dump">Step 1: Fastq-dump</h2>
 <p>First we need to retrieve Ebola data from NCBI. </p>
 <ul>
-<li>We will use the <code>Get Data</code> tab on the left hand side panel of Galaxy, under <code>Tools</code>. </li>
-<li>Click on <code>Download and Extract Reads in FASTA/Q</code></li>
+<li>We will use the <SS>Get Data</SS> tab on the left hand side panel of Galaxy, under <SS>Tools</SS>. </li>
+<li>Click on <SS>Download and Extract Reads in FASTA/Q</SS></li>
 <li>Options will now be visible in the middle panel of galaxy</li>
-<li>The input type should be <code>SRR accession</code></li>
-<li>In Accession enter <code>ERR1014225</code> (This is the accession number for nanopore reads of an Ebola sample from the West African outbreak)</li>
-<li>Select <code>gzip compressed fastq</code> for the output format</li>
-<li>Click <code>Execute</code></li>
+<li>The input type should be <SS>SRR accession</SS></li>
+<li>In Accession enter <SS>ERR1014225</SS> (This is the accession number for nanopore reads of an Ebola sample from the West African outbreak)</li>
+<li>Select <SS>gzip compressed fastq</SS> for the output format</li>
+<li>Click <SS>Execute</SS></li>
 </ul>
 <p><img alt="Alt text" src="./screenshots/Screen%20Shot%202018-06-07%20at%209.52.33%20AM.png" /></p>
 <ul>
-<li>The job will then appear in the <code>History</code> panel on the right hand side of the screen</li>
+<li>The job will then appear in the <SS>History</SS> panel on the right hand side of the screen</li>
 </ul>
 <p><img alt="Alt text" src="./screenshots/Screen%20Shot%202018-06-07%20at%2010.07.13%20AM.png" /></p>
 <ul>
@@ -819,36 +834,36 @@ read capability.</p>
 <h2 id="step-2-bwa-mem">Step 2: BWA-MEM</h2>
 <p>Next we will map our nanopore Ebola reads to a reference.</p>
 <ul>
-<li>We will use the <code>NGS:Mapping</code> tab on the left hand side panel of Galaxy, under <code>Tools</code>. </li>
-<li>Click on <code>Map with BWA-MEM</code></li>
+<li>We will use the <SS>NGS:Mapping</SS> tab on the left hand side panel of Galaxy, under <SS>Tools</SS>. </li>
+<li>Click on <SS>Map with BWA-MEM</SS></li>
 <li>Options will now be visible in the middle panel of galaxy</li>
-<li>Select <code>Use a genome from history and build index</code></li>
-<li>The reference sequence will be preloaded into your galaxy history: <code>EM_079517.fasta</code> (This is a finished Ebola reference genome for strain Zaire)</li>
-<li>For Algorithm select <code>Auto. Let BWA decide the best algorithm to use</code></li>
-<li>Select <code>Single</code> for type of reads</li>
-<li>Select <code>ERR1014225 (fastq-dump)</code> for fastq dataset</li>
-<li>Select <code>Do not set</code> for read groups information</li>
-<li>Select <code>3. Nanopore 2D-reads mode (-x ont2d)</code> for analysis mode  </li>
-<li>Click <code>Execute</code></li>
+<li>Select <SS>Use a genome from history and build index</SS></li>
+<li>The reference sequence will be preloaded into your galaxy history: <FN>EM_079517.fasta</FN> (This is a finished Ebola reference genome for strain Zaire)</li>
+<li>For Algorithm select <SS>Auto. Let BWA decide the best algorithm to use</SS></li>
+<li>Select <SS>Single</SS> for type of reads</li>
+<li>Select <SS>ERR1014225 (fastq-dump)</SS> for fastq dataset</li>
+<li>Select <SS>Do not set</SS> for read groups information</li>
+<li>Select <SS>3. Nanopore 2D-reads mode (-x ont2d)</SS> for analysis mode  </li>
+<li>Click <SS>Execute</SS></li>
 </ul>
 <p><img alt="Screenshot" src="./screenshots/Screen%20Shot%202018-06-07%20at%2010.07.13%20AM.png" /></p>
 <p>When it has finished running, we will download the mapped reads.</p>
 <ul>
-<li>Click on the finished job (Called <code>Map with BWA-MEM</code>etc.) in the <code>History</code> panel on the right hand side panel </li>
+<li>Click on the finished job (Called <SS>Map with BWA-MEM</SS>etc.) in the <SS>History</SS> panel on the right hand side panel </li>
 <li>You will see a save icon under the details of the job</li>
-<li>Click on it and the <code>Download dataset</code> and <code>Download bam_index</code> options will appear</li>
+<li>Click on it and the <SS>Download dataset</SS> and <SS>Download bam_index</SS> options will appear</li>
 <li>We need both so click on one after the other </li>
 </ul>
 <p><img alt="Alt text" src="./screenshots/Screen%20Shot%202018-06-07%20at%2010.32.52%20AM.png" /></p>
 <h2 id="step-3-viewing-the-mapping-in-tablet">Step 3: Viewing the mapping in Tablet</h2>
 <ul>
-<li>We will load the downloaded data into Tablet by opening the Tablet program and clicking on <code>Open Assembly</code> in the top left hand side of the screen</li>
-<li>For <code>Primary assembly file or URL:</code> click on <code>Browse...</code> and find the downloaded Bam file (you need the file with the extension <code>.bam</code> not <code>.bai</code>)</li>
-<li>For <code>Reference/consensus file or URL:</code> click on <code>Browse...</code> and find the downloaded (from dropbox) reference genome <code>EM_079517.fasta</code></li>
+<li>We will load the downloaded data into Tablet by opening the Tablet program and clicking on <SS>Open Assembly</SS> in the top left hand side of the screen</li>
+<li>For <SS>Primary assembly file or URL:</SS> click on <SS>Browse&hellip;</SS> and find the downloaded Bam file (you need the file with the extension <FN>.bam</FN> not <FN>.bai</FN>)</li>
+<li>For <SS>Reference/consensus file or URL:</SS> click on <SS>Browse&hellip;</SS> and find the downloaded (from dropbox) reference genome <FN>EM_079517.fasta</FN></li>
 </ul>
 <p><img alt="Alt text" src="./screenshots/Screen%20Shot%202018-06-07%20at%2010.42.02%20AM.png" /></p>
 <ul>
-<li>Click <code>Open</code> and then click on the Contig <code>EM_079517</code> on the left hand panel of the screen and you will see your mapping results ready to browse</li>
+<li>Click <SS>Open</SS> and then click on the Contig <FN>EM_079517</FN> on the left hand panel of the screen and you will see your mapping results ready to browse</li>
 <li>Take a few minutes to explore the program and the results</li>
 </ul>
 <p><img alt="Alt text" src="./screenshots/Screen%20Shot%202018-06-07%20at%2010.44.03%20AM.png" /></p>
@@ -875,28 +890,28 @@ Edges = overlaps
 
 <ul>
 <li>Open up Bandage from your desktop</li>
-<li>Click on <code>File</code> then <code>Load graph</code></li>
-<li>Find the <code>illumina_assembly_graph.fastg</code> location on your computer and click <code>Open</code></li>
+<li>Click on <SS>File</SS> then <SS>Load graph</SS></li>
+<li>Find the <SS>illumina_assembly_graph.fastg</SS> location on your computer and click <SS>Open</SS></li>
 </ul>
 <p><img alt="Alt text" src="./screenshots/Screen%20Shot%202018-06-07%20at%2011.20.11%20AM.png" /></p>
 <ul>
-<li>Click <code>Draw graph</code> on the left hand panel of the screen</li>
+<li>Click <SS>Draw graph</SS> on the left hand panel of the screen</li>
 <li>You will see that the Illumina assembly produces a whole mess of 649 contigs with a lot of short contigs connecting everything together</li>
 <li>You can zoom in on the graph to look at it in more detail</li>
 </ul>
 <p><img alt="Alt text" src="./screenshots/Screen%20Shot%202018-06-07%20at%2012.40.28%20PM.png" /></p>
 <ul>
-<li>We can colour the graph by depth by changing <code>Graph display</code> from <code>Random colours</code> to <code>Colour by depth</code></li>
+<li>We can colour the graph by depth by changing <SS>Graph display</SS> from <SS>Random colours</SS> to <SS>Colour by depth</SS></li>
 <li>You&rsquo;ll see that the short contigs all have much higher coverage than the other contigs. <em>What do you think that means?</em></li>
 </ul>
 <p><img alt="Alt text" src="./screenshots/Screen%20Shot%202018-06-07%20at%2012.47.48%20PM.png" /></p>
 <p>Now we are going to use <a href="https://blast.ncbi.nlm.nih.gov/Blast.cgi">BLAST</a> to look for the prophage regions in the assembly</p>
 <ul>
-<li>Click on <code>Create/view BLAST search</code> in the left hand panel of the screen</li>
-<li><code>Step 1</code> click on <code>Build BLAST database</code></li>
-<li><code>Step 2</code> click on <code>Load from FASTA file</code> and find the <code>sakai_prophages.fa</code> location on your computer</li>
-<li><code>Step 3</code> click on <code>Run BLAST search</code></li>
-<li>click on <code>Close</code></li>
+<li>Click on <SS>Create/view BLAST search</SS> in the left hand panel of the screen</li>
+<li><SS>Step 1</SS> click on <SS>Build BLAST database</SS></li>
+<li><SS>Step 2</SS> click on <SS>Load from FASTA file</SS> and find the <FN>sakai_prophages.fa</FN> location on your computer</li>
+<li><SS>Step 3</SS> click on <SS>Run BLAST search</SS></li>
+<li>click on <SS>Close</SS></li>
 </ul>
 <p><img alt="Alt text" src="./screenshots/Screen%20Shot%202018-06-07%20at%2012.52.56%20PM.png" /></p>
 <p>You will see the prophage regions highlighted in colour on the assembly graph now.</p>
@@ -904,23 +919,25 @@ Edges = overlaps
 <p><img alt="Alt text" src="./screenshots/Screen%20Shot%202018-06-07%20at%2012.54.03%20PM.png" /></p>
 <p>Now, we will load the nanopore assembly into Bandage to see how long reads affect this</p>
 <ul>
-<li>Click on <code>File</code> then <code>Load graph</code></li>
-<li>Find the <code>O55_combined_miniasm.gfa</code> location on your computer and click <code>Open</code></li>
-<li>Click <code>Draw graph</code> on the left hand panel of the screen</li>
-<li>Change <code>Graph display</code> option from <code>BLAST hits(solid)</code> to <code>Random colours</code>. <em>What is strikingly different about this assembly than the Illumina one?</em></li>
+<li>Click on <SS>File</SS> then <SS>Load graph</SS></li>
+<li>Find the <FN>O55_combined_miniasm.gfa</FN> location on your computer and click <SS>Open</SS></li>
+<li>Click <SS>Draw graph</SS> on the left hand panel of the screen</li>
+<li>Change <SS>Graph display</SS> option from <SS>BLAST hits(solid)</SS> to <SS>Random colours</SS>. <em>What is strikingly different about this assembly than the Illumina one?</em></li>
 </ul>
 <p><img alt="Alt text" src="./screenshots/Screen%20Shot%202018-06-07%20at%2012.58.17%20PM.png" /></p>
 <p>Now, lets look at where the prophage regions are in this assembly</p>
 <ul>
-<li>Click on <code>Create/view BLAST search</code> in the left hand panel of the screen</li>
-<li><code>Step 1</code> click on <code>Build BLAST database</code></li>
-<li><code>Step 2</code> click on <code>Load from FASTA file</code> and find the <code>sakai_prophages.fa</code> location on your computer</li>
-<li><code>Step 3</code> click on <code>Run BLAST search</code></li>
-<li>click on <code>Close</code></li>
+<li>Click on <SS>Create/view BLAST search</SS> in the left hand panel of the screen</li>
+<li><SS>Step 1</SS> click on <SS>Build BLAST database</SS></li>
+<li><SS>Step 2</SS> click on <SS>Load from FASTA file</SS> and find the <FN>sakai_prophages.fa</FN> location on your computer</li>
+<li><SS>Step 3</SS> click on <SS>Run BLAST search</SS></li>
+<li>click on <SS>Close</SS></li>
 </ul>
 <p><img alt="Alt text" src="./screenshots/Screen%20Shot%202018-06-07%20at%2012.59.42%20PM.png" /></p>
-<p>How have the long reads improved this assembly?</p>
-<p>Are there any regions that haven&rsquo;t been resolved by the nanopore experiment? Why would that be?</p>
+<ol>
+<li>How have the long reads improved this assembly?</li>
+<li>Are there any regions that haven&rsquo;t been resolved by the nanopore experiment? Why would that be?</li>
+</ol>
                 
                   
                 

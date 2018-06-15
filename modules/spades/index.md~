@@ -1,4 +1,3 @@
-<br>
 # Assembly using Spades
 
 Keywords: de novo assembly, Spades, Galaxy, Microbial Genomics Virtual Lab
