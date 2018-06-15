@@ -72,8 +72,6 @@ IMG {
   padding: 1em 1em;
 }
 
-TABLE.tutors IMG { padding: 0ex 1ex; }
-TABLE.tutors TD { text-align: center; }
 
 .navbar-brand {
   font-weight: bolder;

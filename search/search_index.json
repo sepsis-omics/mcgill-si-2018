@@ -2,13 +2,23 @@
     "docs": [
         {
             "location": "/",
-            "text": "Welcome!\n\n\nThis site contains microbial genomics tutorials \nfor the\n\nGalaxy\n platform\nrunning on the\n\nGenomics Virtual Lab\n.",
+            "text": "Welcome!\n\n\nAgenda\n\n\n\n\nInstructors\n\n\n\n\n\n\n \n\n\n \n\n\n \n\n\n \n\n\n \n\n\n \n\n\n\n\n Robyn\n\n Marcel\n\n In\u00e8s\n\n Anders\n\n Lauren\n\n Torsten",
             "title": "Home"
         },
         {
             "location": "/#welcome",
-            "text": "This site contains microbial genomics tutorials \nfor the Galaxy  platform\nrunning on the Genomics Virtual Lab .",
+            "text": "",
             "title": "Welcome!"
+        },
+        {
+            "location": "/#agenda",
+            "text": "",
+            "title": "Agenda"
+        },
+        {
+            "location": "/#instructors",
+            "text": "Robyn  Marcel  In\u00e8s  Anders  Lauren  Torsten",
+            "title": "Instructors"
         },
         {
             "location": "/day1/",
@@ -767,7 +777,7 @@
         },
         {
             "location": "/journal_club/",
-            "text": "Journal Club\n\n\nAnders\n\n\nHao \net al\n (2018) \n\nDistinct  evolutionary  patterns  of Neisseria meningitidis serogroup B\ndisease  outbreaks  at  two  universities  in  the  USA\n \n\nMicrobial Genomics\n\n\n\n\nPaper\n\n\nSupplement\n\n\n\n\nIn\u00e9s\n\n\nWeill \net al\n (2017) \n\nGenomic  history  of  the  seventhpandemic  of  cholera  in  Africa\n\n\nScience\n\n\n\n\nPaper\n\n\nSupplement\n\n\n\n\nMarcel\n\n\nvan Ingen \net al\n (2017)\n\nGlobal  outbreak  of  severe  Mycobacterium  chimaera  disease  after\ncardiac  surgery:  a  molecular  epidemiological  study\n\n\nThe Lancet Infectious Diseases\n\n\n\n\nPaper\n\n\nSupplement\n\n\n\n\nRobyn\n\n\nYang \net al\n (2018)\nInternal  migration  and  transmission  dynamics  of  tuberculosis  in\nShanghai,  China:  an  epidemiological,  spatial,  genomic  analysis\n\nThe Lancet Infectious Diseases\n\n\n\n\nPaper\n\n\nSupplement",
+            "text": "Journal Club\n\n\nAnders\n\n\nHao \net al\n (2018) \n\nDistinct  evolutionary  patterns  of Neisseria meningitidis serogroup B\ndisease  outbreaks  at  two  universities  in  the  USA\n \n\nMicrobial Genomics\n\n\n\n\nPaper\n\n\nSupplement\n\n\n\n\nIn\u00e8s\n\n\nWeill \net al\n (2017) \n\nGenomic  history  of  the  seventhpandemic  of  cholera  in  Africa\n\n\nScience\n\n\n\n\nPaper\n\n\nSupplement\n\n\n\n\nMarcel\n\n\nvan Ingen \net al\n (2017)\n\nGlobal  outbreak  of  severe  Mycobacterium  chimaera  disease  after\ncardiac  surgery:  a  molecular  epidemiological  study\n\n\nThe Lancet Infectious Diseases\n\n\n\n\nPaper\n\n\nSupplement\n\n\n\n\nRobyn\n\n\nYang \net al\n (2018)\nInternal  migration  and  transmission  dynamics  of  tuberculosis  in\nShanghai,  China:  an  epidemiological,  spatial,  genomic  analysis\n\nThe Lancet Infectious Diseases\n\n\n\n\nPaper\n\n\nSupplement",
             "title": "Journal Club"
         },
         {
@@ -783,7 +793,7 @@
         {
             "location": "/journal_club/#ins",
             "text": "Weill  et al  (2017)  Genomic  history  of  the  seventhpandemic  of  cholera  in  Africa  Science   Paper  Supplement",
-            "title": "In&eacute;s"
+            "title": "In&egrave;s"
         },
         {
             "location": "/journal_club/#marcel",
