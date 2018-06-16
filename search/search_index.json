@@ -2,7 +2,7 @@
     "docs": [
         {
             "location": "/",
-            "text": "Welcome!\n\n\nAgenda\n\n\n\n\nInstructors\n\n\n\n\n\n\n \n\n\n \n\n\n \n\n\n \n\n\n \n\n\n \n\n\n\n\n Robyn\n\n Marcel\n\n In\u00e8s\n\n Anders\n\n Lauren\n\n Torsten",
+            "text": "Welcome!\n\n\nAgenda\n\n\n\n\nFaculty\n\n\n\n\n\n\n \n\n\n \n\n\n \n\n\n \n\n\n \n\n\n \n\n\n\n\n Robyn\n\n Marcel\n\n In\u00e8s\n\n Anders\n\n Lauren\n\n Torsten\n\n\n\n\n\n\n\n\n \n\n\n \n\n\n \n\n\n \n\n\n \n\n\n \n\n\n\n\n Jesse\n\n Bill\n\n Vanessa\n\n Greg\n\n Erwin\n\n Lynn",
             "title": "Home"
         },
         {
@@ -16,19 +16,19 @@
             "title": "Agenda"
         },
         {
-            "location": "/#instructors",
-            "text": "Robyn  Marcel  In\u00e8s  Anders  Lauren  Torsten",
-            "title": "Instructors"
+            "location": "/#faculty",
+            "text": "Robyn  Marcel  In\u00e8s  Anders  Lauren  Torsten                        Jesse  Bill  Vanessa  Greg  Erwin  Lynn",
+            "title": "Faculty"
         },
         {
             "location": "/day1/",
-            "text": "Agenda Day 1",
+            "text": "Day 1\n\n\n\n\nSlides: \nIntro to Genomic Epidemiology\n - Marcel\n\n\nSlides: \nIntro to Next Generation Sequencing\n - Marcel\n\n\nSlides: \nBioinformatics methods I\n - Torsten\n\n\nSlides: \nBioinformatics methods II\n - Torsten",
             "title": "Agenda"
         },
         {
-            "location": "/day1/#agenda-day-1",
-            "text": "",
-            "title": "Agenda Day 1"
+            "location": "/day1/#day-1",
+            "text": "Slides:  Intro to Genomic Epidemiology  - Marcel  Slides:  Intro to Next Generation Sequencing  - Marcel  Slides:  Bioinformatics methods I  - Torsten  Slides:  Bioinformatics methods II  - Torsten",
+            "title": "Day 1"
         },
         {
             "location": "/modules/galaxy-intro-1/",
@@ -247,12 +247,12 @@
         },
         {
             "location": "/day2/",
-            "text": "Agenda Day 2",
+            "text": "Agenda Day 2\n\n\n\n\nSlides: \nLab considerations for Genomic Epidemiology\n - Marcel\n\n\nSlides: \nDetecting contamination in NGS data\n - Torsten\n\n\nSlides: \nPhylogenetics I\n - Anders\n\n\nSlides: \nPhylogenetics II\n - Anders",
             "title": "Agenda"
         },
         {
             "location": "/day2/#agenda-day-2",
-            "text": "",
+            "text": "Slides:  Lab considerations for Genomic Epidemiology  - Marcel  Slides:  Detecting contamination in NGS data  - Torsten  Slides:  Phylogenetics I  - Anders  Slides:  Phylogenetics II  - Anders",
             "title": "Agenda Day 2"
         },
         {
@@ -377,22 +377,22 @@
         },
         {
             "location": "/day3/",
-            "text": "Agenda Day 3",
+            "text": "Agenda Day 3\n\n\n\n\nSlides: \nWithin-hist diversity\n - Jesse\n\n\nSlides: \nMolecular clocks and dating\n - Anders\n\n\nSlides: \nInferring transmission in Genomic Epi\n - Robyn",
             "title": "Agenda"
         },
         {
             "location": "/day3/#agenda-day-3",
-            "text": "",
+            "text": "Slides:  Within-hist diversity  - Jesse  Slides:  Molecular clocks and dating  - Anders  Slides:  Inferring transmission in Genomic Epi  - Robyn",
             "title": "Agenda Day 3"
         },
         {
             "location": "/day4/",
-            "text": "Agenda Day 4",
+            "text": "Agenda Day 4\n\n\n\n\nSlides: \nMechanisms of antimicrobial resistance\n - Marcel\n\n\nSlides: \nPredicting AMR using genomics data\n - Torsten\n\n\nSlides: \nMetagenomics - analysis and application\n - Jesse\n\n\nSlides: \nOther approaches for predicting resistance\n - Bill\n\n\nSlides: \nNanopore sequencing - applications\n - Lauren",
             "title": "Agenda"
         },
         {
             "location": "/day4/#agenda-day-4",
-            "text": "",
+            "text": "Slides:  Mechanisms of antimicrobial resistance  - Marcel  Slides:  Predicting AMR using genomics data  - Torsten  Slides:  Metagenomics - analysis and application  - Jesse  Slides:  Other approaches for predicting resistance  - Bill  Slides:  Nanopore sequencing - applications  - Lauren",
             "title": "Agenda Day 4"
         },
         {
@@ -482,12 +482,12 @@
         },
         {
             "location": "/day5/",
-            "text": "Agenda Day 5",
+            "text": "Agenda Day 5\n\n\n\n\nSlides: \nApplications of WGS to parasites\n - Greg\n\n\nSlides: \nHost-pathogen interactions\n - Erwin\n\n\nSlides: \nIncorporating WGS into the public health laboratory\n - Vanessa",
             "title": "Agenda"
         },
         {
             "location": "/day5/#agenda-day-5",
-            "text": "",
+            "text": "Slides:  Applications of WGS to parasites  - Greg  Slides:  Host-pathogen interactions  - Erwin  Slides:  Incorporating WGS into the public health laboratory  - Vanessa",
             "title": "Agenda Day 5"
         },
         {
