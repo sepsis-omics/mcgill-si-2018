@@ -91,9 +91,8 @@ pages:
     - Viral genome sequencing: modules/viral_genomes/index.md
     - Read trimming: modules/trimmomatic/index.md
 
-
-#  - About:
-#    - Authors: about/index.md
+  - About:
+    - Acknowledgements: about/index.md
 
   #- Proteomics:
   #    - Protein Identification: modules/xtandem/index.md
