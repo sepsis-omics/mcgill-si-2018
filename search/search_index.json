@@ -809,6 +809,16 @@
             "location": "/modules/trimmomatic/#examine-output",
             "text": "Trimmomatic should produce 2 pairs files (1 left and 1 right hand end) and 1 or 2 single \u201corphaned reads\u201d files.  The output files are the ones you should use for assembly.  There are four output files, still in FASTQ format:   R1 reads that have a pair in the R2 file  R2 reads that have a pair in the R1 file  R1 reads with no pair (R2 match was low quality: deleted)  R2 reads with no pair (R1 match was low quality: deleted)   Examine each file with the eye icon. Look for:   Number of reads orphaned by the trimming / cleanup process.  Number of pairs lost totally.",
             "title": "Examine output"
+        },
+        {
+            "location": "/about/",
+            "text": "Acknowledgements\n\n\nBig thanks to the following \n\nMelbourne Bioinformatics\n\nstaff who co-developed this material,\nand managed the \ncustom \nGalaxy server\n \nhosted  on \nNectar AU\n\nat the \nUniversity of Melbourne\n.\n\n\n Anna Syme\n\n\n Simon Gladman\n\n\n Dieter Bulach",
+            "title": "Acknowledgements"
+        },
+        {
+            "location": "/about/#acknowledgements",
+            "text": "Big thanks to the following  Melbourne Bioinformatics \nstaff who co-developed this material,\nand managed the \ncustom  Galaxy server  \nhosted  on  Nectar AU \nat the  University of Melbourne .   Anna Syme   Simon Gladman   Dieter Bulach",
+            "title": "Acknowledgements"
         }
     ]
 }
