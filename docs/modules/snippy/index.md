@@ -1,7 +1,5 @@
 # Variant calling with Snippy
 
-Keywords: variant calling, SNP, Snippy, JBrowse, Galaxy, Microbial Genomics Virtual Lab
-
 ## Background
 
 Variant calling is the process of identifying differences between two genome samples.

@@ -1,11 +1,9 @@
 
 # Welcome!
 
-## Agenda
-
 ![Logo](media/timetable/title.png)
 
-## Faculty
+# The team
 
 <TABLE CLASS="tutors">
 <TR>

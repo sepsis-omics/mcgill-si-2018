@@ -1,7 +1,5 @@
 # Genome annotation using Prokka
 
-Keywords: annotation, Prokka, JBrowse, Galaxy, Microbial Genomics Virtual Lab
-
 ## Background
 
 In this section we will use a software tool called Prokka to annotate the draft genome sequence produced in the previous [tutorial](/modules/spades/index.md). Prokka is a “wrapper”; it collects together several pieces of software (from various authors), and so avoids “re-inventing the wheel”.
@@ -22,7 +20,7 @@ Prokka requires assembled contigs.
 
 - If you are continuing on from the previous workshop ([Assembly with Spades](/modules/spades/index.md)), this file will be in your current history: <fn>SPAdes_contigs.fasta</fn>.
 
-- Alternatively, get the file called "assembled contigs" from the [Training dataset page.](../data-dna/index.md)
+- Alternatively, get the file called <FN>assembled contigs</FN> from the [Training dataset page.](../data-dna/index.md)
 
 
 <!--
