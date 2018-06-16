@@ -76,12 +76,17 @@
      <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>https://sepsis-omics.github.io/mcgill-si-2018/modules/artemis/</loc>
+     <loc>https://sepsis-omics.github.io/mcgill-si-2018/journal_club/</loc>
      <lastmod>2018-06-16</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>https://sepsis-omics.github.io/mcgill-si-2018/modules/trimmomatic/</loc>
+     <loc>https://sepsis-omics.github.io/mcgill-si-2018/extras/</loc>
+     <lastmod>2018-06-16</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    <url>
+     <loc>https://sepsis-omics.github.io/mcgill-si-2018/modules/artemis/</loc>
      <lastmod>2018-06-16</lastmod>
      <changefreq>daily</changefreq>
     </url>
@@ -96,12 +101,7 @@
      <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>https://sepsis-omics.github.io/mcgill-si-2018/journal_club/</loc>
-     <lastmod>2018-06-16</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-    <url>
-     <loc>https://sepsis-omics.github.io/mcgill-si-2018/about/</loc>
+     <loc>https://sepsis-omics.github.io/mcgill-si-2018/modules/trimmomatic/</loc>
      <lastmod>2018-06-16</lastmod>
      <changefreq>daily</changefreq>
     </url>

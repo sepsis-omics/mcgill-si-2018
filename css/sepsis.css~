@@ -18,11 +18,8 @@ H2 {
 }
 
 H3 {
-
   font-weight: 900;
   font-size: 1em;
-
-
 }
 
 P {
@@ -40,6 +37,7 @@ FN = filename
 TX = text
 */
 
+/* galaxy looking action */
 SS {
   font-family: "Lucida Grande", sans-serif;
   font-size: 80%;
@@ -52,6 +50,7 @@ SS {
 
 }
 
+/* filename */
 FN {
   font-family: "Lucida Grande", sans-serif;
   font-size: 80%;
@@ -62,6 +61,18 @@ FN {
   border-radius: 4px;
 }
 
+/* form button */
+BU {
+  font-family: "Lucida Grande", sans-serif;
+  font-size: 80%;
+  color: black;
+  background-color: lightgray;
+  text-align: center;
+  padding: 0.5ex 1.5ex;
+  border: solid thin darkgray;
+  border-radius: 1px;
+}
+
 TX {
   font-family: monospace;
   font-weight: bolder;
@@ -69,11 +80,13 @@ TX {
 
 /* put images in centre */
 IMG {
-  padding: 1em 1em;
+  padding-left: 0.25ex;
+/*  padding: 1em 1em; */
 }
 
-TABLE.tutors IMG { padding: 0ex 1ex; }
+TABLE.tutors IMG { padding: 0ex 1ex; vertical-align: center; width: 128px !important; }
 TABLE.tutors TD { text-align: center; }
+TABLE.tutors { padding: 2ex; }
 
 .navbar-brand {
   font-weight: bolder;

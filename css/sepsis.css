@@ -6,6 +6,7 @@ LI {
   margin-top: 1ex;
 }
 
+/*
 H1 {
   font-size: 3em;
   font-weight: normal;
@@ -14,32 +15,35 @@ H1 {
 H2 {
   border-bottom: 1px solid grey;
   font-weight: normal;
-
 }
 
 H3 {
-
   font-weight: 900;
   font-size: 1em;
-
-
 }
+
+H1,H2 {
+  font-variant: small-caps;
+}
+
+*/
+
+H2 { border-bottom: 1px solid grey; }
 
 P {
   text-align: justify;
   text-justify: inter-word;
 }
 
-H1,H2 {
-  font-variant: small-caps;
-}
 /*
 These style abbreviations are as follows:
 SS = "screen shot" for menu items etc.
 FN = filename
 TX = text
+BU = button
 */
 
+/* galaxy looking action */
 SS {
   font-family: "Lucida Grande", sans-serif;
   font-size: 80%;
@@ -52,6 +56,7 @@ SS {
 
 }
 
+/* filename */
 FN {
   font-family: "Lucida Grande", sans-serif;
   font-size: 80%;
@@ -62,15 +67,30 @@ FN {
   border-radius: 4px;
 }
 
+/* form button */
+BU {
+  font-family: "Lucida Grande", sans-serif;
+  font-size: 80%;
+  color: black;
+  background-color: lightgray;
+  text-align: center;
+  padding: 0.6ex 1.2ex;
+  border: solid thin darkgray;
+  border-radius: 1px;
+}
+
 TX {
   font-family: monospace;
   font-weight: bolder;
 }
 
 /* put images in centre */
+/*
 IMG {
-  padding: 1em 1em;
+  padding-left: 0.25ex; 
+  padding: 1em 1em; 
 }
+*/
 
 TABLE.tutors IMG { padding: 0ex 1ex; vertical-align: center; width: 128px !important; }
 TABLE.tutors TD { text-align: center; }

@@ -159,6 +159,119 @@
         
       
       
+        
+
+  
+
+<nav class="md-tabs md-tabs--active" data-md-component="tabs">
+  <div class="md-tabs__inner md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  <li class="md-tabs__item">
+    
+      <a href="../.." title="Home" class="md-tabs__link">
+        Home
+      </a>
+    
+  </li>
+
+      
+        
+  
+  
+    <li class="md-tabs__item">
+      
+        <a href="../../day1/" title="Day 1" class="md-tabs__link">
+          Day 1
+        </a>
+      
+    </li>
+  
+
+      
+        
+  
+  
+    <li class="md-tabs__item">
+      
+        <a href="../../day2/" title="Day 2" class="md-tabs__link md-tabs__link--active">
+          Day 2
+        </a>
+      
+    </li>
+  
+
+      
+        
+  
+  
+    <li class="md-tabs__item">
+      
+        <a href="../../day3/" title="Day 3" class="md-tabs__link">
+          Day 3
+        </a>
+      
+    </li>
+  
+
+      
+        
+  
+  
+    <li class="md-tabs__item">
+      
+        <a href="../../day4/" title="Day 4" class="md-tabs__link">
+          Day 4
+        </a>
+      
+    </li>
+  
+
+      
+        
+  
+  
+    <li class="md-tabs__item">
+      
+        <a href="../../day5/" title="Day 5" class="md-tabs__link">
+          Day 5
+        </a>
+      
+    </li>
+  
+
+      
+        
+  
+  
+    <li class="md-tabs__item">
+      
+        <a href="../../journal_club/" title="Journal Club" class="md-tabs__link">
+          Journal Club
+        </a>
+      
+    </li>
+  
+
+      
+        
+  
+  
+    <li class="md-tabs__item">
+      
+        <a href="../../extras/" title="Extras" class="md-tabs__link">
+          Extras
+        </a>
+      
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+      
       <main class="md-main">
         <div class="md-main__inner md-grid" data-md-component="container">
           
@@ -563,11 +676,11 @@
       <input class="md-toggle md-nav__toggle" data-md-toggle="nav-7" type="checkbox" id="nav-7">
     
     <label class="md-nav__link" for="nav-7">
-      Extra
+      Journal Club
     </label>
     <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
       <label class="md-nav__title" for="nav-7">
-        Extra
+        Journal Club
       </label>
       <ul class="md-nav__list" data-md-scrollfix>
         
@@ -578,8 +691,44 @@
 
 
   <li class="md-nav__item">
-    <a href="../artemis/" title="Artemis" class="md-nav__link">
-      Artemis
+    <a href="../../journal_club/" title="Papers" class="md-nav__link">
+      Papers
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-8" type="checkbox" id="nav-8">
+    
+    <label class="md-nav__link" for="nav-8">
+      Extras
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-8">
+        Extras
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../extras/" title="Agenda" class="md-nav__link">
+      Agenda
     </a>
   </li>
 
@@ -590,8 +739,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../trimmomatic/" title="Read trimming" class="md-nav__link">
-      Read trimming
+    <a href="../artemis/" title="Viewing genomes with Artemis" class="md-nav__link">
+      Viewing genomes with Artemis
     </a>
   </li>
 
@@ -620,50 +769,14 @@
   </li>
 
         
-      </ul>
-    </nav>
-  </li>
-
-    
-      
-      
-      
-
-
-  <li class="md-nav__item">
-    <a href="../../journal_club/" title="Journal Club" class="md-nav__link">
-      Journal Club
-    </a>
-  </li>
-
-    
-      
-      
-      
-
-
-  <li class="md-nav__item md-nav__item--nested">
-    
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-9" type="checkbox" id="nav-9">
-    
-    <label class="md-nav__link" for="nav-9">
-      About
-    </label>
-    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
-      <label class="md-nav__title" for="nav-9">
-        About
-      </label>
-      <ul class="md-nav__list" data-md-scrollfix>
-        
-        
           
           
           
 
 
   <li class="md-nav__item">
-    <a href="../../about/" title="Authors" class="md-nav__link">
-      Authors
+    <a href="../trimmomatic/" title="Read trimming" class="md-nav__link">
+      Read trimming
     </a>
   </li>
 
@@ -753,7 +866,6 @@
                 
                 
                 <h1 id="genome-annotation-using-prokka">Genome annotation using Prokka</h1>
-<p>Keywords: annotation, Prokka, JBrowse, Galaxy, Microbial Genomics Virtual Lab</p>
 <h2 id="background">Background</h2>
 <p>In this section we will use a software tool called Prokka to annotate the draft genome sequence produced in the previous <a href="../spades/">tutorial</a>. Prokka is a “wrapper”; it collects together several pieces of software (from various authors), and so avoids “re-inventing the wheel”.</p>
 <p>Prokka finds and annotates features (both protein coding regions and RNA genes, i.e. tRNA, rRNA) present on on a sequence. Note, Prokka uses a two-step process for the annotation of protein coding regions: first, protein coding regions on the genome are identified using <a href="https://doi.org/10.1186/1471-2105-11-119">Prodigal</a>; second, the <em>function</em> of the encoded protein is predicted by similarity to proteins in one of many protein or protein domain databases. Prokka is a software tool that can be used to annotate bacterial, archaeal and viral genomes quickly, generating standard output files in GenBank, EMBL and gff formats. More information about Prokka can be found <a href="https://github.com/tseemann/prokka">here</a>.</p>
@@ -771,7 +883,7 @@
 <p>If you are continuing on from the previous workshop (<a href="../spades/">Assembly with Spades</a>), this file will be in your current history: <fn>SPAdes_contigs.fasta</fn>.</p>
 </li>
 <li>
-<p>Alternatively, get the file called &ldquo;assembled contigs&rdquo; from the <a href="../data-dna/">Training dataset page.</a></p>
+<p>Alternatively, get the file called <FN>assembled contigs</FN> from the <a href="../data-dna/">Training dataset page.</a></p>
 </li>
 </ul>
 <!--
