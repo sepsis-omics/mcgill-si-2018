@@ -38,3 +38,9 @@
 <TD> Erwin
 <TD> Lynn
 </TABLE>
+
+# Key links
+
+* This website: <https://tinyurl.com/mcgill2018>
+* Galaxy Server: <http://canada1.genome.edu.au/galaxy>
+* Course Dropbox: <http://bit.ly/GenomicEpi18>
