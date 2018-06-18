@@ -598,8 +598,8 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#data-we-will-use-download" title="Data we will use (download)" class="md-nav__link">
-    Data we will use (download)
+  <a href="#data-we-will-use" title="Data we will use" class="md-nav__link">
+    Data we will use
   </a>
   
 </li>
@@ -889,8 +889,8 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#data-we-will-use-download" title="Data we will use (download)" class="md-nav__link">
-    Data we will use (download)
+  <a href="#data-we-will-use" title="Data we will use" class="md-nav__link">
+    Data we will use
   </a>
   
 </li>
@@ -970,26 +970,39 @@
                 
                 <h1 id="nanopore-tutorial">Nanopore tutorial</h1>
 <p>We will be using the Galaxy server that you have been using this week so far so please open that up.</p>
-<h2 id="data-we-will-use-download">Data we will use (<a href=""><em>download</em></a>)</h2>
+<h2 id="data-we-will-use">Data we will use</h2>
+<p>Please click on these filenames. Then right-click on <code>View Raw</code>, and save to your computer.</p>
 <ul>
-<li><FN>EM_079517.fasta</FN></li>
-<li><FN>illumina_assembly_graph.fastg</FN></li>
-<li><FN>O55_combined_miniasm.gfa</FN></li>
-<li><FN>sakai_prophages.fa</FN></li>
+<li><a href="https://github.com/sepsis-omics/mcgill-si-2018/blob/master/docs/modules/nanopore-ebola/illumina_assembly_graph.fastg"><FN>illumina_assembly_graph.fastg</FN></a></li>
+<li><a href="https://github.com/sepsis-omics/mcgill-si-2018/blob/master/docs/modules/nanopore-ebola/O55_combined_miniasm.gfa"><FN>O55_combined_miniasm.gfa</FN></a></li>
 </ul>
 <h2 id="non-galaxy-tools-needed-download">Non-Galaxy tools needed (<a href="https://www.dropbox.com/sh/kvvkvmhbwzovcg2/AAASrlyOWSq2jt-IQKyPjBgZa/Software_to_install?dl=0"><em>download</em></a>)</h2>
 <ul>
-<li><a href="https://ics.hutton.ac.uk/tablet/">Tablet</a> </li>
+<li><a href="https://ics.hutton.ac.uk/tablet/">Tablet</a></li>
 <li><a href="http://rrwick.github.io/Bandage/">Bandage</a></li>
 </ul>
 <h2 id="introduction">Introduction</h2>
+<p>Go to your Galaxy instance. Make sure you are registered and logged in. Refresh the page.</p>
+<ul>
+<li>In the top menu, click on <ss>Shared Data</ss> and then <ss>Data Libraries</ss></li>
+<li>Click on <fn>Nanopore Data</fn></li>
+<li>A list of files will appear</li>
+<li>
+<p>Tick the box next to these files: <FN>EM_079517.fasta</FN> and <FN>sakai_prophages.fa</FN></p>
+</li>
+<li>
+<p>Then click the <bu>&#x1F4D2; to History</bu> button at the top</p>
+</li>
+<li>Click <bu>Import</bux></li>
+<li>The files should now be in your current history.</li>
+</ul>
 <p>First off, we are going to start by using some Ebola viral genome data to look at
 mapping (aligning) Nanopore reads to a reference.<br />
 We are going to use <code>bwa mem</code> that has long read capability.</p>
 <h2 id="step-1-fastq-dump">Step 1: Fastq-dump</h2>
-<p>First we need to retrieve Ebola data from NCBI. </p>
+<p>First we need to retrieve Ebola data from NCBI.</p>
 <ul>
-<li>We will use the <SS>Get Data</SS> tab on the left hand side panel of Galaxy, under <SS>Tools</SS>. </li>
+<li>We will use the <SS>Get Data</SS> tab on the left hand side panel of Galaxy, under <SS>Tools</SS>.</li>
 <li>Click on <SS>Download and Extract Reads in FASTA/Q</SS></li>
 <li>Options will now be visible in the middle panel of galaxy</li>
 <li>The input type should be <SS>SRR accession</SS></li>
@@ -1008,11 +1021,11 @@ We are going to use <code>bwa mem</code> that has long read capability.</p>
 <h2 id="step-2-bwa-mem">Step 2: BWA-MEM</h2>
 <p>Next we will map our nanopore Ebola reads to a reference.</p>
 <ul>
-<li>We will use the <SS>NGS:Mapping</SS> tab on the left hand side panel of Galaxy, under <SS>Tools</SS>. </li>
+<li>We will use the <SS>NGS:Mapping</SS> tab on the left hand side panel of Galaxy, under <SS>Tools</SS>.</li>
 <li>Click on <SS>Map with BWA-MEM</SS></li>
 <li>Options will now be visible in the middle panel of galaxy</li>
 <li>Select <SS>Use a genome from history and build index</SS></li>
-<li>The reference sequence will be preloaded into your galaxy history: <FN>EM_079517.fasta</FN> (This is a finished Ebola reference genome for strain Zaire)</li>
+<li>The reference sequence is already in your current history: <FN>EM_079517.fasta</FN> (This is a finished Ebola reference genome for strain Zaire)</li>
 <li>For Algorithm select <SS>Auto. Let BWA decide the best algorithm to use</SS></li>
 <li>Select <SS>Single</SS> for type of reads</li>
 <li>Select <SS>ERR1014225 (fastq-dump)</SS> for fastq dataset</li>
@@ -1023,10 +1036,10 @@ We are going to use <code>bwa mem</code> that has long read capability.</p>
 <p><img alt="Screenshot" src="./screenshots/Screen%20Shot%202018-06-07%20at%2010.07.13%20AM.png" /></p>
 <p>When it has finished running, we will download the mapped reads.</p>
 <ul>
-<li>Click on the finished job (Called <SS>Map with BWA-MEM</SS>etc.) in the <SS>History</SS> panel on the right hand side panel </li>
+<li>Click on the finished job (Called <SS>Map with BWA-MEM</SS>etc.) in the <SS>History</SS> panel on the right hand side panel</li>
 <li>You will see a save icon under the details of the job</li>
 <li>Click on it and the <SS>Download dataset</SS> and <SS>Download bam_index</SS> options will appear</li>
-<li>We need both so click on one after the other </li>
+<li>We need both so click on one after the other</li>
 </ul>
 <p><img alt="Alt text" src="./screenshots/Screen%20Shot%202018-06-07%20at%2010.32.52%20AM.png" /></p>
 <h2 id="step-3-viewing-the-mapping-in-tablet">Step 3: Viewing the mapping in Tablet</h2>
@@ -1044,14 +1057,14 @@ We are going to use <code>bwa mem</code> that has long read capability.</p>
 <p>What can you tell from the alignment about the method of sequencing?</p>
 <p>Does the data look different to Illumina data that you might have seen?</p>
 <p>Can you find anything that looks like consistent errors?</p>
-<p>Can you find anything that looks like a reliable SNP? </p>
+<p>Can you find anything that looks like a reliable SNP?</p>
 <h2 id="step-4-comparing-illumina-and-nanopore-assemblies">Step 4: Comparing Illumina and Nanopore assemblies</h2>
 <p>Next, we&rsquo;re going to use <em>Escherichia coli</em> to illustrate how much assemblies can be improved with long reads</p>
 <h2 id="pre-knowledge">Pre-knowledge</h2>
 <ul>
 <li>Pathogenic <em>E. coli</em> tends to have a lot repeat sequences</li>
 <li>This is due to large prophages integrating in the genome</li>
-<li>These prophages are very similar to each other and cause confusion for assembly algorithms </li>
+<li>These prophages are very similar to each other and cause confusion for assembly algorithms</li>
 <li>These prophages can be as large as ~50kb</li>
 <li>No matter how deep you sequence, if you don&rsquo;t get reads longer than those repeats you will never finish the genome</li>
 <li>See <a href="https://genomebiology.biomedcentral.com/articles/10.1186/gb-2013-14-9-r101">this paper</a> for more detail</li>
