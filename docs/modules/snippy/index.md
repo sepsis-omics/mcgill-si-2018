@@ -29,11 +29,11 @@ In this tutorial, we will use the tool "Snippy" (link to Snippy is [here](https:
 
 <!-- We will use the same data that we used in the [Assembly with Spades tutorial.](../spades/index.md) This should still be in your current galaxy history. If not, re-import the data into a new history using the instructions in that tutorial.-->
 
-For variant calling, we need a reference genome that is of the same strain as the input sequence reads.
+For variant calling, we need a reference genome that is of the same strain as the input sequence reads (preferably, as closely related as possible).
 
 For this tutorial, our reference is the <fn>wildtype.gbk</fn> file and our reads are <fn>mutant_R1.fastq</fn> and <fn>mutant_R2.fastq</fn>.
 
-If these files are not presently in your Galaxy history, import them from the [Training dataset page.](../data-dna/index.md)
+If these files are not in your Galaxy history, import them from the [Training dataset page.](../data-dna/index.md)
 
 ## Call variants with Snippy
 
@@ -106,8 +106,8 @@ From Snippy, there are 10 output files in various formats.
 - Click <ss>Insert Annotation Track</ss>
 - For <ss>Track Type</ss> choose *GFF/GFF3/BED/GBK Features*
 - For <ss>Track Data</ss> select <fn>wildtype.gff</fn>
-- Under <ss>JBrowse Track Type[Advanced]</ss> select *Canvas Features*.
-- Click on <ss>JBrowse Styling Options <Advanced]</ss>
+- Under <ss>JBrowse Track Type [Advanced]</ss> select *Canvas Features*.
+- Click on <ss>JBrowse Styling Options [Advanced]</ss>
 - Under <ss>JBrowse style.description</ss> add in the word *product* so that it says *note,description,product*
 - Under <ss>Track Visibility</ss> choose *On for new users*.
 

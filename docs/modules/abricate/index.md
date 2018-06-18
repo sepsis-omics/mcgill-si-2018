@@ -1,11 +1,11 @@
-#Finding antibiotic-resistant genes
+# Finding antibiotic-resistant genes
 
-##Overview
+## Overview
 
 - Import an assembled bacterial genome
 - Find antibiotic-resistance (AMR) genes
 
-##Import data
+## Import data
 
 - Go to your Galaxy instance.
 - Set up a new History for this Activity.
@@ -36,12 +36,13 @@ In the tools panel, go to <ss>NGS Analysis: NGS Annotation: ABRicate</ss>.
 
 There is one output file. Click on the eye icon to view. It should look like this, although likely with a different number of rows. (We will probably only have a few rows as we have used a cut-down data set).
 
-- This shows a table with one line for each antibiotic resistance gene found, in which contig, at which position, and the % coverage.
+- This shows a table with one line for each antibiotic resistance gene match in the database, in which contig, at which position, and the % coverage.
+- *NOTE*: The same gene might appear on multiple rows. Why might that be?
 
 ![abricate results](images/abricate.png)
 
 ## Next
 
-In the output from Abricate, column 5 has the list of the antibiotic-resistant gene names. Some of these may be complete, exact matches, and some may have a gap/mutation in their sequence which can affect whether that protein is actually expressed.
+In the output from ABRicate, column 5 has the list of the antibiotic-resistant gene names. Some of these may be complete, exact matches, and some may have a gap/mutation in their sequence which can affect whether that protein is actually expressed.
 
 To find out more about what type of AMR genes these are, you can search [Genbank](https://www.ncbi.nlm.nih.gov/gene/) with the gene name (e.g. aadD).
