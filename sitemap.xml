@@ -2,112 +2,117 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
      <loc>https://sepsis-omics.github.io/mcgill-si-2018/</loc>
-     <lastmod>2018-06-16</lastmod>
+     <lastmod>2018-06-18</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>https://sepsis-omics.github.io/mcgill-si-2018/day1/</loc>
-     <lastmod>2018-06-16</lastmod>
+     <lastmod>2018-06-18</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>https://sepsis-omics.github.io/mcgill-si-2018/modules/galaxy-intro-1/</loc>
-     <lastmod>2018-06-16</lastmod>
+     <lastmod>2018-06-18</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>https://sepsis-omics.github.io/mcgill-si-2018/modules/data-dna/</loc>
-     <lastmod>2018-06-16</lastmod>
+     <lastmod>2018-06-18</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>https://sepsis-omics.github.io/mcgill-si-2018/modules/fastqc/</loc>
-     <lastmod>2018-06-16</lastmod>
+     <lastmod>2018-06-18</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>https://sepsis-omics.github.io/mcgill-si-2018/modules/spades/</loc>
-     <lastmod>2018-06-16</lastmod>
+     <lastmod>2018-06-18</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>https://sepsis-omics.github.io/mcgill-si-2018/day2/</loc>
-     <lastmod>2018-06-16</lastmod>
+     <lastmod>2018-06-18</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>https://sepsis-omics.github.io/mcgill-si-2018/modules/kraken/</loc>
-     <lastmod>2018-06-16</lastmod>
+     <lastmod>2018-06-18</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>https://sepsis-omics.github.io/mcgill-si-2018/modules/snippy/</loc>
-     <lastmod>2018-06-16</lastmod>
+     <lastmod>2018-06-18</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>https://sepsis-omics.github.io/mcgill-si-2018/modules/prokka/</loc>
-     <lastmod>2018-06-16</lastmod>
+     <lastmod>2018-06-18</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>https://sepsis-omics.github.io/mcgill-si-2018/day3/</loc>
-     <lastmod>2018-06-16</lastmod>
+     <lastmod>2018-06-18</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    <url>
+     <loc>https://sepsis-omics.github.io/mcgill-si-2018/modules/transmission/</loc>
+     <lastmod>2018-06-18</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>https://sepsis-omics.github.io/mcgill-si-2018/day4/</loc>
-     <lastmod>2018-06-16</lastmod>
+     <lastmod>2018-06-18</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>https://sepsis-omics.github.io/mcgill-si-2018/modules/abricate/</loc>
-     <lastmod>2018-06-16</lastmod>
+     <lastmod>2018-06-18</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>https://sepsis-omics.github.io/mcgill-si-2018/modules/nanopore-ebola/</loc>
-     <lastmod>2018-06-16</lastmod>
+     <lastmod>2018-06-18</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>https://sepsis-omics.github.io/mcgill-si-2018/day5/</loc>
-     <lastmod>2018-06-16</lastmod>
+     <lastmod>2018-06-18</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>https://sepsis-omics.github.io/mcgill-si-2018/journal_club/</loc>
-     <lastmod>2018-06-16</lastmod>
+     <lastmod>2018-06-18</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>https://sepsis-omics.github.io/mcgill-si-2018/extras/</loc>
-     <lastmod>2018-06-16</lastmod>
+     <lastmod>2018-06-18</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>https://sepsis-omics.github.io/mcgill-si-2018/modules/artemis/</loc>
-     <lastmod>2018-06-16</lastmod>
+     <lastmod>2018-06-18</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>https://sepsis-omics.github.io/mcgill-si-2018/modules/workflows/</loc>
-     <lastmod>2018-06-16</lastmod>
+     <lastmod>2018-06-18</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>https://sepsis-omics.github.io/mcgill-si-2018/modules/viral_genomes/</loc>
-     <lastmod>2018-06-16</lastmod>
+     <lastmod>2018-06-18</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>https://sepsis-omics.github.io/mcgill-si-2018/modules/trimmomatic/</loc>
-     <lastmod>2018-06-16</lastmod>
+     <lastmod>2018-06-18</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>https://sepsis-omics.github.io/mcgill-si-2018/about/</loc>
-     <lastmod>2018-06-16</lastmod>
+     <lastmod>2018-06-18</lastmod>
      <changefreq>daily</changefreq>
     </url>
 </urlset>
