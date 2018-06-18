@@ -87,6 +87,7 @@ pages:
 
   - Extras:
     - Agenda: extras.md
+    - Skills practice: modules/extra/index.md
     - Viewing genomes with Artemis: modules/artemis/index.md
     - Galaxy workflows: modules/workflows/index.md
     - Viral genome sequencing: modules/viral_genomes/index.md
