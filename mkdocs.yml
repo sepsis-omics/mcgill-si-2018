@@ -62,7 +62,7 @@ pages:
     #- Starting with Galaxy: modules/galaxy/index.md
 
   - Day 2:
-    - Agenda: day2.md    
+    - Agenda: day2.md
     - Detecting contamination: modules/kraken/index.md
     - Variant finding: modules/snippy/index.md
     - Genome annotation: modules/prokka/index.md
@@ -72,6 +72,7 @@ pages:
 
   - Day 3:
     - Agenda: day3.md
+    - Transmission practical: modules/transmission/index.md
 
   - Day 4:
     - Agenda: day4.md
