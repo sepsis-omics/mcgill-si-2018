@@ -963,9 +963,9 @@ Usually differences are limited to single nucleotide polymorphisms (SNPs) and sm
 
 <!-- We will use the same data that we used in the [Assembly with Spades tutorial.](../spades/index.md) This should still be in your current galaxy history. If not, re-import the data into a new history using the instructions in that tutorial.-->
 
-<p>For variant calling, we need a reference genome that is of the same strain as the input sequence reads.</p>
+<p>For variant calling, we need a reference genome that is of the same strain as the input sequence reads (preferably, as closely related as possible).</p>
 <p>For this tutorial, our reference is the <fn>wildtype.gbk</fn> file and our reads are <fn>mutant_R1.fastq</fn> and <fn>mutant_R2.fastq</fn>.</p>
-<p>If these files are not presently in your Galaxy history, import them from the <a href="../data-dna/">Training dataset page.</a></p>
+<p>If these files are not in your Galaxy history, import them from the <a href="../data-dna/">Training dataset page.</a></p>
 <h2 id="call-variants-with-snippy">Call variants with Snippy</h2>
 <ul>
 <li>Go to <ss>Tools &rarr; NGS Analysis &rarr; NGS: Variant Analysis &rarr; snippy</ss></li>
@@ -1043,8 +1043,8 @@ Usually differences are limited to single nucleotide polymorphisms (SNPs) and sm
 <li>Click <ss>Insert Annotation Track</ss></li>
 <li>For <ss>Track Type</ss> choose <em>GFF/GFF3/BED/GBK Features</em></li>
 <li>For <ss>Track Data</ss> select <fn>wildtype.gff</fn></li>
-<li>Under <ss>JBrowse Track Type[Advanced]</ss> select <em>Canvas Features</em>.</li>
-<li>Click on <ss>JBrowse Styling Options <Advanced]</ss></li>
+<li>Under <ss>JBrowse Track Type [Advanced]</ss> select <em>Canvas Features</em>.</li>
+<li>Click on <ss>JBrowse Styling Options [Advanced]</ss></li>
 <li>Under <ss>JBrowse style.description</ss> add in the word <em>product</em> so that it says <em>note,description,product</em></li>
 <li>
 <p>Under <ss>Track Visibility</ss> choose <em>On for new users</em>.</p>

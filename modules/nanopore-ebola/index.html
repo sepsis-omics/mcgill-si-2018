@@ -1012,7 +1012,7 @@
 mapping (aligning) Nanopore reads to a reference.<br />
 We are going to use <code>bwa mem</code> that has long read capability.</p>
 <h2 id="step-1-fastq-dump">Step 1: Fastq-dump</h2>
-<p>First we need to retrieve Ebola data from NCBI.</p>
+<p>First we need to retrieve Ebola genomic data from NCBI. </p>
 <ul>
 <li>We will use the <SS>Get Data</SS> tab on the left hand side panel of Galaxy, under <SS>Tools</SS>.</li>
 <li>Click on <SS>Download and Extract Reads in FASTA/Q</SS></li>
@@ -1048,7 +1048,7 @@ We are going to use <code>bwa mem</code> that has long read capability.</p>
 <p><img alt="Screenshot" src="./screenshots/Screen%20Shot%202018-06-07%20at%2010.07.13%20AM.png" /></p>
 <p>When it has finished running, we will download the mapped reads.</p>
 <ul>
-<li>Click on the finished job (Called <SS>Map with BWA-MEM</SS>etc.) in the <SS>History</SS> panel on the right hand side panel</li>
+<li>Click on the finished job (Called <SS>Map with BWA-MEM</SS>, etc.) in the <SS>History</SS> panel on the right hand side panel </li>
 <li>You will see a save icon under the details of the job</li>
 <li>Click on it and the <SS>Download dataset</SS> and <SS>Download bam_index</SS> options will appear</li>
 <li>We need both so click on one after the other</li>
@@ -1066,7 +1066,7 @@ We are going to use <code>bwa mem</code> that has long read capability.</p>
 <li>Take a few minutes to explore the program and the results</li>
 </ul>
 <p><img alt="Alt text" src="./screenshots/Screen%20Shot%202018-06-07%20at%2010.44.03%20AM.png" /></p>
-<p>What can you tell from the alignment about the method of sequencing?</p>
+<p>Based on the alignment, What can you say about the sequencing method?</p>
 <p>Does the data look different to Illumina data that you might have seen?</p>
 <p>Can you find anything that looks like consistent errors?</p>
 <p>Can you find anything that looks like a reliable SNP?</p>
@@ -1076,7 +1076,7 @@ We are going to use <code>bwa mem</code> that has long read capability.</p>
 <ul>
 <li>Pathogenic <em>E. coli</em> tends to have a lot repeat sequences</li>
 <li>This is due to large prophages integrating in the genome</li>
-<li>These prophages are very similar to each other and cause confusion for assembly algorithms</li>
+<li>These prophages are very similar to each other and can confuse assembly algorithms </li>
 <li>These prophages can be as large as ~50kb</li>
 <li>No matter how deep you sequence, if you don&rsquo;t get reads longer than those repeats you will never finish the genome</li>
 <li>See <a href="https://genomebiology.biomedcentral.com/articles/10.1186/gb-2013-14-9-r101">this paper</a> for more detail</li>
@@ -1114,14 +1114,14 @@ Edges = overlaps
 </ul>
 <p><img alt="Alt text" src="./screenshots/Screen%20Shot%202018-06-07%20at%2012.52.56%20PM.png" /></p>
 <p>You will see the prophage regions highlighted in colour on the assembly graph now.</p>
-<p>What affect are the prophage regions having on the assembly?</p>
+<p>What effect are the prophage regions having on the assembly?</p>
 <p><img alt="Alt text" src="./screenshots/Screen%20Shot%202018-06-07%20at%2012.54.03%20PM.png" /></p>
 <p>Now, we will load the nanopore assembly into Bandage to see how long reads affect this</p>
 <ul>
 <li>Click on <SS>File</SS> then <SS>Load graph</SS></li>
 <li>Find the <FN>O55_combined_miniasm.gfa</FN> location on your computer and click <SS>Open</SS></li>
 <li>Click <SS>Draw graph</SS> on the left hand panel of the screen</li>
-<li>Change <SS>Graph display</SS> option from <SS>BLAST hits(solid)</SS> to <SS>Random colours</SS>. <em>What is strikingly different about this assembly than the Illumina one?</em></li>
+<li>Change <SS>Graph display</SS> option from <SS>BLAST hits (solid)</SS> to <SS>Random colours</SS>. <em>What is strikingly different about this assembly from the Illumina one?</em></li>
 </ul>
 <p><img alt="Alt text" src="./screenshots/Screen%20Shot%202018-06-07%20at%2012.58.17%20PM.png" /></p>
 <p>Now, lets look at where the prophage regions are in this assembly</p>
@@ -1130,11 +1130,11 @@ Edges = overlaps
 <li><SS>Step 1</SS> click on <SS>Build BLAST database</SS></li>
 <li><SS>Step 2</SS> click on <SS>Load from FASTA file</SS> and find the <FN>sakai_prophages.fa</FN> location on your computer</li>
 <li><SS>Step 3</SS> click on <SS>Run BLAST search</SS></li>
-<li>click on <SS>Close</SS></li>
+<li>Click on <SS>Close</SS></li>
 </ul>
 <p><img alt="Alt text" src="./screenshots/Screen%20Shot%202018-06-07%20at%2012.59.42%20PM.png" /></p>
 <ol>
-<li>How have the long reads improved this assembly?</li>
+<li>How have the long reads improved the assembly?</li>
 <li>Are there any regions that haven&rsquo;t been resolved by the nanopore experiment? Why would that be?</li>
 </ol>
                 
