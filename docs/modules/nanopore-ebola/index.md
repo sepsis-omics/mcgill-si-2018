@@ -2,28 +2,43 @@
 
 We will be using the Galaxy server that you have been using this week so far so please open that up.
 
-## Data we will use ([_download_]())
+## Data we will use
 
-* <FN>EM_079517.fasta</FN>
-* <FN>illumina_assembly_graph.fastg</FN>
-* <FN>O55_combined_miniasm.gfa</FN>
-* <FN>sakai_prophages.fa</FN>
+Please click on these filenames. Then right-click on `View Raw`, and save to your computer.
+
+* [<FN>illumina_assembly_graph.fastg</FN>](https://github.com/sepsis-omics/mcgill-si-2018/blob/master/docs/modules/nanopore-ebola/illumina_assembly_graph.fastg)
+* [<FN>O55_combined_miniasm.gfa</FN>](https://github.com/sepsis-omics/mcgill-si-2018/blob/master/docs/modules/nanopore-ebola/O55_combined_miniasm.gfa)
+
+
 
 ## Non-Galaxy tools needed ([_download_](https://www.dropbox.com/sh/kvvkvmhbwzovcg2/AAASrlyOWSq2jt-IQKyPjBgZa/Software_to_install?dl=0))
 
-* [Tablet](https://ics.hutton.ac.uk/tablet/) 
+* [Tablet](https://ics.hutton.ac.uk/tablet/)
 * [Bandage](http://rrwick.github.io/Bandage/)
 
 ## Introduction
+
+Go to your Galaxy instance. Make sure you are registered and logged in. Refresh the page.
+
+- In the top menu, click on <ss>Shared Data</ss> and then <ss>Data Libraries</ss>
+- Click on <fn>Nanopore Data</fn>
+- A list of files will appear
+- Tick the box next to these files: <FN>EM_079517.fasta</FN> and <FN>sakai_prophages.fa</FN>
+
+
+- Then click the <bu>&#x1F4D2; to History</bu> button at the top
+- Click <bu>Import</bux>
+- The files should now be in your current history.
 
 First off, we are going to start by using some Ebola viral genome data to look at
 mapping (aligning) Nanopore reads to a reference.  
 We are going to use `bwa mem` that has long read capability.
 
-## Step 1: Fastq-dump
-First we need to retrieve Ebola data from NCBI. 
 
-* We will use the <SS>Get Data</SS> tab on the left hand side panel of Galaxy, under <SS>Tools</SS>. 
+## Step 1: Fastq-dump
+First we need to retrieve Ebola data from NCBI.
+
+* We will use the <SS>Get Data</SS> tab on the left hand side panel of Galaxy, under <SS>Tools</SS>.
 * Click on <SS>Download and Extract Reads in FASTA/Q</SS>
 * Options will now be visible in the middle panel of galaxy
 * The input type should be <SS>SRR accession</SS>
@@ -42,11 +57,11 @@ First we need to retrieve Ebola data from NCBI.
 ## Step 2: BWA-MEM
 Next we will map our nanopore Ebola reads to a reference.
 
-* We will use the <SS>NGS:Mapping</SS> tab on the left hand side panel of Galaxy, under <SS>Tools</SS>. 
+* We will use the <SS>NGS:Mapping</SS> tab on the left hand side panel of Galaxy, under <SS>Tools</SS>.
 * Click on <SS>Map with BWA-MEM</SS>
 * Options will now be visible in the middle panel of galaxy
 * Select <SS>Use a genome from history and build index</SS>
-* The reference sequence will be preloaded into your galaxy history: <FN>EM_079517.fasta</FN> (This is a finished Ebola reference genome for strain Zaire)
+* The reference sequence is already in your current history: <FN>EM_079517.fasta</FN> (This is a finished Ebola reference genome for strain Zaire)
 * For Algorithm select <SS>Auto. Let BWA decide the best algorithm to use</SS>
 * Select <SS>Single</SS> for type of reads
 * Select <SS>ERR1014225 (fastq-dump)</SS> for fastq dataset
@@ -58,10 +73,10 @@ Next we will map our nanopore Ebola reads to a reference.
 
 When it has finished running, we will download the mapped reads.
 
-* Click on the finished job (Called <SS>Map with BWA-MEM</SS>etc.) in the <SS>History</SS> panel on the right hand side panel 
+* Click on the finished job (Called <SS>Map with BWA-MEM</SS>etc.) in the <SS>History</SS> panel on the right hand side panel
 * You will see a save icon under the details of the job
 * Click on it and the <SS>Download dataset</SS> and <SS>Download bam_index</SS> options will appear
-* We need both so click on one after the other 
+* We need both so click on one after the other
 
 ![Alt text](screenshots/Screen%20Shot%202018-06-07%20at%2010.32.52%20AM.png)
 
@@ -84,7 +99,7 @@ Does the data look different to Illumina data that you might have seen?
 
 Can you find anything that looks like consistent errors?
 
-Can you find anything that looks like a reliable SNP? 
+Can you find anything that looks like a reliable SNP?
 
 ## Step 4: Comparing Illumina and Nanopore assemblies
 
@@ -94,14 +109,14 @@ Next, we're going to use *Escherichia coli* to illustrate how much assemblies ca
 
 * Pathogenic *E. coli* tends to have a lot repeat sequences
 * This is due to large prophages integrating in the genome
-* These prophages are very similar to each other and cause confusion for assembly algorithms 
+* These prophages are very similar to each other and cause confusion for assembly algorithms
 * These prophages can be as large as ~50kb
 * No matter how deep you sequence, if you don't get reads longer than those repeats you will never finish the genome
 * See [this paper](https://genomebiology.biomedcentral.com/articles/10.1186/gb-2013-14-9-r101) for more detail
 
 ## Bandage
 
-	
+
 	Nodes = contigs
 	Edges = overlaps
 
@@ -110,11 +125,11 @@ Next, we're going to use *Escherichia coli* to illustrate how much assemblies ca
 * Find the <SS>illumina_assembly_graph.fastg</SS> location on your computer and click <SS>Open</SS>
 
 ![Alt text](screenshots/Screen%20Shot%202018-06-07%20at%2011.20.11%20AM.png)
- 
+
  * Click <SS>Draw graph</SS> on the left hand panel of the screen
  * You will see that the Illumina assembly produces a whole mess of 649 contigs with a lot of short contigs connecting everything together
  * You can zoom in on the graph to look at it in more detail
- 
+
 ![Alt text](screenshots/Screen%20Shot%202018-06-07%20at%2012.40.28%20PM.png)
 
  * We can colour the graph by depth by changing <SS>Graph display</SS> from <SS>Random colours</SS> to <SS>Colour by depth</SS>
