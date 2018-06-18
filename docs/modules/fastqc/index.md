@@ -11,8 +11,8 @@ After sequencing, the reads should be checked for their quality. This tutorial d
 
 At the end of this tutorial you should be able to:
 
-1. run FastQC on input sequence reads, and
-2. examine the FastQC output.
+1. Run FastQC on input sequence reads, and
+2. Examine the FastQC output.
 
 ## Input files
 
@@ -42,7 +42,7 @@ Look at:
 
     - <ss>Sequence length</ss>: will be important in setting maximum k-mer size value for assembly.
     - <ss>Encoding</ss>: The quality encoding type is important for quality trimming software.
-    - <ss>% GC</ss>: high GC organisms don’t tend to assemble well and may have an uneven read coverage distribution.
+    - <ss>% GC</ss>: extreme GC organisms don’t tend to assemble well and may have an uneven read coverage distribution.
     - <ss>Total sequences</ss>: Total number of reads: gives you an idea of coverage.
 
 -  <ss>Per base sequence quality</ss>: Dips in quality near the beginning, middle or end of the reads: determines possible trimming/cleanup methods and parameters and may indicate technical problems with the sequencing process/machine run. In this case, all the reads are of relatively high quality across their length (150 bp).
@@ -64,7 +64,7 @@ General questions you might ask about your input reads include:
 - Do I need to ask for a new sequencing run?  
 - Is it suitable for the analysis I need to do?
 
-For a fuller discussion of FastQC outputs and warnings, see the [FastQC website link](http://www.bioinformatics.babraham.ac.uk/projects/fastqc/), including the section on each of the output [reports](http://www.bioinformatics.babraham.ac.uk/projects/fastqc/Help/3%20Analysis%20Modules/), and examples of ["good"](http://www.bioinformatics.babraham.ac.uk/projects/fastqc/good_sequence_short_fastqc.html) and ["bad"](http://www.bioinformatics.babraham.ac.uk/projects/fastqc/bad_sequence_fastqc.html) Illumina data.
+For a more in-depth description of FastQC outputs and warnings, see the [FastQC website link](http://www.bioinformatics.babraham.ac.uk/projects/fastqc/), including the section on each of the output [reports](http://www.bioinformatics.babraham.ac.uk/projects/fastqc/Help/3%20Analysis%20Modules/), and examples of ["good"](http://www.bioinformatics.babraham.ac.uk/projects/fastqc/good_sequence_short_fastqc.html) and ["bad"](http://www.bioinformatics.babraham.ac.uk/projects/fastqc/bad_sequence_fastqc.html) Illumina data.
 
 
 ## What Next?

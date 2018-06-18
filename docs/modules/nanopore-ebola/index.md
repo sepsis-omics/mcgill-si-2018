@@ -36,7 +36,7 @@ We are going to use `bwa mem` that has long read capability.
 
 
 ## Step 1: Fastq-dump
-First we need to retrieve Ebola data from NCBI.
+First we need to retrieve Ebola genomic data from NCBI. 
 
 * We will use the <SS>Get Data</SS> tab on the left hand side panel of Galaxy, under <SS>Tools</SS>.
 * Click on <SS>Download and Extract Reads in FASTA/Q</SS>
@@ -73,7 +73,7 @@ Next we will map our nanopore Ebola reads to a reference.
 
 When it has finished running, we will download the mapped reads.
 
-* Click on the finished job (Called <SS>Map with BWA-MEM</SS>etc.) in the <SS>History</SS> panel on the right hand side panel
+* Click on the finished job (Called <SS>Map with BWA-MEM</SS>, etc.) in the <SS>History</SS> panel on the right hand side panel 
 * You will see a save icon under the details of the job
 * Click on it and the <SS>Download dataset</SS> and <SS>Download bam_index</SS> options will appear
 * We need both so click on one after the other
@@ -93,7 +93,7 @@ When it has finished running, we will download the mapped reads.
 
 ![Alt text](screenshots/Screen%20Shot%202018-06-07%20at%2010.44.03%20AM.png)
 
-What can you tell from the alignment about the method of sequencing?
+Based on the alignment, What can you say about the sequencing method?
 
 Does the data look different to Illumina data that you might have seen?
 
@@ -109,7 +109,7 @@ Next, we're going to use *Escherichia coli* to illustrate how much assemblies ca
 
 * Pathogenic *E. coli* tends to have a lot repeat sequences
 * This is due to large prophages integrating in the genome
-* These prophages are very similar to each other and cause confusion for assembly algorithms
+* These prophages are very similar to each other and can confuse assembly algorithms 
 * These prophages can be as large as ~50kb
 * No matter how deep you sequence, if you don't get reads longer than those repeats you will never finish the genome
 * See [this paper](https://genomebiology.biomedcentral.com/articles/10.1186/gb-2013-14-9-r101) for more detail
@@ -149,7 +149,7 @@ Now we are going to use [BLAST](https://blast.ncbi.nlm.nih.gov/Blast.cgi) to loo
 
 You will see the prophage regions highlighted in colour on the assembly graph now.
 
-What affect are the prophage regions having on the assembly?
+What effect are the prophage regions having on the assembly?
 
 ![Alt text](screenshots/Screen%20Shot%202018-06-07%20at%2012.54.03%20PM.png)
 
@@ -158,7 +158,7 @@ Now, we will load the nanopore assembly into Bandage to see how long reads affec
 * Click on <SS>File</SS> then <SS>Load graph</SS>
 * Find the <FN>O55_combined_miniasm.gfa</FN> location on your computer and click <SS>Open</SS>
 * Click <SS>Draw graph</SS> on the left hand panel of the screen
-* Change <SS>Graph display</SS> option from <SS>BLAST hits(solid)</SS> to <SS>Random colours</SS>. *What is strikingly different about this assembly than the Illumina one?*
+* Change <SS>Graph display</SS> option from <SS>BLAST hits (solid)</SS> to <SS>Random colours</SS>. *What is strikingly different about this assembly from the Illumina one?*
 
 ![Alt text](screenshots/Screen%20Shot%202018-06-07%20at%2012.58.17%20PM.png)
 
@@ -168,9 +168,9 @@ Now, lets look at where the prophage regions are in this assembly
 * <SS>Step 1</SS> click on <SS>Build BLAST database</SS>
 * <SS>Step 2</SS> click on <SS>Load from FASTA file</SS> and find the <FN>sakai_prophages.fa</FN> location on your computer
 * <SS>Step 3</SS> click on <SS>Run BLAST search</SS>
-* click on <SS>Close</SS>
+* Click on <SS>Close</SS>
 
 ![Alt text](screenshots/Screen%20Shot%202018-06-07%20at%2012.59.42%20PM.png)
 
-1. How have the long reads improved this assembly?
+1. How have the long reads improved the assembly?
 2. Are there any regions that haven't been resolved by the nanopore experiment? Why would that be?

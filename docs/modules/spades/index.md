@@ -3,7 +3,7 @@
 ## Background
 
 Spades is one of a number of *de novo* assemblers that use short read sets
-as input (e.g.  Illumina Reads), and the assembly method is based on de
+as input (e.g.,  Illumina Reads), and the assembly method is based on de
 Bruijn graphs.  For information about Spades see this
 [link](http://bioinf.spbau.ru/spades).
 
@@ -60,7 +60,7 @@ See [here](/modules/data-dna/index.md) for the link to import the Galaxy history
 -   The reads are paired-end.
 -   Each read is 150 bases long. <!--(before trimming)-->
 
--   The number of bases sequenced is equivalent to 19x the genome sequence of the wildtype strain. (Read coverage 19x - rather low!).
+-   The number of bases sequenced is equivalent to 19x the genome sequence of the wildtype strain. (**Read coverage 19x - rather low!**).
 
 <!--
 - <fn>wildtype.fna</fn>: the reference genome sequence of the wildtype strain in fasta format (a header line, then the nucleotide sequence of the genome)
