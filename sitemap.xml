@@ -91,6 +91,11 @@
      <changefreq>daily</changefreq>
     </url>
     <url>
+     <loc>https://sepsis-omics.github.io/mcgill-si-2018/modules/extra/</loc>
+     <lastmod>2018-06-18</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    <url>
      <loc>https://sepsis-omics.github.io/mcgill-si-2018/modules/artemis/</loc>
      <lastmod>2018-06-18</lastmod>
      <changefreq>daily</changefreq>
