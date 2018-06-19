@@ -247,12 +247,12 @@
         },
         {
             "location": "/day2/",
-            "text": "Agenda Day 2\n\n\n\n\nSlides: \nLab considerations for Genomic Epidemiology\n - Marcel\n\n\nSlides: \nDetecting contamination in NGS data\n - Torsten\n\n\nSlides: \nPhylogenetics\n - Anders",
+            "text": "Agenda Day 2\n\n\n\n\nSlides: \nLab considerations for Genomic Epidemiology\n - Marcel\n\n\nSlides: \nSpecies identification and contamination detection in WGS data\n - Torsten\n\n\nSlides: \nPhylogenetics\n - Anders",
             "title": "Agenda"
         },
         {
             "location": "/day2/#agenda-day-2",
-            "text": "Slides:  Lab considerations for Genomic Epidemiology  - Marcel  Slides:  Detecting contamination in NGS data  - Torsten  Slides:  Phylogenetics  - Anders",
+            "text": "Slides:  Lab considerations for Genomic Epidemiology  - Marcel  Slides:  Species identification and contamination detection in WGS data  - Torsten  Slides:  Phylogenetics  - Anders",
             "title": "Agenda Day 2"
         },
         {
@@ -374,6 +374,16 @@
             "location": "/modules/prokka/#view-annotated-features-in-jbrowse",
             "text": "Now that we have annotated the draft genome sequence, we would like to view the sequence in the JBrowse genome viewer.    Go to  Statistics and Visualisation \u2192 Graph/Display Data \u2192 JBrowse genome browser .    Under  Reference genome to display  choose  Use a genome from history .    Under  Select the reference genome  choose  Prokka on data XX:fna . This .fna sequence is the fasta nucleotide sequence, and will be the reference against which annotations are displayed.    For  Produce a Standalone Instance  select  Yes .    For  Genetic Code  choose  11: The Bacterial, Archaeal and Plant Plastid Code .    Under  JBrowse-in-Galaxy Action  choose  New JBrowse Instance .    Click  Insert Track Group    Under  Track Category  type in  gene annotations .    Click  Insert Annotation Track    For  Track Type  choose  GFF/GFF3/BED/GBK Features    For  GFF/GFF3/BED Track Data  select  Prokka on data XX:gff   [Note: not wildtype.gff]    Under  JBrowse Track Type [Advanced]  select  Canvas Features .    Click on  JBrowse Styling Options [Advanced]    Under  JBrowse style.label  check it says  product,name,id .    Under  Track Visibility  choose  On for new users .    Your tool interface should look like this:      Click  Execute    A new file will be created, called  JBrowse on data XX and data XX - Complete . Click on the eye icon next to the file name. The JBrowse window will appear in the centre Galaxy panel.    Under  Available Tracks  on the left, tick the box for  Prokka on data XX:gff .    Select contig 1 in the drop down box. You can only see one contig displayed at a time.       Use the plus and minus buttons to zoom in and out, and the arrows to move left or right (or click and drag within the window to move left or right).    Zoom in to see the reference sequence at the top. JBrowse displays the sequence and a 6-frame amino acid translation.    Zoomed in view:    Right click on a gene/feature annotation (the bars on the annotation track), then select  View Details  to see more information.  gene name  product name  you can download the FASTA sequence by clicking on the disk icon.",
             "title": "View annotated features in JBrowse"
+        },
+        {
+            "location": "/modules/build_a_tree/",
+            "text": "Build a tree\n\n\nPhylogenetic trees are meant to represent our best guess as to the relatedness among organisms.\n\n\nIn this tutorial, we will go over some crucial concepts needed to correctly build phylogenetic trees using microbial data. We will then apply those concepts in order to build a phylogenetic tree by hand.\n\n\nYou can follow along using the slides \nhere\n.\n\n\nYou should also have received hard copies of the worksheet needed to complete this tutorial (electronic copy \nhere\n).\n\n\nThis tutorial is best completed with a pencil.",
+            "title": "Build a tree"
+        },
+        {
+            "location": "/modules/build_a_tree/#build-a-tree",
+            "text": "Phylogenetic trees are meant to represent our best guess as to the relatedness among organisms.  In this tutorial, we will go over some crucial concepts needed to correctly build phylogenetic trees using microbial data. We will then apply those concepts in order to build a phylogenetic tree by hand.  You can follow along using the slides  here .  You should also have received hard copies of the worksheet needed to complete this tutorial (electronic copy  here ).  This tutorial is best completed with a pencil.",
+            "title": "Build a tree"
         },
         {
             "location": "/day3/",

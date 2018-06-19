@@ -13,7 +13,7 @@
         <meta name="description" content="McGill Summer Institue - Genomic Epidemiology of Infectious Diseaes">
       
       
-        <link rel="canonical" href="https://sepsis-omics.github.io/mcgill-si-2018/modules/abricate/">
+        <link rel="canonical" href="https://sepsis-omics.github.io/mcgill-si-2018/modules/build_a_tree/">
       
       
         <meta name="author" content="Anna Syme, Torsten Seemann">
@@ -42,7 +42,7 @@
     
     
       
-        <title>Predicting antimicrobial resistance - McGill SI 2018 GenEpi</title>
+        <title>Build a tree - McGill SI 2018 GenEpi</title>
       
     
     
@@ -87,7 +87,7 @@
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
     <label class="md-overlay" data-md-component="overlay" for="__drawer"></label>
     
-      <a href="#finding-antibiotic-resistant-genes" tabindex="1" class="md-skip">
+      <a href="#build-a-tree" tabindex="1" class="md-skip">
         Skip to content
       </a>
     
@@ -113,7 +113,7 @@
                 McGill SI 2018 GenEpi
               </span>
               <span class="md-header-nav__topic">
-                Predicting antimicrobial resistance
+                Build a tree
               </span>
             
           
@@ -195,7 +195,7 @@
   
     <li class="md-tabs__item">
       
-        <a href="../../day2/" title="Day 2" class="md-tabs__link">
+        <a href="../../day2/" title="Day 2" class="md-tabs__link md-tabs__link--active">
           Day 2
         </a>
       
@@ -221,7 +221,7 @@
   
     <li class="md-tabs__item">
       
-        <a href="../../day4/" title="Day 4" class="md-tabs__link md-tabs__link--active">
+        <a href="../../day4/" title="Day 4" class="md-tabs__link">
           Day 4
         </a>
       
@@ -404,10 +404,12 @@
       
       
 
+  
 
-  <li class="md-nav__item md-nav__item--nested">
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
     
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-3" type="checkbox" id="nav-3">
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-3" type="checkbox" id="nav-3" checked>
     
     <label class="md-nav__link" for="nav-3">
       Day 2
@@ -471,11 +473,20 @@
           
           
 
+  
 
-  <li class="md-nav__item">
-    <a href="../build_a_tree/" title="Build a tree" class="md-nav__link">
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+      
+    
+    
+    <a href="./" title="Build a tree" class="md-nav__link md-nav__link--active">
       Build a tree
     </a>
+    
   </li>
 
         
@@ -536,12 +547,10 @@
       
       
 
-  
 
-
-  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+  <li class="md-nav__item md-nav__item--nested">
     
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-5" type="checkbox" id="nav-5" checked>
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-5" type="checkbox" id="nav-5">
     
     <label class="md-nav__link" for="nav-5">
       Day 4
@@ -569,70 +578,11 @@
           
           
 
-  
 
-
-  <li class="md-nav__item md-nav__item--active">
-    
-    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="__toc">
-    
-      
-    
-    
-      <label class="md-nav__link md-nav__link--active" for="__toc">
-        Predicting antimicrobial resistance
-      </label>
-    
-    <a href="./" title="Predicting antimicrobial resistance" class="md-nav__link md-nav__link--active">
+  <li class="md-nav__item">
+    <a href="../abricate/" title="Predicting antimicrobial resistance" class="md-nav__link">
       Predicting antimicrobial resistance
     </a>
-    
-      
-<nav class="md-nav md-nav--secondary">
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">Table of contents</label>
-    <ul class="md-nav__list" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#overview" title="Overview" class="md-nav__link">
-    Overview
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#import-data" title="Import data" class="md-nav__link">
-    Import data
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#find-antibiotic-resistance-genes" title="Find antibiotic-resistance genes" class="md-nav__link">
-    Find antibiotic-resistance genes
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#next" title="Next" class="md-nav__link">
-    Next
-  </a>
-  
-</li>
-      
-      
-      
-      
-      
-    </ul>
-  
-</nav>
-    
   </li>
 
         
@@ -874,43 +824,6 @@
     
   
   
-    <label class="md-nav__title" for="__toc">Table of contents</label>
-    <ul class="md-nav__list" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#overview" title="Overview" class="md-nav__link">
-    Overview
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#import-data" title="Import data" class="md-nav__link">
-    Import data
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#find-antibiotic-resistance-genes" title="Find antibiotic-resistance genes" class="md-nav__link">
-    Find antibiotic-resistance genes
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#next" title="Next" class="md-nav__link">
-    Next
-  </a>
-  
-</li>
-      
-      
-      
-      
-      
-    </ul>
-  
 </nav>
                   </div>
                 </div>
@@ -922,56 +835,12 @@
               
                 
                 
-                <h1 id="finding-antibiotic-resistant-genes">Finding antibiotic-resistant genes</h1>
-<h2 id="overview">Overview</h2>
-<ul>
-<li>Import an assembled bacterial genome</li>
-<li>Find antibiotic-resistance (AMR) genes</li>
-</ul>
-<h2 id="import-data">Import data</h2>
-<ul>
-<li>Go to your Galaxy instance.</li>
-<li>
-<p>Set up a new History for this Activity.</p>
-<ul>
-<li>In the History panel, click on the cog icon, select <ss>Create New</ss>.</li>
-<li>A new empty history should appear; click on <fn>Unnamed history</fn> and re-name it (e.g. AMR genes).</li>
-</ul>
-<p><img alt="Galaxy new history" src="./images/galaxy1.png" /></p>
-</li>
-<li>
-<p>Import an assembled genome (or use one from your history).</p>
-<ul>
-<li>Copy this URL for a previously-assembled genome:  <tt>https://swift.rc.nectar.org.au:8888/v1/AUTH_377/public/Microbial_tutorials/SPAdes_contigs.fasta</tt></li>
-<li>From the Galaxy tool panel, click on <ss>Get Data &rarr; Upload File</ss>  </li>
-<li>Click the <ss>Paste/Fetch data</ss> button  </li>
-<li>Paste the URL into the box.</li>
-<li>Click the <ss>Start</ss> button.  </li>
-<li>Once the progress bar reaches 100%, click the <ss>Close</ss> button  </li>
-<li>The file will now upload to your current history.</li>
-<li>Re-name it with the pencil icon to <fn>contigs.fasta</fn>.</li>
-</ul>
-</li>
-</ul>
-<h2 id="find-antibiotic-resistance-genes">Find antibiotic-resistance genes</h2>
-<ul>
-<li>We will use the tool called <a href="https://github.com/tseemann/abricate">ABRicate</a> to find antibiotic resistance genes in the (draft) genome.</li>
-<li>ABRicate uses a <a href="https://cge.cbs.dtu.dk/services/data.php">database</a> of these genes called <a href="https://cge.cbs.dtu.dk/services/ResFinder">ResFinder</a>.</li>
-</ul>
-<p>In the tools panel, go to <ss>NGS Analysis: NGS Annotation: ABRicate</ss>.</p>
-<ul>
-<li>For <ss>Select fasta file</ss> choose <fn>contigs.fasta</fn> (or the name of your own assembly file.)</li>
-<li>Click <ss>Execute</ss>.</li>
-</ul>
-<p>There is one output file. Click on the eye icon to view. It should look like this, although likely with a different number of rows. (We will probably only have a few rows as we have used a cut-down data set).</p>
-<ul>
-<li>This shows a table with one line for each antibiotic resistance gene match in the database, in which contig, at which position, and the % coverage.</li>
-<li><em>NOTE</em>: The same gene might appear on multiple rows. Why might that be?</li>
-</ul>
-<p><img alt="abricate results" src="./images/abricate.png" /></p>
-<h2 id="next">Next</h2>
-<p>In the output from ABRicate, column 5 has the list of the antibiotic-resistant gene names. Some of these may be complete, exact matches, and some may have a gap/mutation in their sequence which can affect whether that protein is actually expressed.</p>
-<p>To find out more about what type of AMR genes these are, you can search <a href="https://www.ncbi.nlm.nih.gov/gene/">Genbank</a> with the gene name (e.g. aadD).</p>
+                <h1 id="build-a-tree">Build a tree</h1>
+<p>Phylogenetic trees are meant to represent our best guess as to the relatedness among organisms.</p>
+<p>In this tutorial, we will go over some crucial concepts needed to correctly build phylogenetic trees using microbial data. We will then apply those concepts in order to build a phylogenetic tree by hand.</p>
+<p>You can follow along using the slides <a href="https://tinyurl.com/yb8daunw">here</a>.</p>
+<p>You should also have received hard copies of the worksheet needed to complete this tutorial (electronic copy <a href="https://www.dropbox.com/s/f6grmye10czrr8j/Build%20trees%20worksheet.pdf?dl=0">here</a>).</p>
+<p>This tutorial is best completed with a pencil.</p>
                 
                   
                 
@@ -992,7 +861,7 @@
     <div class="md-footer-nav">
       <nav class="md-footer-nav__inner md-grid">
         
-          <a href="../../day4/" title="Agenda" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+          <a href="../prokka/" title="Genome annotation" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
             <div class="md-flex__cell md-flex__cell--shrink">
               <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
             </div>
@@ -1001,19 +870,19 @@
                 <span class="md-footer-nav__direction">
                   Previous
                 </span>
-                Agenda
+                Genome annotation
               </span>
             </div>
           </a>
         
         
-          <a href="../nanopore-ebola/" title="Nanopore viral genomics" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+          <a href="../../day3/" title="Agenda" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
             <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
               <span class="md-flex__ellipsis">
                 <span class="md-footer-nav__direction">
                   Next
                 </span>
-                Nanopore viral genomics
+                Agenda
               </span>
             </div>
             <div class="md-flex__cell md-flex__cell--shrink">
